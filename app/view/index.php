@@ -1,238 +1,136 @@
-﻿<?php
-    $nameEnterprise = "Orlando";
-?>
-
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="es" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/public/img/logo.svg">
-    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="/public/css/styleHoverEffect.css">
-    <link rel="stylesheet" href="/public/css/stylesCoproduc.css">
-    <title><?= $nameEnterprise ?></title>
+    <title>Coproduc</title>
+
+    <link rel="shortcut icon" type="image/png" href="/public/img/icon.png"/>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Coproduc : Venta de productos 100% naturales " />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.coproduc.com" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Logo de Coproduc" />
+    <meta property="og:description" content="Coproduc : Venta de productos 100% naturales">
+
+    <meta name="author" content="Coproduc">
+    <meta name="classification" content="all">
+    <meta name="description" content="Coproduc es una empresa que se dedica a la venta de productos 100% naturales con la más pura calidad
+        de ingredientes">
+    <meta name="keywords" content="coproduc, queso, leche, manjar, productos naturales">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <link rel="stylesheet" href="/public/libraries/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/public/libraries/fonts/css/icon.css">
+    <link rel="stylesheet" href="/public/css/coproduc_main.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
 </head>
 <body>
-    <nav class="navbar bg-transparent  navbar-expand-md fixed-top navbar-on-top d-none d-md-flex" id="navbar">
-        <a href="index.php" class="navbar-brand text-white">
-            <img src="/public/img/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-            <?= $nameEnterprise ?>
-        </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top position-fixed">
+        <a class="navbar-brand" href="#">
+            <img src="/public/img/logo.jpg" class="d-inline-block align-top " alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto text-center">
-                <a id="nav-home--large" href="#" class="nav-item nav-link links-color-white mr-4 navbar-nav__a">INICIO</a>
-                <a id="nav-products--large" href="#" class="nav-item nav-link links-color-white mr-4 navbar-nav__a">PRODUCTOS</a>
-                <a id="nav-us--large" href="#" class="nav-item nav-link links-color-white mr-4 navbar-nav__a">¿QUIENES SOMOS?</a>
-                <a id="nav-contact--large" href="#" class="nav-item nav-link links-color-white mr-4 navbar-nav__a">CONTACTO</a>
-                <a id="d" href="#" class="nav-item nav-link mr-4 btn button-primary">
-                    Iniciar Sesion
-                </a>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav  ml-auto d-flex align-items-center">
+                <li class="nav-item ml-2">
+                    <a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a class="nav-link " href="#">PRODUCTOS</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a class="nav-link" href="#">NOSOTROS</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a class="nav-link" href="#">CONTACTO</a>
+                </li>
+                <li class="nav-item ml-2">
+                    <a class="nav-link" href="#">INICIAR SESION</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top navbar-on-top--small d-flex d-md-none" >
-        <a href="index.php" class="navbar-brand text-white">
-            <img src="/public/img/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-            <?= $nameEnterprise ?>
-        </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbardatasmall"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse " id="navbardatasmall">
-            <div class="navbar-nav ml-auto text-center">
-                <a id="nav-home--smal" href="#" class="nav-item nav-link text-white">INICIO</a>
-                <a href="#" class="nav-item nav-link text-white">PRODUCTOS</a>
-                <a href="#" class="nav-item nav-link text-white">¿QUIENES SOMOS?</a>
-                <a href="#" class="nav-item nav-link text-white">CONTACTO</a>
+    <!--  slider  -->
+    <div class="main-slide">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="/public/img/slider/slider1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/public/img/slider/slider2.jpg" alt="Second slide">
+                </div>
+                <!--div class="carousel-item">
+                    <img class="d-block w-100" src="/public/img/slider/cheese.jpg" alt="Third slide">
+                </div-->
             </div>
-        </div>
-    </nav>
-
-
-    <div id="home">
-        <div class="image-principal">
-            <div class="imgText  d-none d-md-flex">
-                <p class="imgPrimaryText" style="font-size: 60px;text-shadow: 0 0 10px black">LOS MEJORES QUESOS</p>
-                <p class="imgSecondaryText" style="font-size: 20px; text-shadow: 0 0 10px black">Ver todos nuestros deliciosos productos</p
-            </div>
-
-        </div>
-        <div class="image-principal--small">
-            <div class="imgText--small d-flex d-md-none">
-                <p class="imgPrimaryText--small">LOS MEJORES QUESOS</p>
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 
 
-    <section class="container-fluid information pt-5 pb-4  d-none d-md-block" id="products-title">
-        <div class="row">
-            <div class="col-12 justify-content-center d-flex">
-                <p class="information__first">Ofrecemos los mejores productos para tu consumo</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 justify-content-center information__second d-flex" >
-                <p class="information__second">100% de la más pura calidad</p>
-            </div>
-        </div>
-    </section>
+    <!-- productos -->
+    <section class="products mt-5">
 
-
-    <section class="container">
-        <div class="row">
-            <div class="col-8 offset-2 offset-sm-0 col-lg-4 col-md-4 col-sm-6 col-xs-6 mt-4">
-                <div class="hovereffect">
-                    <img class="img-responsive img-thumbnail" src="/public/img/mantequilla_small.jpg" alt="">
-                    <div class="overlay">
-                        <h2>Mantequilla del Perú</h2>
-                        <p>
-                            <a href="#">Ver más</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-8 offset-2 offset-sm-0 col-lg-4 col-md-4 col-sm-6 col-xs-6 mt-4">
-                <div class="hovereffect">
-                    <img class="img-responsive img-thumbnail" src="/public/img/queso_small.jpg" alt="">
-                    <div class="overlay">
-                        <h2>Queso del Perú</h2>
-                        <p>
-                            <a href="#">Ver más</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-8 offset-2 offset-sm-0 col-lg-4 col-md-4 col-sm-6 col-xs-6 mt-4">
-                <div class="hovereffect">
-                    <img class="img-responsive img-thumbnail" src="/public/img/yogurt_small.jpg" alt="">
-                    <div class="overlay">
-                        <h2>Effect 13</h2>
-                        <p>
-                            <a href="#">LINK HERE</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-8 offset-2 offset-sm-0 col-lg-4 col-md-4 col-sm-6 col-xs-6 mt-4">
-                <div class="hovereffect">
-                    <img class="img-responsive img-thumbnail" src="/public/img/yogurt_small.jpg" alt="">
-                    <div class="overlay">
-                        <h2>Effect 13</h2>
-                        <p>
-                            <a href="#">LINK HERE</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-8 offset-2 offset-sm-0 col-lg-4 col-md-4 col-sm-6 col-xs-6 mt-4">
-                <div class="hovereffect">
-                    <img class="img-responsive img-thumbnail" src="/public/img/yogurt_small.jpg" alt="">
-                    <div class="overlay">
-                        <h2>Effect 13</h2>
-                        <p>
-                            <a href="#">LINK HERE</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-8 offset-2 offset-sm-0 col-lg-4 col-md-4 col-sm-6 col-xs-6 mt-4">
-                <div class="hovereffect">
-                    <img class="img-responsive img-thumbnail" src="/public/img/yogurt_small.jpg" alt="">
-                    <div class="overlay">
-                        <h2>Effect 13</h2>
-                        <p>
-                            <a href="#">LINK HERE</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <section class="my-5" id="us">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-                        <p class="text-center us-title">¿Quienes somos?</p>
-                        <p class="text-center us-description">
-                            Somos una empresa agroindustrial ubicada en la hermosa ciudad de cajamarca, 100% comprometida con el bienestar de la familia,
-                            por eso nos esmeramos en que cada producto sea lo mas natural posible para que pueda degustar con
-                            total confianza y seguridad
-                        </p>
-                </div>
-                <div class="col-md-6">
-                    <img class="img-fluid rounded" src="/public/img/farm.jpg" alt="">
+                <div class="col-12 d-flex justify-content-center">
+                    <h2 class="titles">PRODUCTOS</h2>
                 </div>
             </div>
         </div>
-    </section>
 
-
-    <section class="container-fluid py-5 p-4 contact" id="contact">
-        <div class="row">
-
-            <div class="col-12 col-md-6 offset-md-3">
-                <div class="d-flex justify-content-center h2">
-                    Contactanos
-                </div>
-                <div>
-                    <form>
-                        <div class="form-group">
-                            <label for="contact_name">Nombre</label>
-                            <input type="text" class="form-control" id="contact_nombre" placeholder="Escribe tu nombre">
-                        </div>
-                        <div class="form-group">
-                            <label for="contact_lastname">Apellido</label>
-                            <input type="text" class="form-control" id="contact_lastname" placeholder="Escribe tu apellido">
-                        </div>
-                        <div class="form-group">
-                            <label for="contact_lastname">Telefono</label>
-                            <input type="number" class="form-control" id="contact_lastname" placeholder="Escribe tu telefono">
-                        </div>
-                        <div class="form-group">
-                            <label for="contact_lastname">E-mail</label>
-                            <input type="email" class="form-control" id="contact_lastname" placeholder="Escribe tu E-mail">
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <button type="button" class="btn btn-color" onclick="alert()">Enviar</button>
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <footer class="bg-dark">
         <div class="container">
-            <div class="row py-4 footer justify-content-center">
-                <?= date('Y')  . " " . $nameEnterprise ?>. Todos los derechos reservados
+            <div class="row">
+
+                <?php for ($i = 0 ; $i < 6 ; $i++): ?>
+                    <div class="col-12 col-sm-6 col-lg-4 mt-5">
+                        <div class="card">
+                            <img class="card-img-top" src="/public/img/products/yogurt.jpg" alt="Card image cap">
+                            <div class="card-body card-body-color">
+                                <h5 class="card-title d-flex justify-content-center">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <div class="d-flex justify-content-center">
+                                    <a href="#" class="btn btn-primary btn-color">
+                                        Comprar
+                                        <i class="icon-basket"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endfor; ?>
+
             </div>
         </div>
-    </footer>
+    </section>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <!--script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script-->
-    <script src="/public/js/sweet.js"></script>
-    <script src="/public/js/scriptIndex.js"></script>
+
+    <section>
+
+    </section>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

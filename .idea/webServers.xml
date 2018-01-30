@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="12a34440-d4da-4c84-adc0-b924897afaa8" name="coproduc" url="http://coproduc.com">
+        <fileTransfer host="coproduc.com" port="21" rootFolder="/public_html">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

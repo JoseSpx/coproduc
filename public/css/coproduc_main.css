@@ -1,0 +1,85 @@
+:root{
+    --primaryColor : #FEBB01;
+    --secondaryColor : #FFD238;
+    --accent : #D3782F;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.btn-color{
+    background-color: var(--primaryColor);
+    border-color: var(--accent);
+}
+
+.btn-color:hover{
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+.navbar{
+    padding: 10px 10px;
+    border-bottom: 1px solid gray;
+}
+
+.slide, .carousel-inner{
+    margin-top: 90px;
+    max-height: 100vh;
+}
+
+.carousel-item{
+    max-height: 100vh;
+}
+
+
+.slide, .carousel-inner{
+    max-height: 100vh;
+}
+
+.titles{
+    font-family: "Lato", sans-serif;
+    font-size: 1.9em;
+}
+
+.titles::after{
+    content: '';
+    position: relative;
+    display: block;
+    height: 8px;
+    width: 150%;
+    left: -25%;
+    background-color: var(--primaryColor);
+}
+
+.card-body-color{
+    background-color: var(--secondaryColor);
+    color: black;
+}
+
+@media screen and (min-width: 992px) {
+
+    .navbar{
+        padding: 10px 90px;
+        border-bottom: 1px solid gray;
+        font-size: 1.15em;
+    }
+
+    .slide, .carousel-inner{
+        margin-top: 0;
+        max-height: 100vh;
+    }
+
+    .carousel-item{
+        max-height: 100vh;
+    }
+
+}
+
