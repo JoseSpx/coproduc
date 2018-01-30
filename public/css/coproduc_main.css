@@ -68,15 +68,6 @@ body{
     color: black;
 }
 
-.about-us{
-    display: block;
-    background-image: url("/public/img/about-us.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 100%;
-}
-
-
 .footer{
     background-color: #272727;
 }
@@ -93,6 +84,32 @@ body{
     display: block;
     height: 2px;
     background-color: white;
+}
+
+.contact-data{
+    background-color: hsl(30,10%, 90%);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact .form-group{
+    margin: 0;
+    padding: 0;
+}
+
+.contact-message{
+    display: flex;
+    height: 64%;
+}
+
+.contact-submit{
+    background-color: var(--secondaryColor);
+    border: var(--accent);
+}
+
+.contact-submit:hover{
+    background-color: var(--primaryColor);
+    border: var(--accent);
 }
 
 /*hover */

@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
     <link rel="stylesheet" href="/public/libraries/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/public/libraries/fonts/css/icon.css">
-    <link rel="stylesheet" href="/public/css/coproduc_main.css">
+    <link rel="stylesheet" href="/public/css/coproduc_main.min.css">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -102,7 +102,7 @@
             <div class="row">
 
                 <?php for ($i = 0 ; $i < 6 ; $i++): ?>
-                    <div class="col-12 col-sm-6 col-lg-4 mt-5">
+                    <div class="col-10 offset-1 col-sm-12 offset-sm-0 col-md-6  col-lg-4 mt-5">
                         <div class="card">
                             <div class="hovereffect">
                                 <img class="card-img-top" src="/public/img/products/yogurt.jpg" alt="Card image cap">
@@ -140,10 +140,46 @@
     </section>
 
     <!-- contact -->
-    <section>
+    <section class="mt-5">
         <div class="container">
             <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <h2 class="titles">CONTACTO</h2>
+                </div>
             </div>
+        </div>
+        <div class="container mt-4 contact">
+            <form action="">
+                <div class="row ">
+                    <div class="col-10 offset-1">
+                        <div class="row contact-data">
+                            <div class="col-6 d-flex flex-column">
+                                <div class="form-group">
+                                    <!--label for="inputName"></label-->
+                                    <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder=" Nombre">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <!--label for="inputEmail">Email</label-->
+                                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder=" Email">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <!--label for="inputTelephone">Telefono</label-->
+                                    <input type="number" class="form-control" id="inputTelephone" aria-describedby="emailHelp" placeholder=" Teléfono">
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex flex-column justify-content-between">
+                                <div class="form-group contact-message">
+                                    <!--label for="inputMessage">Password</label-->
+                                    <textarea spellcheck="false" type="text" class="form-control" id="inputPass" placeholder="Mensaje"></textarea>
+                                </div>
+                                <div class="d-flex flex-column ">
+                                    <button type="submit" class="btn btn-primary contact-submit">ENVIAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
 
