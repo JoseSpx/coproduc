@@ -104,10 +104,16 @@
                 <?php for ($i = 0 ; $i < 6 ; $i++): ?>
                     <div class="col-12 col-sm-6 col-lg-4 mt-5">
                         <div class="card">
-                            <img class="card-img-top" src="/public/img/products/yogurt.jpg" alt="Card image cap">
-                            <div class="card-body card-body-color">
-                                <h5 class="card-title d-flex justify-content-center">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="hovereffect">
+                                <img class="card-img-top" src="/public/img/products/yogurt.jpg" alt="Card image cap">
+                                <div class="overlay">
+                                    <h2>Descripción</h2>
+                                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur libero mollitia nesciunt quod sed velit.</p>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center font-weight-bold">Card title</h5>
                                 <div class="d-flex justify-content-center">
                                     <a href="#" class="btn btn-primary btn-color">
                                         Comprar
@@ -124,8 +130,75 @@
     </section>
 
 
-    <section>
+    <!-- about us --->
+    <section class="mt-5">
+        <div class="container-fluid">
+            <div class="row ">
+                <img class="img-fluid " src="/public/img/about-us.jpg" alt="">
+            </div>
+        </div>
+    </section>
 
+    <!-- contact -->
+    <section>
+        <div class="container">
+            <div class="row">
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="mt-5 footer pb-2">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-8 offset-2 col-sm-4 offset-sm-4  mt-5 mb-4">
+                        <img class="img-fluid" src="/public/img/logo_sin_fondo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-2 mt-2 mb-3 offset-5 d-flex justify-content-around">
+                    <a href="" class="text-white"><i class="icon-facebook-squared"></i></a>
+                    <a href="" class="text-white"><i class="icon-youtube"></i></a>
+                    <a href="" class="text-white"><i class="icon-instagram"></i></a>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="divider">
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-none d-md-flex">
+                    <div class="col-4 mt-3">
+                        <p class="text-white text-center"><i class="icon-location"></i> Av. Sánchez Carrión #420 Trujillo - Perú </p>
+                    </div>
+                    <div class="col-4 mt-3">
+                        <p class="text-white text-center"><i class="icon-mail-alt"></i> info@coproduc.com </p>
+                    </div>
+                    <div class="col-4 mt-3">
+                        <p class="text-white text-center"><i class="icon-phone"></i> 949212970 - 949212970 </p>
+                    </div>
+                </div>
+                <div class="row d-flex d-md-none flex-column">
+                    <div class="col-12 mt-3">
+                        <p class="text-white text-center"><i class="icon-location"></i> Av. Sánchez Carrión #420 Trujillo - Perú </p>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <p class="text-white text-center"><i class="icon-mail-alt"></i> info@coproduc.com </p>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <p class="text-white text-center"><i class="icon-phone"></i> 949212970 - 949212970 </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center text-white text-justify">
+                        Copyright © 2018 - Coproduc. Todos los derechos reservados.
+                    </div>
+                    <div class="col-12 d-flex justify-content-center text-white">
+                        <p class="text-center">©DEVELOPED BY <a target="_blank" class="text-white font-weight-bold" href="http://www.ticognitivas.com/"> TIcognitivas</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 

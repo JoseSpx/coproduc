@@ -2,64 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fdbfcd0-2494-4763-9b3c-4101d8486ca9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/view/index.php" afterPath="$PROJECT_DIR$/app/view/index.php" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" afterPath="$PROJECT_DIR$/public/.htaccess" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap-grid.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap-grid.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap-grid.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap-grid.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap-reboot.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap-reboot.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap-reboot.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap-reboot.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/css/styleHoverEffect.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/css/stylesCoproduc.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/font-awesome/FontAwesome.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/font-awesome/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/font-awesome/fontawesome-webfont.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/font-awesome/fontawesome-webfont.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/font-awesome/fontawesome-webfont.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/font-awesome/fontawesome-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/line-icons/Simple-Line-Icons.dev.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/line-icons/Simple-Line-Icons.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/line-icons/Simple-Line-Icons.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/line-icons/Simple-Line-Icons.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/line-icons/Simple-Line-Icons.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/simple-line-icons.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/img/cheese-big.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/img/cheese-min.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/img/logo.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/img/mantequilla_small.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/img/products.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/img/queso.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/img/queso_small.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/img/slider/slider1.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/img/slider/slider2.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/img/space.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/img/yogurt.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/img/yogurt_small.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.bundle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.bundle.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.bundle.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.bundle.min.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.min.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery-3.2.1.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery-3.2.1.slim.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/popper.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/scriptIndex.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/sweet.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/css/coproduc_main.css" afterPath="$PROJECT_DIR$/public/css/coproduc_main.css" />
+      <change beforePath="$PROJECT_DIR$/public/img/box.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/img/products/mantequilla_small.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/css/icon-codes.css" afterPath="$PROJECT_DIR$/public/libraries/fonts/css/icon-codes.css" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/css/icon-embedded.css" afterPath="$PROJECT_DIR$/public/libraries/fonts/css/icon-embedded.css" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/css/icon-ie7-codes.css" afterPath="$PROJECT_DIR$/public/libraries/fonts/css/icon-ie7-codes.css" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/css/icon-ie7.css" afterPath="$PROJECT_DIR$/public/libraries/fonts/css/icon-ie7.css" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/css/icon.css" afterPath="$PROJECT_DIR$/public/libraries/fonts/css/icon.css" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/font/icon.eot" afterPath="$PROJECT_DIR$/public/libraries/fonts/font/icon.eot" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/font/icon.svg" afterPath="$PROJECT_DIR$/public/libraries/fonts/font/icon.svg" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/font/icon.ttf" afterPath="$PROJECT_DIR$/public/libraries/fonts/font/icon.ttf" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/font/icon.woff" afterPath="$PROJECT_DIR$/public/libraries/fonts/font/icon.woff" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/font/icon.woff2" afterPath="$PROJECT_DIR$/public/libraries/fonts/font/icon.woff2" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -85,8 +43,18 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="89" column="22" lean-forward="false" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+            <state relative-caret-position="397">
+              <caret line="192" column="92" lean-forward="false" selection-start-line="192" selection-start-column="92" selection-end-line="192" selection-end-column="92" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icon.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/libraries/fonts/css/icon.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -102,8 +70,8 @@
       <file leaf-file-name="coproduc_main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/coproduc_main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="51" column="15" lean-forward="true" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
+            <state relative-caret-position="383">
+              <caret line="93" column="13" lean-forward="false" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -144,10 +112,10 @@
         <option value="$PROJECT_DIR$/public/css/hola/a.css" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/public/js/script.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/public/libraries/fonts/css/icon.css" />
         <option value="$PROJECT_DIR$/public/css/coproduc_main.css" />
         <option value="$PROJECT_DIR$/app/view/index.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -223,6 +191,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,16 +199,57 @@
               <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
               <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="products" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="libraries" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="libraries" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="fonts" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files (x86)/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -249,19 +259,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Coproduc\public\img\products" />
-      <recent name="C:\xampp\htdocs\Coproduc\public\libraries" />
-      <recent name="C:\xampp\htdocs\Coproduc\public\img" />
-      <recent name="C:\xampp\htdocs\Coproduc\app\assets" />
-      <recent name="C:\xampp\htdocs\Coproduc\public\coproduc\img\products" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Coproduc\public\libraries\fonts" />
       <recent name="C:\xampp\htdocs\Coproduc\public\img" />
       <recent name="C:\xampp\htdocs\Coproduc\public\libraries" />
       <recent name="C:\xampp\htdocs\Coproduc\public\libraries\js" />
       <recent name="C:\xampp\htdocs\Coproduc\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Coproduc\public\img\products" />
+      <recent name="C:\xampp\htdocs\Coproduc\public\libraries" />
+      <recent name="C:\xampp\htdocs\Coproduc\public\img" />
+      <recent name="C:\xampp\htdocs\Coproduc\app\assets" />
+      <recent name="C:\xampp\htdocs\Coproduc\public\coproduc\img\products" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -304,18 +314,19 @@
       <workItem from="1517179452919" duration="8454000" />
       <workItem from="1517194141059" duration="3968000" />
       <workItem from="1517259125929" duration="15862000" />
-      <workItem from="1517321686866" duration="4853000" />
+      <workItem from="1517321686866" duration="4959000" />
+      <workItem from="1517327831672" duration="8943000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59379000" />
+    <option name="totallyTimeSpent" value="68428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19288956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19591528" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -323,7 +334,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31288344" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31288344" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -477,11 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/box.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -558,17 +564,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/farm.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/img/products/mantequilla_small.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/products/yogurt.jpg">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/farm.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/box.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -581,26 +595,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/coproduc_main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="51" column="15" lean-forward="true" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/public/img/products/yogurt.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/public/css/coproduc_main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="true" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+        <state relative-caret-position="383">
+          <caret line="93" column="13" lean-forward="false" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="89" column="22" lean-forward="false" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+        <state relative-caret-position="397">
+          <caret line="192" column="92" lean-forward="false" selection-start-line="192" selection-start-column="92" selection-end-line="192" selection-end-column="92" />
           <folding />
         </state>
       </provider>
