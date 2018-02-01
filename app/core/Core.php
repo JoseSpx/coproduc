@@ -4,7 +4,7 @@ require_once __DIR__  . '/Controller.php';
 
 class Core{
 
-    protected $controller = 'coproduc';
+    protected $controller = 'Coproduc';
     protected $method = 'index';
 
     public function __construct(){

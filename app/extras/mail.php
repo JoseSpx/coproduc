@@ -2,7 +2,7 @@
 
 header("Content-type: application/json");
 
-if(isset($_POST['submit'])){
+if(!empty($_POST['name'])){
 
     $to = "jose95sp@outlook.com";
     $name = filter_var(trim($_POST['name']), FILTER_SANITIZE_STRING);
@@ -19,7 +19,6 @@ if(isset($_POST['submit'])){
     mail($to, $title, $message, $header);
 
     return print(json_encode("true"));
-
 }
 else{
     return print(json_encode("false"));

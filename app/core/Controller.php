@@ -14,9 +14,9 @@ class Controller{
         }
     }
 
-    public function extras($view){
-        if(file_exists(__DIR__ . '/../extras/' . $view . '.php')){
-            require_once __DIR__ . '/../extras/' . $view . '.php';
+    public function extras($extras){
+        if(file_exists(__DIR__ . '/../extras/' . $extras . '.php')){
+            require_once __DIR__ . '/../extras/' . $extras . '.php';
         }
     }
 }

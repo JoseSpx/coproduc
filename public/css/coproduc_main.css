@@ -19,6 +19,11 @@ a{
     text-decoration: none;
 }
 
+.nav-link.active{
+    color: var(--secondaryColor) !important;
+    border-bottom: 4px solid var(--primaryColor);
+}
+
 .btn-color{
     background-color: var(--secondaryColor);
     border-color: var(--secondaryColor);
