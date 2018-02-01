@@ -15,6 +15,10 @@ body{
     overflow-x: hidden;
 }
 
+a{
+    text-decoration: none;
+}
+
 .btn-color{
     background-color: var(--secondaryColor);
     border-color: var(--secondaryColor);
@@ -29,6 +33,11 @@ body{
     padding: 10px 10px;
     border-bottom: 1px solid gray;
 }
+
+.link-nav:hover{
+    color: var(--primaryColor) !important;
+}
+
 
 .slide, .carousel-inner{
     margin-top: 90px;
@@ -53,7 +62,7 @@ body{
     content: '';
     position: relative;
     display: block;
-    height: 8px;
+    height: 5px;
     width: 150%;
     left: -25%;
     background-color: var(--primaryColor);
@@ -110,6 +119,15 @@ body{
 .contact-submit:hover{
     background-color: var(--primaryColor);
     border: var(--accent);
+}
+
+.link-developer{
+    color: var(--secondaryColor);
+}
+
+.link-developer:hover{
+    color: var(--primaryColor);
+    text-decoration: none;
 }
 
 /*hover */
@@ -204,16 +222,13 @@ body{
 
 /* end hover */
 
-/* hover */
-
-
 
 @media screen and (min-width: 992px) {
 
     .navbar{
         padding: 10px 90px;
         border-bottom: 1px solid gray;
-        font-size: 1.15em;
+        font-size: 1.1em;
     }
 
     .slide, .carousel-inner{

@@ -17,15 +17,20 @@ gulp.task('css', ()=>{
 
 gulp.task('js', function (cb) {
     pump([
-            gulp.src('./js/**/*.js'),
+            gulp.src(['./public/js/**/*.js','!./public/js/**/*.min.js']),
             uglify(),
             rename({
                 suffix: '.min'
             }),
-            gulp.dest('./js')
+            gulp.dest('./public/js')
         ],
         cb
     );
+});
+
+gulp.task('watch', function() {
+    gulp.watch('./public/css/**/*.css', ['css']);
+    gulp.watch('./public/js/**/*.js', ['js']);
 });
 
 

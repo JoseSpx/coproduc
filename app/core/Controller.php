@@ -9,15 +9,27 @@ class Controller{
     }
 
     public function model($view){
-        if(file_exists(__DIR__ . '/../view/' . $view . '.php')){
-            require_once __DIR__ . '/../view/' . $view . '.php';
+        if(file_exists(__DIR__ . '/../model/' . $view . '.php')){
+            require_once __DIR__ . '/../model/' . $view . '.php';
         }
     }
 
     public function extras($view){
-        if(file_exists(__DIR__ . '/../view/' . $view . '.php')){
-            require_once __DIR__ . '/../view/' . $view . '.php';
+        if(file_exists(__DIR__ . '/../extras/' . $view . '.php')){
+            require_once __DIR__ . '/../extras/' . $view . '.php';
         }
     }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

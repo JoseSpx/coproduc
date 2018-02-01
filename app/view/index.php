@@ -33,8 +33,8 @@
 <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top position-fixed">
-        <a class="navbar-brand" href="#">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top position-fixed">
+        <a class="navbar-brand" href="#main">
             <img src="/public/img/logo.jpg" class="d-inline-block align-top " alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,37 +43,37 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav  ml-auto d-flex align-items-center">
                 <li class="nav-item ml-2">
-                    <a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
+                    <a class="nav-link link-nav" href="#main">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item ml-2">
-                    <a class="nav-link " href="#">PRODUCTOS</a>
+                    <a class="nav-link link-nav" href="#products">Productos</a>
                 </li>
                 <li class="nav-item ml-2">
-                    <a class="nav-link" href="#">NOSOTROS</a>
+                    <a class="nav-link link-nav" href="#about-us">Nosotros</a>
                 </li>
                 <li class="nav-item ml-2">
-                    <a class="nav-link" href="#">CONTACTO</a>
+                    <a class="nav-link link-nav" href="#contact">Contacto</a>
                 </li>
                 <li class="nav-item ml-2">
-                    <a class="nav-link" href="#">INICIAR SESION</a>
+                    <a class="nav-link btn btn-color text-white" href="#">Iniciar Sesión</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <!--  slider  -->
-    <div class="main-slide">
+    <div id="main" class="main-slide">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="/public/img/slider/slider1.jpg" alt="First slide">
+                    <img class="d-block w-100" src="/public/img/slider/slider3.jpg" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="/public/img/slider/slider2.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="/public/img/slider/slider1.jpg" alt="Second slide">
                 </div>
-                <!--div class="carousel-item">
-                    <img class="d-block w-100" src="/public/img/slider/cheese.jpg" alt="Third slide">
-                </div-->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/public/img/slider/slider2.jpg" alt="Third slide">
+                </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -88,7 +88,7 @@
 
 
     <!-- productos -->
-    <section class="products mt-5">
+    <section id="products" class="products mt-5">
 
         <div class="container">
             <div class="row">
@@ -131,7 +131,7 @@
 
 
     <!-- about us --->
-    <section class="mt-5">
+    <section id="about-us" class="mt-5">
         <div class="container-fluid">
             <div class="row ">
                 <img class="img-fluid " src="/public/img/about-us.jpg" alt="">
@@ -140,7 +140,7 @@
     </section>
 
     <!-- contact -->
-    <section class="mt-5">
+    <section id="contact" class="mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex justify-content-center">
@@ -149,31 +149,31 @@
             </div>
         </div>
         <div class="container mt-4 contact">
-            <form action="">
+            <form id="form-contact" action="/coproduc/mail" method="post">
                 <div class="row ">
                     <div class="col-10 offset-1">
                         <div class="row contact-data">
                             <div class="col-6 d-flex flex-column">
                                 <div class="form-group">
                                     <!--label for="inputName"></label-->
-                                    <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder=" Nombre">
+                                    <input name="name" required type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder=" Nombre">
                                 </div>
                                 <div class="form-group mt-3">
                                     <!--label for="inputEmail">Email</label-->
-                                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder=" Email">
+                                    <input name="email" required type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder=" Email">
                                 </div>
                                 <div class="form-group mt-3">
                                     <!--label for="inputTelephone">Telefono</label-->
-                                    <input type="number" class="form-control" id="inputTelephone" aria-describedby="emailHelp" placeholder=" Teléfono">
+                                    <input name="phone" required type="number" class="form-control" id="inputTelephone" aria-describedby="emailHelp" placeholder=" Teléfono">
                                 </div>
                             </div>
                             <div class="col-6 d-flex flex-column justify-content-between">
                                 <div class="form-group contact-message">
                                     <!--label for="inputMessage">Password</label-->
-                                    <textarea spellcheck="false" type="text" class="form-control" id="inputPass" placeholder="Mensaje"></textarea>
+                                    <textarea name="message" required spellcheck="false" type="text" class="form-control" id="inputPass" placeholder="Mensaje"></textarea>
                                 </div>
                                 <div class="d-flex flex-column ">
-                                    <button type="submit" class="btn btn-primary contact-submit">ENVIAR</button>
+                                    <button name="submit" type="submit" class="btn btn-primary contact-submit">ENVIAR</button>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +205,7 @@
                 </div>
                 <div class="row d-none d-md-flex">
                     <div class="col-4 mt-3">
-                        <p class="text-white text-center"><i class="icon-location"></i> Av. Sánchez Carrión #420 Trujillo - Perú </p>
+                        <p class="text-white text-center"><i class="icon-location"></i> Trujillo - Cajamarca - Perú </p>
                     </div>
                     <div class="col-4 mt-3">
                         <p class="text-white text-center"><i class="icon-mail-alt"></i> info@coproduc.com </p>
@@ -216,7 +216,7 @@
                 </div>
                 <div class="row d-flex d-md-none flex-column">
                     <div class="col-12 mt-3">
-                        <p class="text-white text-center"><i class="icon-location"></i> Av. Sánchez Carrión #420 Trujillo - Perú </p>
+                        <p class="text-white text-center"><i class="icon-location"></i> Trujillo - Cajamarca - Perú </p>
                     </div>
                     <div class="col-12 mt-3">
                         <p class="text-white text-center"><i class="icon-mail-alt"></i> info@coproduc.com </p>
@@ -230,7 +230,7 @@
                         Copyright © 2018 - Coproduc. Todos los derechos reservados.
                     </div>
                     <div class="col-12 d-flex justify-content-center text-white">
-                        <p class="text-center">©DEVELOPED BY <a target="_blank" class="text-white font-weight-bold" href="http://www.ticognitivas.com/"> TIcognitivas</a></p>
+                        <p class="text-center">©DEVELOPED BY <a target="_blank" class="font-weight-bold link-developer" href="http://www.ticognitivas.com/"> TIcognitivas</a></p>
                     </div>
                 </div>
             </div>
@@ -241,5 +241,8 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="/public/js/coproduc_main.min.js"></script>
+<script src="/public/libraries/js/sweetAlert2.js"></script>
+<script src="/public/js/mail.js"></script>
 </body>
 </html>

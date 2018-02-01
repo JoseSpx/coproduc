@@ -6,4 +6,8 @@ class coproducController extends Controller {
         $this->view('index');
     }
 
+    public function mail(){
+        $this->extras("mail");
+    }
+
 }
