@@ -1,6 +1,6 @@
 <?php
 
-class coproducController extends Controller {
+class CoproducController extends Controller {
 
     public function index(){
         $this->view('index');
@@ -8,6 +8,11 @@ class coproducController extends Controller {
 
     public function mail(){
         $this->extras("mail");
+    }
+
+    public function login(){
+        //require_once __DIR__ . '/../extras/login.php';
+        $this->extras("login");
     }
 
 }

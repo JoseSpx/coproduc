@@ -165,6 +165,10 @@ a{
     font-size: 1.5em;
 }
 
+.btn-primary:focus, .btn:focus, button:focus{
+    border-color: var(--secondaryColor) !important;
+}
+
 /*hover */
 
 .hovereffect {

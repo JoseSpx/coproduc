@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿<?php
+    session_start();
+
+?>
+
+<!DOCTYPE html>
 <html lang="es" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
@@ -54,9 +59,22 @@
                 <li class="nav-item ml-2">
                     <a class="nav-link link-nav scroll" href="#contact">Contacto</a>
                 </li>
-                <li class="nav-item ml-2 ">
-                    <button type="button" data-toggle="modal" data-target="#modalLogin" class="nav-link btn btn-color text-white" >Iniciar Sesión</button>
-                </li>
+
+                <?php if(!isset($_SESSION['user'])):  ?>
+                    <li class="nav-item ml-2 ">
+                        <button type="button" data-toggle="modal" data-target="#modalLogin" class="nav-link btn btn-color text-white" >Iniciar Sesión</button>
+                    </li>
+                <?php else: ?>
+                    <div class="dropdown">
+                        <button class="btn btn-color dropdown-toggle text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Josesp
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Configuracion</a>
+                            <a class="dropdown-item" href="#">Salir</a>
+                        </div>
+                    </div>
+                <?php endif; ?>
             </ul>
         </div>
     </nav>
@@ -78,7 +96,8 @@
                                 Iniciar Sesión
                             </div>
                         </div>
-                        <form action="/coproduc/login" method="post">
+
+                        <form id="form-login" action="/coproduc/login" method="post">
                             <div class="row">
                                 <div class="col-10 offset-1 mt-1">
                                     <div class="row no-gutters">
@@ -86,7 +105,7 @@
                                             <label class="icon-label" for="inputUser"> <i class="icon-user icon-label"></i></label>
                                         </div>
                                         <div class="col-10">
-                                            <input type="text" class="form-control form-icon" id="inputUser" aria-describedby="" placeholder="Usuario o DNI">
+                                            <input name="user" type="text" class="form-control form-icon" id="inputUser" aria-describedby="" placeholder="Usuario o DNI">
                                         </div>
                                     </div>
                                 </div>
@@ -99,44 +118,27 @@
                                             <label class="icon-label" for="inputPass"> <i class="icon-key icon-label"></i></label>
                                         </div>
                                         <div class="col-10">
-                                            <input type="password" class="form-control form-icon" id="inputPass" aria-describedby="" placeholder="Contraseña">
+                                            <input name="pass" type="password" class="form-control form-icon" id="inputPass" aria-describedby="" placeholder="Contraseña">
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-
-                            <!--div class="row mt-2">
+                            <div class="row mt-3">
                                 <div class="col-10 offset-1">
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label d-flex " for="exampleCheck1">Recordar Usuario</label>
+                                    <div id="alert-error" class="alert alert-danger d-none">
+                                        Usuario o Contraseña incorrecta
                                     </div>
                                 </div>
-                            </div-->
+                            </div>
+
                             <div class="row mt-3 mb-3">
                                 <div class="col-10 offset-1 d-flex justify-content-center">
                                     <button type="submit" class="btn btn-primary btn-color">INGRESAR</button>
                                 </div>
                             </div>
-                            <!--div class="row">
-                                <div class="col-10">
-                                    <div class="form-group">
-                                        <label for="inputUser">Ingrese su nombre de Usuario o DNI</label>
-                                        <input type="text" class="form-control" id="inputUser" aria-describedby="emailHelp" placeholder="Usuario o DNI">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputPass">Ingrese su Contraseña</label>
-                                        <input type="password" class="form-control" id="inputPass" placeholder="Contraseña">
-                                    </div>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Recordar Usuario</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </div>
-                            </div-->
                         </form>
+
                     </div>
                 </div>
                 <!--div class="modal-footer">
