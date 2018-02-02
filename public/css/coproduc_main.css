@@ -6,9 +6,9 @@
 
 
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -133,6 +133,36 @@ a{
 .link-developer:hover{
     color: var(--primaryColor);
     text-decoration: none;
+}
+
+.modal-header{
+    background-color: var(--primaryColor);
+    color: #fff;
+}
+
+.icon-container{
+    background-color: var(--secondaryColor);
+    color: #fff;
+    font-size: 1.4em;
+    border-radius: 5px 0 0 5px;
+}
+
+.form-icon{
+    border-radius: 0 5px 5px 0;
+}
+
+.icon-label{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.login-title{
+    background-color:#fff;
+    color: var(--secondaryColor);
+    padding: 10px 0;
+    border-radius: 5px;
+    font-size: 1.5em;
 }
 
 /*hover */

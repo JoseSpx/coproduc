@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
     <link rel="stylesheet" href="/public/libraries/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/public/libraries/font/css/icon.css">
-    <link rel="stylesheet" href="/public/css/coproduc_main.css">
+    <link rel="stylesheet" href="/public/css/coproduc_main.min.css">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -54,12 +54,99 @@
                 <li class="nav-item ml-2">
                     <a class="nav-link link-nav scroll" href="#contact">Contacto</a>
                 </li>
-                <li class="nav-item ml-2">
-                    <a class="nav-link btn btn-color text-white" href="#">Iniciar Sesión</a>
+                <li class="nav-item ml-2 ">
+                    <button type="button" data-toggle="modal" data-target="#modalLogin" class="nav-link btn btn-color text-white" >Iniciar Sesión</button>
                 </li>
             </ul>
         </div>
     </nav>
+
+    <!-- login modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5  class="modal-title" id="exampleModalLabel">COPRODUC</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="modal-close">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row mt-2">
+                            <div class="col-10 offset-1 d-flex justify-content-center login-title text-uppercase">
+                                Iniciar Sesión
+                            </div>
+                        </div>
+                        <form action="/coproduc/login" method="post">
+                            <div class="row">
+                                <div class="col-10 offset-1 mt-1">
+                                    <div class="row no-gutters">
+                                        <div class="col-2 d-flex flex-row justify-content-center align-items-center icon-container">
+                                            <label class="icon-label" for="inputUser"> <i class="icon-user icon-label"></i></label>
+                                        </div>
+                                        <div class="col-10">
+                                            <input type="text" class="form-control form-icon" id="inputUser" aria-describedby="" placeholder="Usuario o DNI">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-10 offset-1">
+                                    <div class="row no-gutters">
+                                        <div class="col-2 d-flex flex-row justify-content-center align-items-center icon-container">
+                                            <label class="icon-label" for="inputPass"> <i class="icon-key icon-label"></i></label>
+                                        </div>
+                                        <div class="col-10">
+                                            <input type="password" class="form-control form-icon" id="inputPass" aria-describedby="" placeholder="Contraseña">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--div class="row mt-2">
+                                <div class="col-10 offset-1">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label d-flex " for="exampleCheck1">Recordar Usuario</label>
+                                    </div>
+                                </div>
+                            </div-->
+                            <div class="row mt-3 mb-3">
+                                <div class="col-10 offset-1 d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-primary btn-color">INGRESAR</button>
+                                </div>
+                            </div>
+                            <!--div class="row">
+                                <div class="col-10">
+                                    <div class="form-group">
+                                        <label for="inputUser">Ingrese su nombre de Usuario o DNI</label>
+                                        <input type="text" class="form-control" id="inputUser" aria-describedby="emailHelp" placeholder="Usuario o DNI">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPass">Ingrese su Contraseña</label>
+                                        <input type="password" class="form-control" id="inputPass" placeholder="Contraseña">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Recordar Usuario</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div-->
+                        </form>
+                    </div>
+                </div>
+                <!--div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
+                    <button type="button" class="btn btn-primary">Ingresar</button>
+                </div-->
+            </div>
+        </div>
+    </div>
+
 
     <!--  slider  -->
     <div id="main" class="main-slide">
@@ -242,7 +329,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="/public/libraries/js/sweetAlert2.js"></script>
-<script src="/public/js/coproduc_main.js"></script>
+<script src="/public/js/coproduc_main.min.js"></script>
 <script src="/public/js/mail.js"></script>
 </body>
 </html>

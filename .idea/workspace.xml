@@ -6,27 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="3fdbfcd0-2494-4763-9b3c-4101d8486ca9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/controller/coproducController.php" afterPath="$PROJECT_DIR$/app/controller/CoproducController.php" />
-      <change beforePath="$PROJECT_DIR$/app/core/Controller.php" afterPath="$PROJECT_DIR$/app/core/Controller.php" />
-      <change beforePath="$PROJECT_DIR$/app/core/Core.php" afterPath="$PROJECT_DIR$/app/core/Core.php" />
-      <change beforePath="$PROJECT_DIR$/app/extras/mail.php" afterPath="$PROJECT_DIR$/app/extras/mail.php" />
       <change beforePath="$PROJECT_DIR$/app/view/index.php" afterPath="$PROJECT_DIR$/app/view/index.php" />
+      <change beforePath="$PROJECT_DIR$/public/.htaccess" afterPath="$PROJECT_DIR$/public/.htaccess" />
       <change beforePath="$PROJECT_DIR$/public/css/coproduc_main.css" afterPath="$PROJECT_DIR$/public/css/coproduc_main.css" />
-      <change beforePath="$PROJECT_DIR$/public/js/coproduc_main.js" afterPath="$PROJECT_DIR$/public/js/coproduc_main.js" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/css/animation.css" afterPath="$PROJECT_DIR$/public/libraries/font/css/animation.css" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/css/icon-codes.css" afterPath="$PROJECT_DIR$/public/libraries/font/css/icon-codes.css" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/css/icon-embedded.css" afterPath="$PROJECT_DIR$/public/libraries/font/css/icon-embedded.css" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/css/icon-ie7-codes.css" afterPath="$PROJECT_DIR$/public/libraries/font/css/icon-ie7-codes.css" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/css/icon-ie7.css" afterPath="$PROJECT_DIR$/public/libraries/font/css/icon-ie7.css" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/css/icon.css" afterPath="$PROJECT_DIR$/public/libraries/font/css/icon.css" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/font/icon.eot" afterPath="$PROJECT_DIR$/public/libraries/font/font/icon.eot" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/font/icon.svg" afterPath="$PROJECT_DIR$/public/libraries/font/font/icon.svg" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/font/icon.ttf" afterPath="$PROJECT_DIR$/public/libraries/font/font/icon.ttf" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/font/icon.woff" afterPath="$PROJECT_DIR$/public/libraries/font/font/icon.woff" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/fonts/font/icon.woff2" afterPath="$PROJECT_DIR$/public/libraries/font/font/icon.woff2" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/js/sweetAlert2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/css/coproduc_main.min.css" afterPath="$PROJECT_DIR$/public/css/coproduc_main.min.css" />
+      <change beforePath="$PROJECT_DIR$/public/js/coproduc_main.min.js" afterPath="$PROJECT_DIR$/public/js/coproduc_main.min.js" />
+      <change beforePath="$PROJECT_DIR$/public/js/mail.min.js" afterPath="$PROJECT_DIR$/public/js/mail.min.js" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/font/css/icon-codes.css" afterPath="$PROJECT_DIR$/public/libraries/font/css/icon-codes.css" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/font/css/icon-embedded.css" afterPath="$PROJECT_DIR$/public/libraries/font/css/icon-embedded.css" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/font/css/icon-ie7-codes.css" afterPath="$PROJECT_DIR$/public/libraries/font/css/icon-ie7-codes.css" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/font/css/icon-ie7.css" afterPath="$PROJECT_DIR$/public/libraries/font/css/icon-ie7.css" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/font/css/icon.css" afterPath="$PROJECT_DIR$/public/libraries/font/css/icon.css" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/font/font/icon.eot" afterPath="$PROJECT_DIR$/public/libraries/font/font/icon.eot" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/font/font/icon.svg" afterPath="$PROJECT_DIR$/public/libraries/font/font/icon.svg" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/font/font/icon.ttf" afterPath="$PROJECT_DIR$/public/libraries/font/font/icon.ttf" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/font/font/icon.woff" afterPath="$PROJECT_DIR$/public/libraries/font/font/icon.woff" />
+      <change beforePath="$PROJECT_DIR$/public/libraries/font/font/icon.woff2" afterPath="$PROJECT_DIR$/public/libraries/font/font/icon.woff2" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,51 +45,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="156" column="36" lean-forward="false" selection-start-line="156" selection-start-column="33" selection-end-line="156" selection-end-column="36" />
-              <folding />
+            <state relative-caret-position="279">
+              <caret line="75" column="44" lean-forward="false" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+              <folding>
+                <element signature="e#3553#3560#1#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mail.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/mail.js">
+      <file leaf-file-name="coproduc_main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/coproduc_main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Core.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/core/Core.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="79" lean-forward="true" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mail.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/extras/mail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CoproducController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controller/CoproducController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="162" column="20" lean-forward="true" selection-start-line="162" selection-start-column="20" selection-end-line="162" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -125,7 +93,6 @@
         <option value="$PROJECT_DIR$/public/css/stylesCoproduc.css" />
         <option value="$PROJECT_DIR$/public/js/scriptIndex.js" />
         <option value="$PROJECT_DIR$/app/.htaccess" />
-        <option value="$PROJECT_DIR$/public/.htaccess" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/public/css/hola/a.css" />
         <option value="$PROJECT_DIR$/public/js/script.js" />
@@ -134,16 +101,20 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/app/controller/coproducController.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="&lt;12a34440-d4da-4c84-adc0-b924897afaa8&gt;/app/view/index.php" />
-        <option value="$PROJECT_DIR$/app/view/index.php" />
-        <option value="$PROJECT_DIR$/public/css/coproduc_main.css" />
-        <option value="$PROJECT_DIR$/public/js/coproduc_main.js" />
         <option value="$PROJECT_DIR$/app/core/Core.php" />
         <option value="$PROJECT_DIR$/public/js/mail.js" />
         <option value="$PROJECT_DIR$/app/core/Controller.php" />
         <option value="&lt;12a34440-d4da-4c84-adc0-b924897afaa8&gt;/app/extras/mail.php" />
         <option value="$PROJECT_DIR$/app/extras/mail.php" />
+        <option value="$PROJECT_DIR$/public/js/coproduc_main.js" />
+        <option value="&lt;12a34440-d4da-4c84-adc0-b924897afaa8&gt;/.htaccess" />
+        <option value="&lt;12a34440-d4da-4c84-adc0-b924897afaa8&gt;/public/.htaccess" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="&lt;12a34440-d4da-4c84-adc0-b924897afaa8&gt;/app/view/index.php" />
+        <option value="$PROJECT_DIR$/public/.htaccess" />
+        <option value="$PROJECT_DIR$/public/libraries/font/css/icon.css" />
+        <option value="$PROJECT_DIR$/public/css/coproduc_main.css" />
+        <option value="$PROJECT_DIR$/app/view/index.php" />
       </list>
     </option>
   </component>
@@ -163,7 +134,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="683" />
     <option name="height" value="768" />
   </component>
@@ -235,19 +206,7 @@
               <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
               <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="extras" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
@@ -271,13 +230,14 @@
               <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
               <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="libraries" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
               <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="libraries" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="font" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -312,11 +272,11 @@
       <recent name="C:\xampp\htdocs\Coproduc\public\coproduc\img\products" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Coproduc\public\libraries\font" />
       <recent name="C:\xampp\htdocs\Coproduc\public\libraries\js" />
       <recent name="C:\xampp\htdocs\Coproduc\public\img\slider" />
       <recent name="C:\xampp\htdocs\Coproduc\public\img" />
       <recent name="C:\xampp\htdocs\Coproduc\public\libraries\fonts" />
-      <recent name="C:\xampp\htdocs\Coproduc\public\libraries" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -363,25 +323,25 @@
       <workItem from="1517327831672" duration="25443000" />
       <workItem from="1517493561520" duration="145000" />
       <workItem from="1517493791455" duration="1240000" />
-      <workItem from="1517501330244" duration="11922000" />
+      <workItem from="1517501330244" duration="21044000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98235000" />
+    <option name="totallyTimeSpent" value="107357000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.009202454" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.009202454" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31288344" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18305598" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1376702" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16641453" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -484,13 +444,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/img/logo_tiny.png" />
-    <entry file="file://$PROJECT_DIR$/public/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -528,13 +481,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/img/box.png" />
-    <entry file="file://$PROJECT_DIR$/public/libraries/font/css/icon.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/img/products/yogurt.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -551,20 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/coproduc_main.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/coproduc_main.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -600,50 +532,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/coproduc_main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/coproduc_main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/mail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/core/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="156" column="36" lean-forward="false" selection-start-line="156" selection-start-column="33" selection-end-line="156" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -656,6 +548,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/extras/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/core/Core.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -664,11 +564,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/extras/mail.php">
+    <entry file="file://$PROJECT_DIR$/public/js/mail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        <state relative-caret-position="374">
+          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/coproduc_main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="82" lean-forward="false" selection-start-line="10" selection-start-column="82" selection-end-line="10" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/coproduc_main.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="30" lean-forward="true" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/libraries/font/css/icon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/coproduc_main.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/coproduc_main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="162" column="20" lean-forward="true" selection-start-line="162" selection-start-column="20" selection-end-line="162" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="75" column="44" lean-forward="false" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+          <folding>
+            <element signature="e#3553#3560#1#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
