@@ -33,3 +33,48 @@ function changeDistricts() {
         });
     }
 }
+
+
+/*
+* Register User function
+* */
+
+function validatePasswords(xhr) {
+    let pass1 = document.getElementById("inputPass").value;
+    let pass2 = document.getElementById("inputPass2").value;
+    let alertError = document.getElementById("error-pass");
+    if (pass1 !== pass2){
+        xhr.abort();
+        if (alertError.classList.contains("d-none")){
+            alertError.classList.remove("d-none");
+        }
+    }
+    else{
+        if (!alertError.classList.contains("d-none")){
+            alertError.classList.add("d-none");
+        }
+    }
+}
+
+$("#form-register").bind("submit",function (e) {
+   $.ajax({
+       type : $(this).attr('method'),
+       url : $(this).attr('action'),
+       data: $(this).serialize(),
+       beforeSend : function (xhr) {
+           validatePasswords(xhr);
+       },
+       success : function () {
+           
+       },
+       error : function () {
+           
+       },
+       complete : function () {
+           
+       }
+   });
+
+   return false;
+
+});

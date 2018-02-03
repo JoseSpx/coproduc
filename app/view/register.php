@@ -26,7 +26,6 @@ session_start();
         de ingredientes">
     <meta name="keywords" content="coproduc, queso, leche, manjar, productos naturales">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
     <link rel="stylesheet" href="/public/libraries/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/public/libraries/font/css/icon.css">
     <link rel="stylesheet" href="/public/css/coproduc_register.min.css">
@@ -55,89 +54,29 @@ session_start();
 </nav>
 
 <!-- form -->
-<div class="container mb-5">
-    <div class="row">
-        <div class="col-8 offset-2">
-            <form>
-                <div class="row mt-5">
-                    <div class="col-12 d-flex justify-content-center h4">
-                        Formulario de Registro
-                    </div>
-                </div>
+<div class="container mb-5 mt-5">
 
-                <div class="row mt-4">
-                    <div class="col-10 offset-1">
-                        <div class="row">
-                            <div class="col-3 d-flex justify-content-end align-items-center">
-                                <label class="d-block" for="inputUser">Usuario </label>
-                            </div>
-                            <div class="col-9">
-                                <input name="user" type="text" class="form-control form-control-sm" id="inputUser" required>
-                           </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-9 offset-3">
-                                <small id="error-user" class="alert alert-danger form-text text-muted d-none">
-                                    Usuario ya existe
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+    <div class="row ">
+        <div class="col-10 offset-1 offset-lg-0 col-lg-12 d-flex justify-content-center h4 title-register">
+            Formulario de Registro
+        </div>
+    </div>
+    <form id="form-register" method="post" action="/register/register_user">
+        <div class="row">
+            <div class="col-10 offset-1 offset-lg-0 col-lg-6">
                 <div class="row mt-3">
-                    <div class="col-10 offset-1">
-                        <div class="row">
-                            <div class="col-3 d-flex justify-content-end align-items-center">
-                                <label class="d-block" for="inputPass">Contraseña </label>
-                            </div>
-                            <div class="col-9">
-                                <input name="pass1" type="password" class="form-control form-control-sm" id="inputPass" required>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-3">
-                    <div class="col-10 offset-1">
-                        <div class="row">
-                            <div class="col-3 d-flex justify-content-end align-items-center">
-                                <label class="d-block" for="inputPass2">Repetir Contraseña </label>
-                            </div>
-                            <div class="col-9">
-                                <input name="pass2" type="password" class="form-control form-control-sm" id="inputPass2" required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-9 offset-3">
-                                <small id="error-pass" class="alert alert-danger form-text text-muted d-none">
-                                    Contraseña no coincide
-                                </small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-4">
-                    <div class="col-10 offset-1">
-                        <div class="divider ">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-3">
-                    <div class="col-10 offset-1">
+                    <div class="col-12">
                         <div class="row">
                             <div class="col-3 d-flex justify-content-end align-items-center">
                                 <label class="d-block" for="inputDNI"> DNI </label>
                             </div>
                             <div class="col-9">
-                                <input name="dni" type="text" class="form-control form-control-sm" id="inputDNI" required>
+                                <input name="dni" type="text" class="form-control form-control-sm" id="inputDNI" maxlength="9" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-9 offset-3">
-                                <small id="error-pass" class="alert alert-danger form-text text-muted d-none">
+                                <small id="error-dni" class="alert alert-danger form-text text-muted d-none">
                                     DNI ya registrado
                                 </small>
                             </div>
@@ -146,95 +85,95 @@ session_start();
                 </div>
 
                 <div class="row mt-3">
-                    <div class="col-10 offset-1">
+                    <div class="col-12">
                         <div class="row">
                             <div class="col-3 d-flex justify-content-end align-items-center">
                                 <label class="d-block" for="inputName"> Nombre </label>
                             </div>
                             <div class="col-9">
-                                <input name="name" type="text" class="form-control form-control-sm" id="inputName" required>
+                                <input name="name" type="text" class="form-control form-control-sm" id="inputName" maxlength="99" required>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row mt-3">
-                    <div class="col-10 offset-1">
+                    <div class="col-12">
                         <div class="row">
                             <div class="col-3 d-flex justify-content-end align-items-center">
                                 <label class="d-block" for="inputLast"> Apellidos </label>
                             </div>
                             <div class="col-9">
-                                <input name="lastName" type="text" class="form-control form-control-sm" id="inputLast" required>
+                                <input name="lastName" type="text" class="form-control form-control-sm" id="inputLast" maxlength="99" required>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row mt-3">
-                    <div class="col-10 offset-1">
+                    <div class="col-12">
                         <div class="row">
                             <div class="col-3 d-flex justify-content-end align-items-center">
                                 <label class="d-block" for="inputEmail"> Email </label>
                             </div>
                             <div class="col-9">
-                                <input name="email" type="email" class="form-control form-control-sm" id="inputEmail" required>
+                                <input name="email" type="email" class="form-control form-control-sm" id="inputEmail" maxlength="100" required>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row mt-3">
-                    <div class="col-10 offset-1">
+                    <div class="col-12">
                         <div class="row">
-                            <div class="col-3 d-flex justify-content-end align-items-center">
+                            <div class="col-3 col-lg-3 d-flex justify-content-end align-items-center">
                                 <label class="d-block" for="inputPhone"> Teléfono </label>
                             </div>
-                            <div class="col-3">
-                                <input name="phone1" type="number" class="form-control form-control-sm" id="inputPhone" required>
+                            <div class="col-9 col-lg-3">
+                                <input name="phone1" type="number" class="form-control form-control-sm" id="inputPhone" maxlength="20" required>
                             </div>
-                            <div class="col-3 d-flex justify-content-end align-items-center">
+                            <div class="col-3 col-lg-3 mt-3 mt-lg-0 d-flex justify-content-end align-items-center">
                                 <label class="d-block" for="inputPhone"> Teléfono Opcional</label>
                             </div>
-                            <div class="col-3">
-                                <input name="phone2" type="number" class="form-control form-control-sm" id="inputPhone" required>
+                            <div class="col-9 col-lg-3  mt-3 mt-lg-0">
+                                <input name="phone2" type="number" class="form-control form-control-sm" id="inputPhone" maxlength="20" required>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row mt-3">
-                    <div class="col-10 offset-1">
+                    <div class="col-12">
                         <div class="row">
                             <div class="col-3 d-flex justify-content-end align-items-center">
                                 <label class="d-block" for="inputAddress"> Dirección </label>
                             </div>
                             <div class="col-9">
-                                <input name="address" type="text" class="form-control form-control-sm" id="inputAddress" required>
+                                <input name="address" type="text" class="form-control form-control-sm" id="inputAddress" maxlength="200" required>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-10 offset-1">
+                    <div class="col-12">
                         <div class="row">
                             <div class="col-3 d-flex justify-content-end align-items-center">
                                 <label class="d-block" for="inputReference"> Referencia  </label>
                             </div>
                             <div class="col-9">
-                                <input name="reference" type="text" class="form-control form-control-sm" id="inputReference" required>
+                                <input name="reference" type="text" class="form-control form-control-sm" id="inputReference" maxlength="300" required>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row mt-3">
-                    <div class="col-10 offset-1">
+                    <div class="col-12">
                         <div class="row">
-                            <div class="col-3 d-flex justify-content-end align-items-center">
+                            <div class="col-3 col-lg-3 d-flex justify-content-end align-items-center">
                                 <label for="departments" class="d-block">Departamento</label>
                             </div>
-                            <div class="col-3">
+                            <div class="col-9 col-lg-3">
                                 <select class="custom-select custom-select-sm" id="departments" onchange="changeProvinces()">
                                     <option value="10000" disabled selected>Elegir</option>
                                     <option value="Amazonas">Amazonas</option>
@@ -265,10 +204,10 @@ session_start();
                                 </select>
                             </div>
 
-                            <div class="col-3 d-flex justify-content-end align-items-center">
+                            <div class="col-3 col-lg-3 mt-3 mt-lg-0 d-flex justify-content-end align-items-center">
                                 <label for="provinces" class="d-block">Provincia</label>
                             </div>
-                            <div class="col-3">
+                            <div class="col-9 col-lg-3 mt-3 mt-lg-0">
                                 <select class="custom-select custom-select-sm" id="provinces" onchange="changeDistricts()">
                                     <option value="10000" disabled selected>Elegir</option>
                                 </select>
@@ -277,31 +216,98 @@ session_start();
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-10 offset-1">
+                    <div class="col-12">
                         <div class="row">
-                            <div class="col-3 d-flex justify-content-end align-items-center">
+                            <div class="col-3 col-lg-3 d-flex justify-content-end align-items-center">
                                 <label for="districts" class="d-block">Distrito</label>
                             </div>
-                            <div class="col-3">
+                            <div class="col-9 col-lg-3">
                                 <select class="custom-select custom-select-sm" id="districts">
                                     <option value="10000" disabled selected>Elegir</option>
                                 </select>
                             </div>
 
-                            <div class="col-3 d-flex justify-content-end align-items-center">
+                            <div class="col-3 col-lg-3 mt-3 mt-lg-0 d-flex justify-content-end align-items-center">
                                 <label for="inputUrb" class="d-block">Urbanización</label>
                             </div>
-                            <div class="col-3">
+                            <div class="col-9 col-lg-3 mt-3 mt-lg-0">
                                 <input name="urb" type="text" class="form-control form-control-sm" id="inputUrb" placeholder="Opcional">
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-10 offset-1 offset-lg-0 col-lg-6">
 
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-3 col-lg-4 d-flex justify-content-end align-items-center">
+                                <label class="d-block" for="inputUser">Usuario </label>
+                            </div>
+                            <div class="col-9 col-lg-8">
+                                <input name="user" type="text" class="form-control form-control-sm" id="inputUser" required>
+                           </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9 offset-3 col-lg-8 offset-lg-4">
+                                <small id="error-user" class="alert alert-danger form-text text-muted d-none">
+                                    Usuario ya existe
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            </form>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-3 col-lg-4 d-flex justify-content-end align-items-center">
+                                <label class="d-block" for="inputPass">Contraseña </label>
+                            </div>
+                            <div class="col-9 col-lg-8">
+                                <input name="pass1" type="password" class="form-control form-control-sm" id="inputPass" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-3 col-lg-4 d-flex justify-content-end align-items-center">
+                                <label class="d-block" for="inputPass2">Repetir Contraseña </label>
+                            </div>
+                            <div class="col-9 col-lg-8">
+                                <input name="pass2" type="password" class="form-control form-control-sm" id="inputPass2" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9 offset-3 offset-lg-4 col-lg-8">
+                                <small id="error-pass" class="alert alert-danger form-text text-muted d-none">
+                                    Contraseña no coincide
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--div class="row mt-4">
+                    <div class="col-10 offset-1">
+                        <div class="divider ">
+                        </div>
+                    </div>
+                </div-->
+
+                <div class="row mt-4">
+                    <div class="col-6 offset-3">
+                        <button class="btn btn-color form-control" type="submit">Registrar</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
+    </form>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

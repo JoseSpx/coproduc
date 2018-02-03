@@ -6,4 +6,8 @@ class RegisterController extends Controller{
         $this->view('register');
     }
 
+    public function register_user(){
+        $this->database("register_user");
+    }
+
 }

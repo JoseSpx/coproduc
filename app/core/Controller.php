@@ -19,6 +19,13 @@ class Controller{
             require_once __DIR__ . '/../extras/' . $extras . '.php';
         }
     }
+
+    public function database($database){
+        if(file_exists(__DIR__ . '/../extras/' . $database . '.php')){
+            require_once __DIR__ . '/../extras/' . $database . '.php';
+        }
+    }
+
 }
 
 

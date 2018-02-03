@@ -13,6 +13,7 @@
 
 body{
     overflow-x: hidden;
+
 }
 
 a{
@@ -33,9 +34,14 @@ label{
     font-size: 0.9em;
 }
 
+.link-nav:hover{
+    color: var(--primaryColor) !important;
+}
+
 .btn-color{
     background-color: var(--secondaryColor);
     border-color: var(--secondaryColor);
+    color: #fff;
 }
 
 .btn-color:hover{
@@ -48,6 +54,19 @@ label{
     height: 1px;
     width: 100%;
     background-color: hsl(10,10%,70%);
+}
+
+.title-register{
+    font-size: 1.8em;
+    background-color: var(--secondaryColor);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.alert{
+    padding: 5px ;
+    font-size: 0.8em;
 }
 
 @media screen and (min-width: 992px) {
