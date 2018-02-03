@@ -65,15 +65,21 @@
                         <button type="button" data-toggle="modal" data-target="#modalLogin" class="nav-link btn btn-color text-white" >Iniciar Sesión</button>
                     </li>
                 <?php else: ?>
-                    <div class="dropdown">
-                        <button class="btn btn-color dropdown-toggle text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Josesp
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Configuracion</a>
-                            <a class="dropdown-item" href="#">Salir</a>
+                    <li class="ml-2">
+                        <div class="dropdown">
+                            <button class="btn btn-color dropdown-toggle text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <?php
+                                    $user = $_SESSION['user'];
+                                    $user = substr($user,0,10);
+                                    echo $user;
+                                ?>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Configuracion</a>
+                                <a class="dropdown-item" href="/coproduc/logout">Salir</a>
+                            </div>
                         </div>
-                    </div>
+                    </li>
                 <?php endif; ?>
             </ul>
         </div>
@@ -105,7 +111,7 @@
                                             <label class="icon-label" for="inputUser"> <i class="icon-user icon-label"></i></label>
                                         </div>
                                         <div class="col-10">
-                                            <input name="user" type="text" class="form-control form-icon" id="inputUser" aria-describedby="" placeholder="Usuario o DNI">
+                                            <input required name="user" type="text" class="form-control form-icon" id="inputUser" aria-describedby="" placeholder="Usuario o DNI">
                                         </div>
                                     </div>
                                 </div>
@@ -118,7 +124,7 @@
                                             <label class="icon-label" for="inputPass"> <i class="icon-key icon-label"></i></label>
                                         </div>
                                         <div class="col-10">
-                                            <input name="pass" type="password" class="form-control form-icon" id="inputPass" aria-describedby="" placeholder="Contraseña">
+                                            <input required name="pass" type="password" class="form-control form-icon" id="inputPass" aria-describedby="" placeholder="Contraseña">
                                         </div>
                                     </div>
                                 </div>
@@ -132,11 +138,18 @@
                                 </div>
                             </div>
 
-                            <div class="row mt-3 mb-3">
+                            <div class="row mt-3">
                                 <div class="col-10 offset-1 d-flex justify-content-center">
                                     <button type="submit" class="btn btn-primary btn-color">INGRESAR</button>
                                 </div>
                             </div>
+
+                            <div class="row mt-2 mb-3">
+                                <div class="col-10 offset-1 login-register d-flex justify-content-center">
+                                    ¿No está registrado? &nbsp;<a href="/register">Regístrate Aquí.</a>
+                                </div>
+                            </div>
+
                         </form>
 
                     </div>

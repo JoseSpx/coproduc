@@ -15,4 +15,9 @@ class CoproducController extends Controller {
         $this->extras("login");
     }
 
+    public function logout(){
+        //require_once __DIR__ . '/../extras/login.php';
+        $this->extras("logout");
+    }
+
 }

@@ -4,7 +4,7 @@ let cssnano = require('gulp-cssnano');
 let rename = require('gulp-rename');
 let pump = require('pump');
 let uglify = require('gulp-uglify');
-
+let babel = require('gulp-babel');
 
 gulp.task('css', ()=>{
     gulp.src(['./public/css/**/*.css','!./public/css/**/*.min.css'])
@@ -18,6 +18,9 @@ gulp.task('css', ()=>{
 gulp.task('js', function (cb) {
     pump([
             gulp.src(['./public/js/**/*.js','!./public/js/**/*.min.js']),
+            babel({
+               presets : ['env']
+            }),
             uglify(),
             rename({
                 suffix: '.min'

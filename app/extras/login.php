@@ -6,9 +6,9 @@
         $user = filter_var(trim($_POST['user']), FILTER_SANITIZE_STRING);
         $pass = filter_var(trim($_POST['pass']), FILTER_SANITIZE_STRING);
 
-        require_once __DIR__ . '/../model/Login.php';
+        require_once __DIR__ . '/../model/Connection.php';
 
-        if(Login::connect($user,$pass)){
+        if(Connection::login($user,$pass)){
             return print json_encode("true");
         }
         else{

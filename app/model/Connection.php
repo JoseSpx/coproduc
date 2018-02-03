@@ -17,8 +17,32 @@ class Connection{
             die("failed connection to database");
         }
         //return true;
-
     }
 
+    public static function login($user, $pass){
+        $query = "select user from account WHERE (user = :user OR user_data_dni = :user) AND pass = :pass ";
+        $conecction = Connection::connect();
+        $ps = $conecction->prepare($query);
+        $ps->execute(array(
+            ":user" => $user,
+            ":pass" => $pass
+        ));
+
+        $count = $ps->rowCount();
+
+        if($count == 1){
+            session_start();
+            $_SESSION['user'] = $user;
+        }
+
+        return ($count == 1);
+    }
+
+
+    public static function logout(){
+        session_start();
+        $_SESSION = array();
+        session_destroy();
+    }
 
 }

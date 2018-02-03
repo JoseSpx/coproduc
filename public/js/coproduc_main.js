@@ -23,13 +23,18 @@ $("#form-login").bind("submit", function () {
                 location.reload();
             }
             else{
-                $("#alert-error").toggleClass("d-none");//alert(response);
+                var divError = $("#alert-error");
+                if(divError.hasClass("d-none")){
+                    divError.removeClass("d-none");
+                }
             }
         },
 
         error : function () {
-            $("#alert-error").toggleClass("d-none");
-            //alert("error code");
+            var divError = $("#alert-error");
+            if(divError.hasClass("d-none")){
+                divError.removeClass("d-none");
+            }
         }
 
     });

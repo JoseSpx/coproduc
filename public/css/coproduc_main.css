@@ -165,8 +165,12 @@ a{
     font-size: 1.5em;
 }
 
-.btn-primary:focus, .btn:focus, button:focus{
-    border-color: var(--secondaryColor) !important;
+.btn-primary:focus, .btn:focus, button:focus {
+    box-shadow: none;
+}
+
+.login-register{
+    font-size: 0.9em;
 }
 
 /*hover */
