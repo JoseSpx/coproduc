@@ -127,16 +127,16 @@ session_start();
                     <div class="col-12">
                         <div class="row">
                             <div class="col-3 col-lg-3 d-flex justify-content-end align-items-center">
-                                <label class="d-block" for="inputPhone"> Teléfono </label>
+                                <label class="d-block" for="inputPhone1"> Teléfono </label>
                             </div>
                             <div class="col-9 col-lg-3">
-                                <input name="phone1" type="number" class="form-control form-control-sm" id="inputPhone" maxlength="20" required>
+                                <input name="phone1" type="number" class="form-control form-control-sm" id="inputPhone1" maxlength="20" required>
                             </div>
                             <div class="col-3 col-lg-3 mt-3 mt-lg-0 d-flex justify-content-end align-items-center">
-                                <label class="d-block" for="inputPhone"> Teléfono Opcional</label>
+                                <label class="d-block" for="inputPhone2"> Teléfono Opcional</label>
                             </div>
                             <div class="col-9 col-lg-3  mt-3 mt-lg-0">
-                                <input name="phone2" type="number" class="form-control form-control-sm" id="inputPhone" maxlength="20" required>
+                                <input name="phone2" type="number" class="form-control form-control-sm" id="inputPhone2" maxlength="20" required>
                             </div>
                         </div>
                     </div>
@@ -174,7 +174,7 @@ session_start();
                                 <label for="departments" class="d-block">Departamento</label>
                             </div>
                             <div class="col-9 col-lg-3">
-                                <select class="custom-select custom-select-sm" id="departments" onchange="changeProvinces()">
+                                <select name="departments" class="custom-select custom-select-sm" id="departments" onchange="changeProvinces()">
                                     <option value="10000" disabled selected>Elegir</option>
                                     <option value="Amazonas">Amazonas</option>
                                     <option value="Ancash">Ancash</option>
@@ -208,7 +208,7 @@ session_start();
                                 <label for="provinces" class="d-block">Provincia</label>
                             </div>
                             <div class="col-9 col-lg-3 mt-3 mt-lg-0">
-                                <select class="custom-select custom-select-sm" id="provinces" onchange="changeDistricts()">
+                                <select name="provinces" class="custom-select custom-select-sm" id="provinces" onchange="changeDistricts()">
                                     <option value="10000" disabled selected>Elegir</option>
                                 </select>
                             </div>
@@ -222,7 +222,7 @@ session_start();
                                 <label for="districts" class="d-block">Distrito</label>
                             </div>
                             <div class="col-9 col-lg-3">
-                                <select class="custom-select custom-select-sm" id="districts">
+                                <select name="districts" class="custom-select custom-select-sm" id="districts">
                                     <option value="10000" disabled selected>Elegir</option>
                                 </select>
                             </div>
@@ -266,7 +266,7 @@ session_start();
                                 <label class="d-block" for="inputPass">Contraseña </label>
                             </div>
                             <div class="col-9 col-lg-8">
-                                <input name="pass1" type="password" class="form-control form-control-sm" id="inputPass" required>
+                                <input name="pass" type="password" class="form-control form-control-sm" id="inputPass" required>
                             </div>
                         </div>
                     </div>

@@ -69,6 +69,10 @@ label{
     font-size: 0.8em;
 }
 
+.btn:active, .btn-color:active{
+    border-color: var(--primaryColor) !important;
+}
+
 @media screen and (min-width: 992px) {
 
     .navbar{

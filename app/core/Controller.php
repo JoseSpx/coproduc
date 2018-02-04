@@ -21,8 +21,8 @@ class Controller{
     }
 
     public function database($database){
-        if(file_exists(__DIR__ . '/../extras/' . $database . '.php')){
-            require_once __DIR__ . '/../extras/' . $database . '.php';
+        if(file_exists(__DIR__ . '/../database/' . $database . '.php')){
+            require_once __DIR__ . '/../database/' . $database . '.php';
         }
     }
 
