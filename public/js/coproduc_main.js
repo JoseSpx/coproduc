@@ -23,7 +23,7 @@ $("#form-login").bind("submit", function () {
                 location.reload();
             }
             else{
-                var divError = $("#alert-error");
+                let divError = $("#alert-error");
                 if(divError.hasClass("d-none")){
                     divError.removeClass("d-none");
                 }
@@ -31,7 +31,7 @@ $("#form-login").bind("submit", function () {
         },
 
         error : function () {
-            var divError = $("#alert-error");
+            let divError = $("#alert-error");
             if(divError.hasClass("d-none")){
                 divError.removeClass("d-none");
             }

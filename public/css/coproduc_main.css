@@ -263,6 +263,10 @@ a{
     transition-delay:.2s;
 }
 
+.dropdown-item{
+    font-size: 0.9em;
+}
+
 /* end hover */
 
 

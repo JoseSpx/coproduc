@@ -24,6 +24,24 @@ class User{
         return $ps->rowCount() == 1; // false == 0
     }
 
+    public function updateUsername($userActual, $userNew){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("UPDATE account set user = :userNew WHERE user = :userActual");
+        return $ps->execute(array(
+           ':userNew' => $userNew,
+           ':userActual' => $userActual
+        ));
+    }
+
+    public function updatePassword($user, $passNew){
+        $conn = Connection::connect();
+        $ps =  $conn->prepare("UPDATE account set pass = :pass_new WHERE user = :user");
+        return $ps->execute(array(
+            ':user' => $user,
+            ':pass_new' => $passNew
+        ));
+    }
+
     public function insert($dni, $name, $last, $email, $phone1, $phone2, $address, $ref, $depar, $prov, $dist,
                            $urb, $user, $pass){
 
@@ -74,5 +92,16 @@ class User{
 
     }
 
+
+    public function getUserData($user){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("SELECT * FROM account WHERE user = :user ");
+        $ps->execute(array(
+           ':user' => $user
+        ));
+
+        $rs = $ps->fetchAll(PDO::FETCH_ASSOC);
+        return $rs ;
+    }
 
 }

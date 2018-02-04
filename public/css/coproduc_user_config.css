@@ -89,6 +89,37 @@ label{
     color: #fff;
 }
 
+.sub-title{
+    font-size: 0.9em;
+}
+
+.btn{
+    font-size: 0.9em;
+}
+
+.btn:focus{
+    background-color: var(--primaryColor) !important;
+    color: white;
+}
+
+#inputPass{
+    border-radius: 5px 0  0 5px ;
+}
+
+#btn_view_pass{
+    border-radius: 0 5px 5px 0;
+    background-color: #6c757d;
+    box-shadow: none;
+    border: 0;
+}
+
+#btn_view_pass:focus{
+    border-radius: 0 5px 5px 0;
+    background-color: hsl(0,0%,70%) !important;
+    box-shadow: none;
+    border: 0;
+}
+
 @media screen and (min-width: 992px) {
 
     .navbar{

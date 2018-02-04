@@ -10,4 +10,8 @@ class RegisterController extends Controller{
         $this->database("register_user");
     }
 
+    public function update_username(){
+        $this->database("update_username");
+    }
+
 }

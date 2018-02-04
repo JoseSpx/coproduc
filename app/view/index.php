@@ -61,11 +61,11 @@
                 </li>
 
                 <?php if(!isset($_SESSION['user'])):  ?>
-                    <li class="nav-item ml-2 ">
+                    <li class="nav-item ml-2 mr-2">
                         <button type="button" data-toggle="modal" data-target="#modalLogin" class="nav-link btn btn-color text-white" >Iniciar Sesión</button>
                     </li>
                 <?php else: ?>
-                    <li class="ml-2">
+                    <li class="ml-2 mr-2">
                         <div class="dropdown">
                             <button class="btn btn-color dropdown-toggle text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <?php
@@ -75,7 +75,7 @@
                                 ?>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="/user/config">Configuracion</a>
+                                <a class="dropdown-item" href="/user/config">Configuración</a>
                                 <a class="dropdown-item" href="/user/config">Pedidos</a>
                                 <a class="dropdown-item" href="/coproduc/logout">Salir</a>
                             </div>
