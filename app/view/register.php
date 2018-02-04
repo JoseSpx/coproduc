@@ -54,7 +54,7 @@ session_start();
 </nav>
 
 <!-- form -->
-<div class="container mb-5 mt-5">
+<div class="container mb-5 mt-4">
 
     <div class="row ">
         <div class="col-10 offset-1 offset-lg-0 col-lg-12 d-flex justify-content-center h4 title-register">

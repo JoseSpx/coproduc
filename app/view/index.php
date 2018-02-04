@@ -75,7 +75,8 @@
                                 ?>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Configuracion</a>
+                                <a class="dropdown-item" href="/user/config">Configuracion</a>
+                                <a class="dropdown-item" href="/user/config">Pedidos</a>
                                 <a class="dropdown-item" href="/coproduc/logout">Salir</a>
                             </div>
                         </div>

@@ -42,11 +42,13 @@ label{
     background-color: var(--secondaryColor);
     border-color: var(--secondaryColor);
     color: #fff;
+    cursor: pointer;
 }
 
 .btn-color:hover{
     background-color: var(--primaryColor);
     border-color: var(--primaryColor);
+    cursor: pointer !important;
 }
 
 .divider{
@@ -56,14 +58,6 @@ label{
     background-color: hsl(10,10%,70%);
 }
 
-.title-register{
-    font-size: 1.3em;
-    background-color: var(--secondaryColor);
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-}
-
 .alert{
     padding: 5px ;
     font-size: 0.8em;
@@ -71,6 +65,28 @@ label{
 
 .btn:active, .btn-color:active{
     border-color: var(--primaryColor) !important;
+}
+
+.border-link-init{
+    border-radius: 5px 5px 0 0 !important;
+}
+
+.border-link-end{
+    border-radius: 0 0 5px 5px !important;
+}
+
+.nav-pills{
+
+}
+
+.nav-pills a.active{
+    background-color: var(--primaryColor) !important;
+    box-shadow: 0 0 3px hsl(0,50%,10%);
+}
+
+.nav-pills a{
+    background-color: var(--secondaryColor);
+    color: #fff;
 }
 
 @media screen and (min-width: 992px) {
