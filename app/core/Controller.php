@@ -2,7 +2,7 @@
 
 class Controller{
 
-    public function view($view){
+    public function view($view, $id = ''){
         if(file_exists(__DIR__ . '/../view/' . $view . '.php')){
             require_once __DIR__ . '/../view/' . $view . '.php';
         }
@@ -20,7 +20,7 @@ class Controller{
         }
     }
 
-    public function database($database){
+    public function database($database, $id = ''){
         if(file_exists(__DIR__ . '/../database/' . $database . '.php')){
             require_once __DIR__ . '/../database/' . $database . '.php';
         }

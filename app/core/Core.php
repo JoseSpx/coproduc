@@ -6,6 +6,7 @@ class Core{
 
     protected $controller = 'Coproduc';
     protected $method = 'index';
+    protected $parameter = [];
 
     public function __construct(){
         $url = $this->getUrl();
@@ -28,7 +29,9 @@ class Core{
             }
         }
 
-        call_user_func([$this->controller, $this->method]);
+        $this->parameter = $url ? array_values($url) : [];
+
+        call_user_func([$this->controller, $this->method], $this->parameter);
 
     }
 
