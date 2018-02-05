@@ -11,6 +11,13 @@ class Product{
         return $ps->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function getAllProductsVisible(){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("SELECT id, name, image, description, price from product WHERE state = '1' and eliminated = '0'");
+        $ps->execute();
+        return $ps->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     public function get($id){
         $conn = Connection::connect();
         $ps = $conn->prepare("SELECT id, name, price, image, description, state from product WHERE id = :id");

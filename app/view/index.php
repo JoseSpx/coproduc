@@ -1,6 +1,10 @@
 ﻿<?php
     session_start();
 
+    require_once __DIR__ . '/../model/Product.php';
+    $p = new Product();
+    $products = $p->getAllProductsVisible();
+
 ?>
 
 <!DOCTYPE html>
@@ -204,19 +208,19 @@
         <div class="container">
             <div class="row">
 
-                <?php for ($i = 0 ; $i < 6 ; $i++): ?>
+                <?php for ($i = 0 ; $i < count($products) ; $i++): ?>
                     <div class="col-10 offset-1 col-sm-12 offset-sm-0 col-md-6  col-lg-4 mt-5">
                         <div class="card">
                             <div class="hovereffect">
-                                <img class="card-img-top" src="/public/img/products/yogurt.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="<?= '/public/img/products/' . $products[$i]['image'] ?> " alt="<?=  $products[$i]['image'] ?>">
                                 <div class="overlay">
                                     <h2>Descripción</h2>
-                                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur libero mollitia nesciunt quod sed velit.</p>
+                                    <p class="text-white"> <?= $products[$i]['description'] ?> </p>
                                 </div>
                             </div>
 
                             <div class="card-body">
-                                <h5 class="card-title d-flex justify-content-center font-weight-bold">Card title</h5>
+                                <h5 class="card-title d-flex justify-content-center font-weight-bold"> <?= $products[$i]['name'] ?> </h5>
                                 <div class="d-flex justify-content-center">
                                     <a href="#" class="btn btn-primary btn-color">
                                         Comprar
