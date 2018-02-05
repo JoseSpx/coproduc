@@ -95,7 +95,11 @@ class User{
 
     public function getUserData($user){
         $conn = Connection::connect();
-        $ps = $conn->prepare("SELECT * FROM account WHERE user = :user ");
+        $ps = $conn->prepare("SELECT user, pass, dni, name, last_name, email, telephone, telephone2, dpto,
+            prov, dist, urb, address, reference, state FROM account
+            INNER JOIN user_data u ON account.user_data_dni = u.dni
+            INNER JOIN ubication u2 ON u.ubication_id = u2.id
+            WHERE user = :user ");
         $ps->execute(array(
            ':user' => $user
         ));

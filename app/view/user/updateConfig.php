@@ -64,7 +64,7 @@
 <div class="container mb-0 mt-4">
 
     <div class="row">
-        <div class="col-3">
+        <div class="col-10 offset-1 offset-lg-0 col-lg-3">
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <a class="nav-link active text-center border-link-init" id="tab-config" data-toggle="pill" href="#v-pills-config" role="tab" aria-controls="v-pills-config" aria-selected="true">
                     Configuración General
@@ -75,29 +75,29 @@
             </div>
         </div>
 
-        <div class="col-9">
+        <div class="col-10 offset-1 offset-lg-0 col-lg-9 mb-2">
             <div class="tab-content" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="v-pills-config" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                    <div class="row">
-                        <div class="col-12 ml-3">
+                    <div class="row mt-3 mt-lg-0">
+                        <div class="col-12  ml-lg-3">
                             <p class="sub-title">En esta sección puede ver sus datos generales.</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-10 offset-1 offset-lg-0 col-lg-12">
+                    <div class="row ">
+                        <div class="col-12">
 
                             <div class="row mt-3">
                                 <div class="col-12">
                                     <div class="row">
-                                        <div class="col-2 d-flex justify-content-end align-items-center">
-                                            <label class="d-block" for="inputDNI"> DNI </label>
+                                        <div class="col-3 col-lg-2 d-flex justify-content-end align-items-center">
+                                            <label for="inputDNI"> DNI </label>
                                         </div>
-                                        <div class="col-10">
-                                            <input name="dni" type="text" class="form-control form-control-sm" id="inputDNI" maxlength="9" required>
+                                        <div class="col-9 col-lg-10">
+                                            <input name="dni" value="<?= $data['dni'] ?>" type="text" class="form-control form-control-sm" id="inputDNI" maxlength="9" required>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-10 offset-2">
+                                        <div class="col-9 col-lg-10 offset-3 offset-lg-2">
                                             <small id="error-dni" class="alert alert-danger form-text text-muted d-none">
                                                 DNI ya registrado
                                             </small>
@@ -109,11 +109,11 @@
                             <div class="row mt-3">
                                 <div class="col-12">
                                     <div class="row">
-                                        <div class="col-2 d-flex justify-content-end align-items-center">
+                                        <div class="col-3 col-lg-2 d-flex justify-content-end align-items-center">
                                             <label class="d-block" for="inputName"> Nombre </label>
                                         </div>
-                                        <div class="col-10">
-                                            <input name="name" type="text" class="form-control form-control-sm" id="inputName" maxlength="99" required>
+                                        <div class="col-9 col-lg-10">
+                                            <input name="name" value="<?= $data['name'] ?>" type="text" class="form-control form-control-sm" id="inputName" maxlength="99" required>
                                         </div>
                                     </div>
                                 </div>
@@ -122,11 +122,11 @@
                             <div class="row mt-3">
                                 <div class="col-12">
                                     <div class="row">
-                                        <div class="col-2 d-flex justify-content-end align-items-center">
+                                        <div class="col-3 col-lg-2 d-flex justify-content-end align-items-center">
                                             <label class="d-block" for="inputLast"> Apellidos </label>
                                         </div>
-                                        <div class="col-10">
-                                            <input name="lastName" type="text" class="form-control form-control-sm" id="inputLast" maxlength="99" required>
+                                        <div class="col-9 col-lg-10">
+                                            <input name="lastName" value="<?= $data['last_name'] ?>" type="text" class="form-control form-control-sm" id="inputLast" maxlength="99" required>
                                         </div>
                                     </div>
                                 </div>
@@ -135,11 +135,11 @@
                             <div class="row mt-3">
                                 <div class="col-12">
                                     <div class="row">
-                                        <div class="col-2 d-flex justify-content-end align-items-center">
+                                        <div class="col-3 col-lg-2 d-flex justify-content-end align-items-center">
                                             <label class="d-block" for="inputEmail"> Email </label>
                                         </div>
-                                        <div class="col-10">
-                                            <input name="email" type="email" class="form-control form-control-sm" id="inputEmail" maxlength="100" required>
+                                        <div class="col-9 col-lg-10">
+                                            <input name="email" value="<?= $data['email'] ?>" type="email" class="form-control form-control-sm" id="inputEmail" maxlength="100" required>
                                         </div>
                                     </div>
                                 </div>
@@ -148,17 +148,17 @@
                             <div class="row mt-3">
                                 <div class="col-12">
                                     <div class="row">
-                                        <div class="col-2 col-lg-2 d-flex justify-content-end align-items-center">
+                                        <div class="col-3 col-lg-2 d-flex justify-content-end align-items-center">
                                             <label class="d-block" for="inputPhone1"> Teléfono </label>
                                         </div>
                                         <div class="col-9 col-lg-4">
-                                            <input name="phone1" type="number" class="form-control form-control-sm" id="inputPhone1" maxlength="20" required>
+                                            <input name="phone1" value="<?= $data['telephone'] ?>" type="number" class="form-control form-control-sm" id="inputPhone1" maxlength="20" required>
                                         </div>
                                         <div class="col-3 col-lg-2 mt-3 mt-lg-0 d-flex justify-content-end align-items-center">
                                             <label class="d-block" for="inputPhone2"> Teléfono Opcional</label>
                                         </div>
                                         <div class="col-9 col-lg-4  mt-3 mt-lg-0">
-                                            <input name="phone2" type="number" class="form-control form-control-sm" id="inputPhone2" maxlength="20" required>
+                                            <input name="phone2" value="<?= $data['telephone2'] ?>" type="number" class="form-control form-control-sm" id="inputPhone2" maxlength="20" required>
                                         </div>
                                     </div>
                                 </div>
@@ -167,11 +167,11 @@
                             <div class="row mt-3">
                                 <div class="col-12">
                                     <div class="row">
-                                        <div class="col-2 d-flex justify-content-end align-items-center">
+                                        <div class="col-3 col-lg-2 d-flex justify-content-end align-items-center">
                                             <label class="d-block" for="inputAddress"> Dirección </label>
                                         </div>
-                                        <div class="col-10">
-                                            <input name="address" type="text" class="form-control form-control-sm" id="inputAddress" maxlength="200" required>
+                                        <div class="col-9 col-lg-10">
+                                            <input name="address" value="<?= $data['address'] ?>" type="text" class="form-control form-control-sm" id="inputAddress" maxlength="200" required>
                                         </div>
                                     </div>
                                 </div>
@@ -180,11 +180,11 @@
                             <div class="row mt-3">
                                 <div class="col-12">
                                     <div class="row">
-                                        <div class="col-2 d-flex justify-content-end align-items-center">
+                                        <div class="col-3 col-lg-2 d-flex justify-content-end align-items-center">
                                             <label class="d-block" for="inputReference"> Referencia  </label>
                                         </div>
-                                        <div class="col-10">
-                                            <input name="reference" type="text" class="form-control form-control-sm" id="inputReference" maxlength="300" required>
+                                        <div class="col-9 col-lg-10">
+                                            <input name="reference" value="<?= $data['reference'] ?>" type="text" class="form-control form-control-sm" id="inputReference" maxlength="300" required>
                                         </div>
                                     </div>
                                 </div>
@@ -273,7 +273,7 @@
                 </div>
                 <div class="tab-pane fade" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                     <div class="row">
-                        <div class="col-12 ml-3">
+                        <div class="col-12 ml-lg-3 mt-3 mt-lg-0">
                             <p class="sub-title">Si desea cambiar su nombre de Usuario, escriba otro nombre y actualize. &nbsp;(mínimo 3 carácteres)</p>
                         </div>
                     </div>
@@ -303,7 +303,7 @@
                                 </div>
 
                                 <div class="row mt-3">
-                                    <div class="col-4 offset-4">
+                                    <div class="col-6 offset-3 offset-lg-4 col-lg-4">
                                         <button class="btn btn-color form-control" type="submit">Actualizar</button>
                                     </div>
                                 </div>
@@ -312,7 +312,7 @@
                         </div>
                     </div>
                     <div class="row ">
-                        <div class="col-12 ml-3 mt-4">
+                        <div class="col-10 offset-1 offset-lg-0 col-lg-12 ml-3 mt-4">
                             <p class="sub-title">Si desea cambiar su contraseña, escriba una nueva contraseña y actualize.</p>
                         </div>
                     </div>
@@ -331,8 +331,8 @@
                                 </div>
 
 
-                                <div class="row mt-3">
-                                    <div class="col-4 offset-4">
+                                <div class="row mt-3 mb-3">
+                                    <div class="col-6 offset-3 offset-lg-4 col-lg-4 ">
                                         <button class="btn btn-color form-control" type="submit">Actualizar</button>
                                     </div>
                                 </div>

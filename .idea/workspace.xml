@@ -5,29 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fdbfcd0-2494-4763-9b3c-4101d8486ca9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/controller/RegisterController.php" afterPath="$PROJECT_DIR$/app/controller/RegisterController.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/UserController.php" afterPath="$PROJECT_DIR$/app/controller/UserController.php" />
       <change beforePath="$PROJECT_DIR$/app/model/User.php" afterPath="$PROJECT_DIR$/app/model/User.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/index.php" afterPath="$PROJECT_DIR$/app/view/index.php" />
       <change beforePath="$PROJECT_DIR$/app/view/user/updateConfig.php" afterPath="$PROJECT_DIR$/app/view/user/updateConfig.php" />
-      <change beforePath="$PROJECT_DIR$/public/css/coproduc_main.css" afterPath="$PROJECT_DIR$/public/css/coproduc_main.css" />
-      <change beforePath="$PROJECT_DIR$/public/css/coproduc_main.min.css" afterPath="$PROJECT_DIR$/public/css/coproduc_main.min.css" />
-      <change beforePath="$PROJECT_DIR$/public/css/coproduc_user_config.css" afterPath="$PROJECT_DIR$/public/css/coproduc_user_config.css" />
-      <change beforePath="$PROJECT_DIR$/public/css/coproduc_user_config.min.css" afterPath="$PROJECT_DIR$/public/css/coproduc_user_config.min.css" />
-      <change beforePath="$PROJECT_DIR$/public/js/coproduc_main.js" afterPath="$PROJECT_DIR$/public/js/coproduc_main.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/coproduc_user_Config.js" afterPath="$PROJECT_DIR$/public/js/coproduc_user_config.js" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/font/css/icon-codes.css" afterPath="$PROJECT_DIR$/public/libraries/font/css/icon-codes.css" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/font/css/icon-embedded.css" afterPath="$PROJECT_DIR$/public/libraries/font/css/icon-embedded.css" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/font/css/icon-ie7-codes.css" afterPath="$PROJECT_DIR$/public/libraries/font/css/icon-ie7-codes.css" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/font/css/icon-ie7.css" afterPath="$PROJECT_DIR$/public/libraries/font/css/icon-ie7.css" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/font/css/icon.css" afterPath="$PROJECT_DIR$/public/libraries/font/css/icon.css" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/font/font/icon.eot" afterPath="$PROJECT_DIR$/public/libraries/font/font/icon.eot" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/font/font/icon.svg" afterPath="$PROJECT_DIR$/public/libraries/font/font/icon.svg" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/font/font/icon.ttf" afterPath="$PROJECT_DIR$/public/libraries/font/font/icon.ttf" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/font/font/icon.woff" afterPath="$PROJECT_DIR$/public/libraries/font/font/icon.woff" />
-      <change beforePath="$PROJECT_DIR$/public/libraries/font/font/icon.woff2" afterPath="$PROJECT_DIR$/public/libraries/font/font/icon.woff2" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,7 +38,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
+            <state relative-caret-position="1309">
               <caret line="77" column="89" lean-forward="false" selection-start-line="77" selection-start-column="89" selection-end-line="77" selection-end-column="89" />
               <folding />
             </state>
@@ -68,15 +48,9 @@
       <file leaf-file-name="updateConfig.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/user/updateConfig.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="264" column="49" lean-forward="false" selection-start-line="264" selection-start-column="49" selection-end-line="264" selection-end-column="49" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#16509#16515#0#HTML" expanded="true" />
-                <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="408">
+              <caret line="333" column="57" lean-forward="false" selection-start-line="333" selection-start-column="57" selection-end-line="333" selection-end-column="57" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,8 +68,8 @@
       <file leaf-file-name="coproduc_user_config.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/coproduc_user_config.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="92" column="21" lean-forward="true" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+            <state relative-caret-position="1564">
+              <caret line="92" column="21" lean-forward="false" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -104,8 +78,8 @@
       <file leaf-file-name="coproduc_user_config.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/coproduc_user_config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11">
-              <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+            <state relative-caret-position="1020">
+              <caret line="60" column="17" lean-forward="false" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -124,15 +98,15 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/model/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="39" column="28" lean-forward="false" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+            <state relative-caret-position="238">
+              <caret line="44" column="75" lean-forward="false" selection-start-line="44" selection-start-column="75" selection-end-line="44" selection-end-column="75" />
               <folding>
                 <element signature="n#existsDNI#0;n#User#0;n#!!top" expanded="false" />
                 <element signature="n#existsUser#0;n#User#0;n#!!top" expanded="false" />
                 <element signature="n#updateUsername#0;n#User#0;n#!!top" expanded="false" />
+                <element signature="n#updatePassword#0;n#User#0;n#!!top" expanded="false" />
                 <element signature="n#insert#0;n#User#0;n#!!top" expanded="false" />
-                <element signature="n#getUserData#0;n#User#0;n#!!top" expanded="false" />
-                <marker date="1517765285468" expanded="true" signature="1077:1131" ph="UPDATE account... " />
+                <marker date="1517771151680" expanded="true" signature="3042:3347" ph="SELECT user,... account" />
               </folding>
             </state>
           </provider>
@@ -141,8 +115,8 @@
       <file leaf-file-name="mail.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/mail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+            <state relative-caret-position="357">
+              <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -215,7 +189,6 @@
         <option value="$PROJECT_DIR$/public/js/coproduc_main.js" />
         <option value="$PROJECT_DIR$/public/js/coproduc_user_Config.js" />
         <option value="$PROJECT_DIR$/app/database/update_username.php" />
-        <option value="$PROJECT_DIR$/app/model/User.php" />
         <option value="$PROJECT_DIR$/public/libraries/font/css/icon.css" />
         <option value="$PROJECT_DIR$/app/controller/UserController.php" />
         <option value="$PROJECT_DIR$/public/js/coproduc_user_config.js" />
@@ -223,6 +196,7 @@
         <option value="$PROJECT_DIR$/app/view/index.php" />
         <option value="$PROJECT_DIR$/public/css/coproduc_main.css" />
         <option value="$PROJECT_DIR$/public/css/coproduc_user_config.css" />
+        <option value="$PROJECT_DIR$/app/model/User.php" />
         <option value="$PROJECT_DIR$/app/view/user/updateConfig.php" />
       </list>
     </option>
@@ -300,6 +274,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -357,13 +332,6 @@
             <path>
               <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
               <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -402,7 +370,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -485,19 +452,21 @@
       <workItem from="1517501330244" duration="35717000" />
       <workItem from="1517604238713" duration="22336000" />
       <workItem from="1517670044347" duration="38413000" />
-      <workItem from="1517757643073" duration="12756000" />
+      <workItem from="1517757643073" duration="14119000" />
+      <workItem from="1517788083056" duration="2401000" />
+      <workItem from="1517805806423" duration="1415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195535000" />
+    <option name="totallyTimeSpent" value="200714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18305598" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21558245" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20196672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -583,7 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -679,9 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-          <folding>
-            <marker date="1517594147898" expanded="true" signature="652:739" ph="select user account" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -689,7 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -704,7 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="60" column="8" lean-forward="false" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -712,7 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
           <caret line="101" column="46" lean-forward="false" selection-start-line="101" selection-start-column="46" selection-end-line="101" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -727,7 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="46" column="17" lean-forward="true" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -735,7 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="43" lean-forward="false" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,7 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="30" lean-forward="true" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -759,7 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -767,7 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2494">
           <caret line="56" column="31" lean-forward="false" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,29 +740,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="39" column="28" lean-forward="false" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-          <folding>
-            <element signature="n#existsDNI#0;n#User#0;n#!!top" expanded="false" />
-            <element signature="n#existsUser#0;n#User#0;n#!!top" expanded="false" />
-            <element signature="n#updateUsername#0;n#User#0;n#!!top" expanded="false" />
-            <element signature="n#insert#0;n#User#0;n#!!top" expanded="false" />
-            <element signature="n#getUserData#0;n#User#0;n#!!top" expanded="false" />
-            <marker date="1517765285468" expanded="true" signature="1077:1131" ph="UPDATE account... " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/mail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+        <state relative-caret-position="357">
+          <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -822,13 +763,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="269" column="13" lean-forward="false" selection-start-line="269" selection-start-column="13" selection-end-line="269" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
+        <state relative-caret-position="1309">
           <caret line="77" column="89" lean-forward="false" selection-start-line="77" selection-start-column="89" selection-end-line="77" selection-end-column="89" />
           <folding />
         </state>
@@ -838,22 +778,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="991" lean-forward="false" selection-start-line="0" selection-start-column="991" selection-end-line="0" selection-end-column="991" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/coproduc_user_config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+        <state relative-caret-position="1020">
+          <caret line="60" column="17" lean-forward="false" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/coproduc_user_config.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="92" column="21" lean-forward="true" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+        <state relative-caret-position="1564">
+          <caret line="92" column="21" lean-forward="false" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -866,17 +805,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="44" column="75" lean-forward="false" selection-start-line="44" selection-start-column="75" selection-end-line="44" selection-end-column="75" />
+          <folding>
+            <element signature="n#existsDNI#0;n#User#0;n#!!top" expanded="false" />
+            <element signature="n#existsUser#0;n#User#0;n#!!top" expanded="false" />
+            <element signature="n#updateUsername#0;n#User#0;n#!!top" expanded="false" />
+            <element signature="n#updatePassword#0;n#User#0;n#!!top" expanded="false" />
+            <element signature="n#insert#0;n#User#0;n#!!top" expanded="false" />
+            <marker date="1517771151680" expanded="true" signature="3042:3347" ph="SELECT user,... account" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/user/updateConfig.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="264" column="49" lean-forward="false" selection-start-line="264" selection-start-column="49" selection-end-line="264" selection-end-column="49" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#16509#16515#0#HTML" expanded="true" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="408">
+          <caret line="333" column="57" lean-forward="false" selection-start-line="333" selection-start-column="57" selection-end-line="333" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
