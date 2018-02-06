@@ -43,6 +43,35 @@ $("#form-login").bind("submit", function () {
 });
 
 
+$(".form-modal").bind("submit",function () {
+
+    $.ajax({
+        type : $(this).attr('method'),
+        url : $(this).attr('action'),
+        data : $(this).serialize(),
+
+        success : function (response) {
+            if (response === 'true'){
+                swal('Pedido Realizado');
+                $(".modal").modal('hide');
+            }
+            else if (response === 'false'){
+                swal('No se puede realizar el pedido');
+                //$(".modal").modal('hide');
+            }
+        },
+
+        error : function () {
+            swal('No se puede realizar el pedido');
+            $(".modal").modal('hide');
+        }
+
+
+    });
+
+    return false;
+
+});
 
 
 

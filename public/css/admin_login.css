@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #343A40;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary{
+    background-color: #F07925;
+    color: white;
+    box-shadow: none ;
+    border-color: #6c757d;
+}
+
+.btn-primary:hover{
+    background-color: #F07925;
+    color: white;
+    box-shadow: none;
+    border-color: #FFF;
+}

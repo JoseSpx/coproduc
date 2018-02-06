@@ -222,14 +222,72 @@
                             <div class="card-body">
                                 <h5 class="card-title d-flex justify-content-center font-weight-bold"> <?= $products[$i]['name'] ?> </h5>
                                 <div class="d-flex justify-content-center">
-                                    <a href="#" class="btn btn-primary btn-color">
+                                    <button type="button"  class="btn btn-primary btn-color" data-toggle="modal" data-target="<?= '#' . $products[$i]['id'] ?>">
                                         Comprar
                                         <i class="icon-basket"></i>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="<?= $products[$i]['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <form class="form-modal" action="/order/product" method="post">
+                            <input name="product_id" type="hidden" value="<?= $products[$i]['id'] ?>">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle"> Comprar Producto </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-8 offset-2">
+                                                    <img class="img-fluid img-thumbnail" src="<?= '/public/img/products/' . $products[$i]['image'] ?>" alt="">
+                                                    <h6 class="text-center h5 mt-1"> <?= $products[$i]['name'] ?> </h6>
+                                                </div>
+                                            </div>
+
+                                            <?php if(isset($_SESSION['user'])): ?>
+                                                <div class="row mt-3">
+                                                    <div class="col-8 offset-2">
+                                                        <div class="row">
+                                                            <div class="col-4 d-flex flex-column justify-content-center align-items-end">
+                                                                Cantidad :
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <input type="number" class="form-control form-control-sm" pattern="[0-9]+"
+                                                                       title="producto" name="quantity">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <div class="col-8 offset-2 d-flex justify-content-center">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="cbx_accept_order" type="checkbox" class="custom-control-input" id="<?= $products[$i]['id'] . 'cbx' ?>"
+                                                                   title="<?= $products[$i]['name'] ?>">
+                                                            <label class="custom-control-label" for="<?= $products[$i]['id'] . 'cbx' ?>">Seguro de realizar el pedido</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <?php endif; ?>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer d-flex justify-content-center">
+                                        <button type="submit" class="btn btn-primary btn-color btn-order">Realizar Pedido</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+
                 <?php endfor; ?>
 
             </div>

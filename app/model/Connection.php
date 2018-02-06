@@ -20,7 +20,7 @@ class Connection{
     }
 
     public static function login($user, $pass){
-        $query = "select user from account WHERE (user = :user OR user_data_dni = :user) AND pass = :pass ";
+        $query = "select user, user_data_dni AS dni from account WHERE (user = :user OR user_data_dni = :user) AND pass = :pass ";
         $conecction = Connection::connect();
         $ps = $conecction->prepare($query);
         $ps->execute(array(
@@ -32,7 +32,9 @@ class Connection{
 
         if($count == 1){
             session_start();
+            $rs = $ps->fetchAll(PDO::FETCH_ASSOC);
             $_SESSION['user'] = $user;
+            $_SESSION['user_dni'] = $rs[0]['dni'];
         }
 
         return ($count == 1);

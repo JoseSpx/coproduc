@@ -3,7 +3,15 @@
 class AdminController extends Controller {
 
     public function index(){
+        $this->view("admin/index");
+    }
+
+    public function main(){
         $this->view("admin/cpanel");
+    }
+
+    public function login(){
+        $this->database("admin_login");
     }
 
     public function products(){
