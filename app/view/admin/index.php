@@ -39,16 +39,20 @@
             </div>
         </div>
 
-        <div class="row mt-5">
+        <div class="row mt-4">
             <div class="col-10 offset-1 offset-md-4 col-md-4">
                 <form id="form-admin" method="post" action="/admin/login">
                     <div class="form-group">
-                        <label class="text-white" for="user">Email address</label>
-                        <input name="user" type="text" class="form-control" id="user"  placeholder="Ingrese usuario">
+                        <div class="d-flex justify-content-center">
+                            <label class="text-white h5" for="user">Usuario</label>
+                        </div>
+                        <input name="user" type="text" class="form-control " id="user"  placeholder="Ingrese usuario">
                     </div>
                     <div class="form-group">
-                        <label class="text-white" for="exampleInputPassword1">Contraseña</label>
-                        <input name="pass" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <div class="d-flex justify-content-center">
+                            <label class="text-white h5"  for="pass">Contraseña</label>
+                        </div>
+                        <input name="pass" type="password" class="form-control " id="pass" placeholder="Ingrese Contraseña">
                     </div>
                     <div class="row mt-4">
                         <div class="col-4 offset-4">
@@ -58,7 +62,6 @@
                 </form>
             </div>
         </div>
-
     </div>
 
 
@@ -66,6 +69,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="/public/libraries/js/sweetAlert2.js"></script>
 <script src="/public/js/admin_login.min.js"></script>
 </body>
 </html>

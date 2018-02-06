@@ -9,13 +9,28 @@ $("#form-admin").bind("submit", function () {
 
         success : function (response) {
             if (response === 'true'){
-
+                window.location.href = '/admin/main';
+            }
+            else{
+                swal({
+                    title: 'Datos Incorrectos',
+                    text: "",
+                    type: 'error',
+                    confirmButtonColor: '#F07925',
+                    confirmButtonText: 'Aceptar'
+                });
             }
 
         },
 
         error : function () {
-
+            swal({
+                title: 'Datos Incorrectos',
+                text: "",
+                type: 'error',
+                confirmButtonColor: '#F07925',
+                confirmButtonText: 'Aceptar'
+            });
         }
 
     });

@@ -7,6 +7,7 @@ class AdminController extends Controller {
     }
 
     public function main(){
+        $this->extras("verifyAdmin");
         $this->view("admin/cpanel");
     }
 
@@ -14,7 +15,12 @@ class AdminController extends Controller {
         $this->database("admin_login");
     }
 
+    public function logout(){
+        $this->database("admin_logout");
+    }
+
     public function products(){
+        $this->extras("verifyAdmin");
         $this->view("admin/options/products");
     }
 
@@ -24,6 +30,7 @@ class AdminController extends Controller {
     }
 
     public function product_new(){
+        $this->extras("verifyAdmin");
         $this->view("admin/options/product_new");
     }
 
@@ -32,6 +39,7 @@ class AdminController extends Controller {
     }
 
     public function product_update_view($id){
+        $this->extras("verifyAdmin");
         $id = $id[0];
         $this->view("admin/options/product_edit", $id );
     }

@@ -13,7 +13,7 @@ $(function () {
             cancelButtonText: 'No'
         }).then(function (result) {
             if (result.value) {
-                window.location.href = "/cpanel/products";
+                window.location.href = "/admin/products";
             }
         });
 

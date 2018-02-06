@@ -13,7 +13,7 @@
                         Administrador
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/admin/close">Cerrar Sesión</a>
+                        <a class="dropdown-item" href="/admin/logout">Cerrar Sesión</a>
                     </div>
                 </li>
             </ul>
