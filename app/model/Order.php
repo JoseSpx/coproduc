@@ -15,4 +15,17 @@ class Order extends Connection {
         ));
     }
 
+    public function getAllOrdersFromAClient($dni){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("select p.name AS product ,quantity, date_order, date_confirmation, `order`.state from `order` 
+            INNER JOIN product p ON `order`.product_id = p.id WHERE user_data_dni = :dni ORDER BY `order`.id DESC LIMIT 100");
+
+        $ps->execute(array(
+           ':dni' => $dni
+        ));
+
+        return $ps->fetchAll(PDO::FETCH_ASSOC);
+
+    }
+
 }

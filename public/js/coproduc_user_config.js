@@ -85,6 +85,59 @@ $("#form_update_pass").bind("submit", function () {
 
 });
 
+
+$("#form_update_data").bind("submit", function () {
+
+    $.ajax({
+        type : $(this).attr('method'),
+        url : $(this).attr('action'),
+        data : $(this).serialize(),
+
+        success : function (response) {
+            if (response === 'true'){
+                swal({
+                    title: 'Actualizado',
+                    text : 'Los datos se actualizaron',
+                    type: 'success',
+                    confirmButtonColor: '#FFD238',
+                    confirmButtonText: 'Aceptar'
+                });
+            }
+            else if (response === 'dni_exists'){
+                swal({
+                    title: 'DNI ya existe',
+                    text : '',
+                    type: 'error',
+                    confirmButtonColor: '#FFD238',
+                    confirmButtonText: 'Aceptar'
+                });
+            }
+            else{
+                swal({
+                    title: 'Ocurrio una acción inesperada',
+                    text : '',
+                    type: 'error',
+                    confirmButtonColor: '#FFD238',
+                    confirmButtonText: 'Aceptar'
+                });
+            }
+        },
+        error : function () {
+            swal({
+                title: 'Ocurrio una acción inesperada',
+                text : '',
+                type: 'error',
+                confirmButtonColor: '#FFD238',
+                confirmButtonText: 'Aceptar'
+            });
+        }
+
+    });
+
+    return false;
+
+});
+
 $("#btn_view_pass").click(function () {
     let pass = $("#inputPass");
     if (pass.attr("type") === 'text'){

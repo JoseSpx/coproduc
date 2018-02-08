@@ -31,7 +31,7 @@ gulp.task('js', function (cb) {
     );
 });
 
-gulp.task('watch', function() {
+gulp.task('default', function() {
     gulp.watch('./public/css/**/*.css', ['css']);
     gulp.watch('./public/js/**/*.js', ['js']);
 });

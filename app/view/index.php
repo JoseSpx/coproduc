@@ -80,7 +80,7 @@
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="/user/config">Configuración</a>
-                                <a class="dropdown-item" href="/user/config">Pedidos</a>
+                                <a class="dropdown-item" href="/user/order">Pedidos</a>
                                 <a class="dropdown-item" href="/coproduc/logout">Salir</a>
                             </div>
                         </div>

@@ -59,6 +59,13 @@
                             <button type="submit" class="btn btn-primary">Ingresar</button>
                         </div>
                     </div>
+
+                    <div class="row mt-3">
+                        <div class="col-2 offset-5 text-white">
+                            <a class="text-white" href="/">Salir</a>
+                        </div>
+                    </div>
+
                 </form>
             </div>
         </div>

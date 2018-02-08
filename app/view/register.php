@@ -1,6 +1,9 @@
 <?php
 session_start();
 
+$districts = ['La Esperanza','Víctor Larco ','Trujillo','El Porvenir','Huanchaco','Florencia de Mora',
+    'Laredo', 'Moche', 'Salaverry', 'Poroto', 'Simbal'];
+
 ?>
 
 <!DOCTYPE html>
@@ -174,8 +177,8 @@ session_start();
                                 <label for="departments" class="d-block">Departamento</label>
                             </div>
                             <div class="col-9 col-lg-3">
-                                <select name="departments" class="custom-select custom-select-sm" id="departments" onchange="changeProvinces()">
-                                    <option value="10000" disabled selected>Elegir</option>
+                                <select name="departments" class="custom-select custom-select-sm" id="departments">
+                                    <!--option value="10000" disabled selected>Elegir</option>  onchange="changeProvinces()"
                                     <option value="Amazonas">Amazonas</option>
                                     <option value="Ancash">Ancash</option>
                                     <option value="Apurimac">Apurimac</option>
@@ -187,9 +190,9 @@ session_start();
                                     <option value="Huancavelica">Huancavelica</option>
                                     <option value="Huanuco">Huanuco</option>
                                     <option value="Ica">Ica</option>
-                                    <option value="Junin">Junin</option>
-                                    <option value="La Libertad" >La Libertad</option>
-                                    <option value="Lambayeque">Lambayeque</option>
+                                    <option value="Junin">Junin</option-->
+                                    <option value="La Libertad" selected>La Libertad</option>
+                                    <!--option value="Lambayeque">Lambayeque</option>
                                     <option value="Lima">Lima</option>
                                     <option value="Loreto">Loreto</option>
                                     <option value="Madre De Dios">Madre De Dios</option>
@@ -200,7 +203,7 @@ session_start();
                                     <option value="San Martin">San Martin</option>
                                     <option value="Tacna">Tacna</option>
                                     <option value="Tumbes">Tumbes</option>
-                                    <option value="Ucayali">Ucayali</option>
+                                    <option value="Ucayali">Ucayali</option-->
                                 </select>
                             </div>
 
@@ -208,8 +211,8 @@ session_start();
                                 <label for="provinces" class="d-block">Provincia</label>
                             </div>
                             <div class="col-9 col-lg-3 mt-3 mt-lg-0">
-                                <select name="provinces" class="custom-select custom-select-sm" id="provinces" onchange="changeDistricts()">
-                                    <option value="10000" disabled selected>Elegir</option>
+                                <select name="provinces" class="custom-select custom-select-sm" id="provinces">
+                                    <option value="Trujillo" selected>Trujillo</option>
                                 </select>
                             </div>
                         </div>
@@ -223,7 +226,11 @@ session_start();
                             </div>
                             <div class="col-9 col-lg-3">
                                 <select name="districts" class="custom-select custom-select-sm" id="districts">
-                                    <option value="10000" disabled selected>Elegir</option>
+                                    <!--option value="10000" disabled selected>Elegir</option-->
+                                    <?php   foreach ($districts as $district){
+                                                echo "<option value='$district'>$district</option>";
+                                            }
+                                    ?>
                                 </select>
                             </div>
 

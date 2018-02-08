@@ -2,9 +2,17 @@
     require_once __DIR__ . '/../../model/User.php';
     session_start();
 
+    if(!isset($_SESSION['user'])){
+        header("location:/");
+    }
+
     $user = new User();
     $data = $user->getUserData($_SESSION['user']);
     $data = $data[0];
+
+    $districts = ['La Esperanza','Víctor Larco ','Trujillo','El Porvenir','Huanchaco','Florencia de Mora',
+                    'Laredo', 'Moche', 'Salaverry', 'Poroto', 'Simbal'];
+
 ?>
 
 <!DOCTYPE html>
@@ -51,7 +59,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav  ml-auto d-flex align-items-center">
             <li class="nav-item ml-2">
-                <a class="nav-link link-nav" href="/user/pedidos"> Pedidos </a>
+                <a class="nav-link link-nav" href="/user/order"> Pedidos </a>
             </li>
             <li class="nav-item ml-2">
                 <a class="nav-link link-nav" href="/">Página Principal</a>
@@ -85,6 +93,11 @@
                     </div>
                     <div class="row ">
                         <div class="col-12">
+                            <form id="form_update_data" action="/user/update_data" method="post">
+
+                                <!-- data default --->
+                                <input name="dni_old" type="hidden" value="<?= $data['dni'] ?>">
+                                <input name="id_ubication" type="hidden" value="<?= $data['id_ubication'] ?>">
 
                             <div class="row mt-3">
                                 <div class="col-12">
@@ -93,7 +106,7 @@
                                             <label for="inputDNI"> DNI </label>
                                         </div>
                                         <div class="col-9 col-lg-10">
-                                            <input name="dni" value="<?= $data['dni'] ?>" type="text" class="form-control form-control-sm" id="inputDNI" maxlength="9" required>
+                                            <input name="dni_new" value="<?= $data['dni'] ?>" type="number" class="form-control form-control-sm" id="inputDNI" max="99999999" required>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -139,7 +152,7 @@
                                             <label class="d-block" for="inputEmail"> Email </label>
                                         </div>
                                         <div class="col-9 col-lg-10">
-                                            <input name="email" value="<?= $data['email'] ?>" type="email" class="form-control form-control-sm" id="inputEmail" maxlength="100" required>
+                                            <input name="email" value="<?= $data['email'] ?>" type="text" class="form-control form-control-sm" id="inputEmail" maxlength="100" >
                                         </div>
                                     </div>
                                 </div>
@@ -158,7 +171,7 @@
                                             <label class="d-block" for="inputPhone2"> Teléfono Opcional</label>
                                         </div>
                                         <div class="col-9 col-lg-4  mt-3 mt-lg-0">
-                                            <input name="phone2" value="<?= $data['telephone2'] ?>" type="number" class="form-control form-control-sm" id="inputPhone2" maxlength="20" required>
+                                            <input name="phone2" value="<?= $data['telephone2'] ?>" type="number" class="form-control form-control-sm" id="inputPhone2" maxlength="20">
                                         </div>
                                     </div>
                                 </div>
@@ -197,8 +210,8 @@
                                             <label for="departments" class="d-block">Departamento</label>
                                         </div>
                                         <div class="col-9 col-lg-4">
-                                            <select name="departments" class="custom-select custom-select-sm" id="departments" onchange="changeProvinces()">
-                                                <option value="10000" disabled selected>Elegir</option>
+                                            <select name="departments" class="custom-select custom-select-sm" id="departments">
+                                                <!--option value="10000" disabled selected>Elegir</option>
                                                 <option value="Amazonas">Amazonas</option>
                                                 <option value="Ancash">Ancash</option>
                                                 <option value="Apurimac">Apurimac</option>
@@ -210,9 +223,9 @@
                                                 <option value="Huancavelica">Huancavelica</option>
                                                 <option value="Huanuco">Huanuco</option>
                                                 <option value="Ica">Ica</option>
-                                                <option value="Junin">Junin</option>
+                                                <option value="Junin">Junin</option-->
                                                 <option value="La Libertad" >La Libertad</option>
-                                                <option value="Lambayeque">Lambayeque</option>
+                                                <!--    option value="Lambayeque">Lambayeque</option>
                                                 <option value="Lima">Lima</option>
                                                 <option value="Loreto">Loreto</option>
                                                 <option value="Madre De Dios">Madre De Dios</option>
@@ -223,7 +236,7 @@
                                                 <option value="San Martin">San Martin</option>
                                                 <option value="Tacna">Tacna</option>
                                                 <option value="Tumbes">Tumbes</option>
-                                                <option value="Ucayali">Ucayali</option>
+                                                <option value="Ucayali">Ucayali</option-->
                                             </select>
                                         </div>
 
@@ -231,8 +244,8 @@
                                             <label for="provinces" class="d-block">Provincia</label>
                                         </div>
                                         <div class="col-9 col-lg-4 mt-3 mt-lg-0">
-                                            <select name="provinces" class="custom-select custom-select-sm" id="provinces" onchange="changeDistricts()">
-                                                <option value="10000" disabled selected>Elegir</option>
+                                            <select name="provinces" class="custom-select custom-select-sm" id="provinces">
+                                                <option value="Trujillo">Trujillo</option>
                                             </select>
                                         </div>
                                     </div>
@@ -247,7 +260,15 @@
                                         </div>
                                         <div class="col-9 col-lg-4">
                                             <select name="districts" class="custom-select custom-select-sm" id="districts">
-                                                <option value="10000" disabled selected>Elegir</option>
+                                                <?php foreach ($districts as $district):
+                                                            if($district == $data['dist']){
+                                                                echo "<option value='$district' selected>$district</option>";
+                                                            }
+                                                            else{
+                                                                echo "<option value='$district'>$district</option>";
+                                                            }
+                                                      endforeach;
+                                                ?>
                                             </select>
                                         </div>
 
@@ -255,7 +276,7 @@
                                             <label for="inputUrb" class="d-block">Urbanización</label>
                                         </div>
                                         <div class="col-9 col-lg-4 mt-3 mt-lg-0">
-                                            <input name="urb" type="text" class="form-control form-control-sm" id="inputUrb" placeholder="Opcional">
+                                            <input name="urb" value="<?= $data['urb'] ?>" type="text" class="form-control form-control-sm" id="inputUrb" placeholder="Opcional">
                                         </div>
                                     </div>
                                 </div>
@@ -266,8 +287,9 @@
                                     <button type="submit" class="form-control btn btn-color">Actualizar</button>
                                 </div>
                             </div>
-
+                            </form>
                         </div>
+
                 </div>
 
                 </div>

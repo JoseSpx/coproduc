@@ -65,7 +65,7 @@ $("#form-register").bind("submit",function () {
            validatePasswords(xhr);
        },
        success : function (response) {
-
+        //alert("exito");
            let alertDni = document.getElementById("error-dni");
            let alertUser = document.getElementById("error-user");
 
@@ -104,8 +104,8 @@ $("#form-register").bind("submit",function () {
            }
 
        },
-       error : function () {
-           
+       error : function (response) {
+           alert(response);
        },
        complete : function () {
            
