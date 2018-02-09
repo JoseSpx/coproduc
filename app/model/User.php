@@ -138,6 +138,73 @@ class User{
 
     }
 
+    public function insert_client_old($dni, $name, $last, $email, $phone1, $phone2, $address, $ref, $depar, $prov, $dist,
+                           $urb, $user, $pass){
+
+        $conn = Connection::connect();
+
+        try{
+            $conn->beginTransaction();
+
+            //update table user_data
+
+            $ps = $conn->prepare("UPDATE user_data SET name = :name, last_name = :last, email = :email,
+                                              telephone = :phone1, telephone2 = :phone2, type = 'l' where dni = :dni");
+
+            $ps->execute(array(
+                ':dni' => $dni,
+                ':name' => $name,
+                ':last' => $last,
+                ':email' => $email,
+                ':phone1' => $phone1,
+                ':phone2' => $phone2,
+            ));
+
+
+            //update table ubication
+
+            $ps = $conn->prepare("select ubication_id AS ubi from user_data WHERE dni = :dni LIMIT 1");
+            $ps->execute(array(
+               ':dni' => $dni
+            ));
+
+            $rs = $ps->fetchAll(PDO::FETCH_ASSOC);
+            $id_ubication = $rs[0]['ubi'];
+
+                        $ps = $conn->prepare("update ubication set dpto = :dpto, prov = :prov, dist = :dist, urb = :urb,
+                                                          address = :address, reference = :ref, state = :state WHERE id = $id_ubication");
+                        $ps->execute(array(
+                            ':dpto' => $depar,
+                            ':prov' => $prov,
+                            ':dist' => $dist,
+                            ':urb' => $urb,
+                            ':address' => $address,
+                            ':ref' => $ref,
+                            ':state' => '0'
+                        ));
+
+                        $ps = $conn->prepare("insert into account(user, pass, user_data_dni) VALUES (:user, :pass, :dni)");
+                        $ps->execute(array(
+                            ':user' => $user,
+                            ':pass' => $pass,
+                            ':dni' => $dni
+                        ));
+
+            $conn->commit();
+
+            return true;
+
+        }catch (Exception $e){
+            $conn->rollBack();
+
+            return false;
+
+        }finally{
+            $conn = null;
+        }
+
+    }
+
     public function getUserData($user){
         $conn = Connection::connect();
         $ps = $conn->prepare("SELECT user, pass, dni, name, last_name, email, telephone, telephone2, dpto,
@@ -151,6 +218,16 @@ class User{
 
         $rs = $ps->fetchAll(PDO::FETCH_ASSOC);
         return $rs ;
+    }
+
+    public function existsDNI_userData($dni){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("select name from user_data WHERE dni =  :dni LIMIT 1");
+        $ps->execute(array(
+            ':dni' => $dni
+        ));
+
+        return $ps->rowCount() == 1; // false == 0
     }
 
 }

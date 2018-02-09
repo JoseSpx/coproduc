@@ -102,6 +102,9 @@ $("#form-register").bind("submit",function () {
                    window.location.href = "/";
                });
            }
+           else{
+               swal("Ocurrió un error inseperado");
+           }
 
        },
        error : function (response) {

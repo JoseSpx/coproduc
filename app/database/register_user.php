@@ -58,12 +58,30 @@
     $urb = $_POST['urb'];
     $pass = $_POST['pass'];
 
-    $userdb->insert($dni, $name, $lastname, $email, $phone1, $phone2, $address, $reference, $depar, $prov, $district, $urb, $user, $pass);
-    $arrayResult['ok'] = 'true';
+    if(!$userdb->existsDNI_userData($dni)){
+        $userdb->insert($dni, $name, $lastname, $email, $phone1, $phone2, $address, $reference, $depar, $prov, $district, $urb, $user, $pass);
+        $arrayResult['ok'] = 'true';
 
-    session_start();
-    $_SESSION['user'] = $user;
-    $_SESSION['user_dni'] = $dni;
+        session_start();
+        $_SESSION['user'] = $user;
+        $_SESSION['user_dni'] = $dni;
+
+    }
+    else{
+        $band = $userdb->insert_client_old($dni, $name, $lastname, $email, $phone1, $phone2, $address, $reference, $depar, $prov, $district, $urb, $user, $pass);
+        if($band){
+            $arrayResult['ok'] = 'true';
+            session_start();
+            $_SESSION['user'] = $user;
+            $_SESSION['user_dni'] = $dni;
+        }
+        else{
+            $arrayResult['ok'] = 'false';
+        }
+
+    }
+
+
 
     return print json_encode($arrayResult);
 
