@@ -59,10 +59,24 @@ $(".form-modal").bind("submit",function () {
                 swal('No se puede realizar el pedido');
                 //$(".modal").modal('hide');
             }
+            else if (response === 'cbx'){
+                swal('Confirme el pedido');
+            }
+            else{
+                let no_client = document.getElementById(response + "_no_client");
+                if (no_client.classList.contains("d-none")){
+                    no_client.classList.remove("d-none");
+                }
+
+                let data_main = document.getElementById(response + "_no_client_2");
+                if (data_main.classList.contains("d-none") === false){
+                    data_main.classList.add("d-none");
+                }
+            }
         },
 
         error : function () {
-            swal('No se puede realizar el pedido');
+            swal('No se puede realizar el pedido - error');
             $(".modal").modal('hide');
         }
 
@@ -74,6 +88,9 @@ $(".form-modal").bind("submit",function () {
 });
 
 
+$(".btn-modal").click(function () {
+    $(".na_te").val("");
+});
 
 
 

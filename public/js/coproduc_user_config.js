@@ -104,13 +104,10 @@ $("#form_update_data").bind("submit", function () {
                 });
             }
             else if (response === 'dni_exists'){
-                swal({
-                    title: 'DNI ya existe',
-                    text : '',
-                    type: 'error',
-                    confirmButtonColor: '#FFD238',
-                    confirmButtonText: 'Aceptar'
-                });
+                let dni = document.getElementById("error-dni");
+                if (dni.classList.contains("d-none")){
+                    dni.classList.remove("d-none");
+                }
             }
             else{
                 swal({

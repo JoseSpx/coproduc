@@ -63,6 +63,7 @@
 
     session_start();
     $_SESSION['user'] = $user;
+    $_SESSION['user_dni'] = $dni;
 
     return print json_encode($arrayResult);
 

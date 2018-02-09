@@ -221,8 +221,9 @@
 
                             <div class="card-body">
                                 <h5 class="card-title d-flex justify-content-center font-weight-bold"> <?= $products[$i]['name'] ?> </h5>
+                                <p class="text-center"> Precio : &nbsp;<?= $products[$i]['price'] ?> soles c/u (referencial) </p>
                                 <div class="d-flex justify-content-center">
-                                    <button type="button"  class="btn btn-primary btn-color" data-toggle="modal" data-target="<?= '#' . $products[$i]['id'] ?>">
+                                    <button type="button"  class="btn btn-primary btn-color btn-modal" data-toggle="modal" data-target="<?= '#' . $products[$i]['id'] ?>">
                                         Comprar
                                         <i class="icon-basket"></i>
                                     </button>
@@ -257,7 +258,7 @@
                                                     <div class="col-8 offset-2">
                                                         <div class="row">
                                                             <div class="col-4 d-flex flex-column justify-content-center align-items-end">
-                                                                Cantidad :
+                                                                Cantidad
                                                             </div>
                                                             <div class="col-8">
                                                                 <input type="number" class="form-control form-control-sm" pattern="[0-9]+"
@@ -275,6 +276,74 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                            <?php else: ?>
+
+                                                <div class="row mt-3">
+                                                    <div class="col-8 offset-2">
+                                                        <div class=""  id="<?= $products[$i]['id'] . '_no_client_2'?>">
+                                                            <div class="row">
+                                                                <div class="col-4 d-flex flex-column justify-content-center align-items-end">
+                                                                    Cantidad
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <input type="number" class="form-control form-control-sm" pattern="[0-9]+"
+                                                                           title="producto" name="quantity" required>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mt-3">
+                                                                <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+                                                                    DNI
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <input type="number" class="form-control form-control-sm" pattern="[0-9]+" max="99999999"
+                                                                           title="dni" name="dni_client" required  >
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="d-none" id="<?= $products[$i]['id'] . '_no_client' ?>">
+
+                                                            <div class="mt-0">
+                                                                <p class="text-danger text-center">Complete sus datos por favor</p>
+                                                            </div>
+
+                                                            <div class="row mt-3">
+                                                                <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+                                                                    Nombre
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <input type="text" class="form-control form-control-sm na_te" pattern="[a-zA-Z]+" maxlength="20" value=""
+                                                                           title="name" name="name_client">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mt-3 ">
+                                                                <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+                                                                    Teléfono
+                                                                </div>
+                                                                <div class="col-8">
+                                                                    <input type="number" class="form-control form-control-sm na_te" pattern="[0-9]+" max="99999999" value=""
+                                                                           title="telefono" name="phone_client">
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <div class="col-8 offset-2 d-flex justify-content-center">
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input name="cbx_accept_order" type="checkbox" class="custom-control-input" id="<?= $products[$i]['id'] . 'cbx' ?>"
+                                                                   title="<?= $products[$i]['name'] ?>">
+                                                            <label class="custom-control-label" for="<?= $products[$i]['id'] . 'cbx' ?>">Seguro de realizar el pedido</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             <?php endif; ?>
 
                                         </div>
@@ -407,7 +476,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="/public/libraries/js/sweetAlert2.js"></script>
-<script src="/public/js/coproduc_main.min.js"></script>
+<script src="/public/js/coproduc_main.js"></script>
 <script src="/public/js/mail.js"></script>
 </body>
 </html>
