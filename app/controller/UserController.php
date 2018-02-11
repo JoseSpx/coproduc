@@ -11,6 +11,14 @@ class UserController extends Controller {
         $this->view("user/order");
     }
 
+    public function order_detail(){
+        $this->view("user/order_detail");
+    }
+
+    public function order_list(){
+        $this->view("user/order_list");
+    }
+
     public function update_username(){
         $this->database("update_username");
     }
@@ -23,6 +31,9 @@ class UserController extends Controller {
         $this->database("update_data");
     }
 
+    public function order_detail_save(){
+        $this->database("order_detail_save");
+    }
 
 
 }

@@ -2,7 +2,7 @@
 
 require_once __DIR__ .'/Connection.php';
 
-class Order extends Connection {
+class Order {
 
     public function insert($dni, $product, $quantity){
         $conn = Connection::connect();
@@ -104,7 +104,7 @@ class Order extends Connection {
 
     public function getAllOrdersFromAClient($dni){
         $conn = Connection::connect();
-        $ps = $conn->prepare("select p.name AS product ,quantity, date_order, date_confirmation, `order`.state from `order` 
+        $ps = $conn->prepare("select `order`.id AS order_id,  p.name AS product ,quantity, date_order, date_confirmation, `order`.state from `order` 
             INNER JOIN product p ON `order`.product_id = p.id WHERE user_data_dni = :dni ORDER BY `order`.id DESC LIMIT 100");
 
         $ps->execute(array(
@@ -132,6 +132,43 @@ class Order extends Connection {
            ':dni' => $dni
         ));
         return $ps->fetchColumn(0);
+    }
+
+    public function getAllFinancialfromAOrder($id_order){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("select id,cod_op, monto, date, time, entity from financial_entity WHERE order_id = :order");
+        $ps->execute(array(
+           ':order' => $id_order
+        ));
+        return $ps->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function getNameOfTheProduct($id_order){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("select name from `order` INNER JOIN product p ON `order`.product_id = p.id
+                                          WHERE `order`.id = :id_order LIMIT 1");
+        $ps->execute(array(
+           ':id_order' => $id_order
+        ));
+
+        return $ps->fetchColumn(0);
+    }
+
+    public function insert_financial_pay($cod_op, $monto, $date, $time, $entity, $order_id){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("insert into financial_entity(cod_op, order_id, date, time, entity, monto) 
+                                          VALUES (:cod_op, :order_id, :dat, :tim, :entity, :monto)");
+
+        return $ps->execute(array(
+            ':cod_op' => $cod_op,
+            ':order_id' => $order_id,
+            ':dat' => $date,
+            ':tim' => $time,
+            ':entity' => $entity,
+            ':monto' => $monto
+
+        ));
+        //return true;
     }
 
 }

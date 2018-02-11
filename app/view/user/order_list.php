@@ -7,7 +7,10 @@
     }
 
     $order = new Order();
-    $orderResultSet = $order->getAllOrdersFromAClient($_SESSION['user_dni']);
+    $orderResultSet = $order->getAllFinancialfromAOrder($_POST['nro_order']);
+
+    $name_product = $order->getNameOfTheProduct($_POST['nro_order']);
+
 ?>
 
 <!DOCTYPE html>
@@ -70,7 +73,28 @@
 
     <div class="row pt-4 pb-4">
         <div class="col-12 title d-flex justify-content-center text-uppercase">
-            Lista de Pedidos
+            Lista de Pagos
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-12 ">
+            <span class="text-dark">Los datos son referidos a pagos realizados en alguna entidad bancaria.</span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-12 ">
+            Nombre del producto : <span class="font-weight-bold"><?= $name_product ?></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-2">
+            <form class="form_order_detail" action="/user/order_detail" method="post">
+                <input type="hidden" name="id_order" value="<?= $_POST['nro_order'] ?>">
+                <button type="submit" class="form-control btn btn-sm btn-dark ">Agregar Pago</button>
+            </form>
         </div>
     </div>
 
@@ -80,61 +104,47 @@
                 <thead class="color-primary">
                     <tr>
                         <th class="text-center" scope="col">#</th>
-                        <th class="text-center" scope="col">Producto</th>
-                        <th class="text-center" scope="col">Cantidad</th>
-                        <th class="text-center" scope="col">Fecha de Pedido</th>
-                        <th class="text-center" scope="col">Fecha de Entrega</th>
-                        <th class="text-center" scope="col">Estado</th>
-                        <th class="text-center" scope="col">Pagos</th>
+                        <th class="text-center" scope="col">Cod. Operación</th>
+                        <th class="text-center" scope="col">Fecha</th>
+                        <th class="text-center" scope="col">Hora</th>
+                        <th class="text-center" scope="col">Entidad</th>
+                        <th class="text-center" scope="col">Monto</th>
+
                     </tr>
                 </thead>
                 <tbody>
-                    <?php for ($i = 0; $i < count($orderResultSet); $i++): ?>
-                        <tr>
-                            <th class="text-center" scope="row"><?= $i + 1?></th>
-                            <td class="text-center">
-                                <?= $orderResultSet[$i]['product'] ?>
-                            </td>
-                            <td class="text-center">
-                                <?= $orderResultSet[$i]['quantity'] ?>
-                            </td>
-                            <td class="text-center">
-                                <?= $orderResultSet[$i]['date_order'] ?>
-                            </td>
-                            <td class="text-center">
-                                <?php
-                                $confirmation = $orderResultSet[$i]['date_confirmation'];
-                                if( $confirmation == '' || $confirmation == null){
-                                    echo "Desconocido";
-                                }
-                                else{
-                                    echo $orderResultSet[$i]['state'];
-                                }
-                                ?>
-                            </td>
-                            <td class="text-center">
-                                <?php
-                                    $state= $orderResultSet[$i]['state'];
-                                    if($state == 'P'){
-                                        echo "Pagado";
-                                    }
-                                    elseif ($state == 'D'){
-                                        echo "Debe";
-                                    }
-                                    else{
-                                        echo "Anulado";
-                                    }
-                                ?>
-                            </td>
-                            <td class="text-center">
-                                <form class="form_order_detail" action="/user/order_list" method="post">
-                                    <input type="hidden" name="nro_order" value="<?= $orderResultSet[$i]['order_id'] ?>">
-                                    <button type="submit" class="btn btn-sm btn-primary color-primary btn_pay">Ver</button>
-                                </form>
+
+                    <?php if(count($orderResultSet) == 0): ?>
+
+                        <tr class="alert-dark">
+                            <td colspan="6">
+                                No hay ninguna orden de Pago
                             </td>
                         </tr>
 
-                    <?php endfor; ?>
+                    <?php else: ?>
+                        <?php for ($i = 0; $i < count($orderResultSet); $i++): ?>
+                            <input type="hidden" value="<?= $orderResultSet[$i]['id'] ?>" title="code" name="cod_financial">
+                            <tr>
+                                <td class="text-center" scope="row"><?= $i + 1?></td>
+                                <td class="text-center">
+                                    <?= $orderResultSet[$i]['cod_op'] ?>
+                                </td>
+                                <td class="text-center">
+                                    <?= $orderResultSet[$i]['date'] ?>
+                                </td>
+                                <td class="text-center">
+                                    <?= $orderResultSet[$i]['time'] ?>
+                                </td>
+                                <td class="text-center">
+                                    <?= $orderResultSet[$i]['entity'] ?>
+                                </td>
+                                <td class="text-center">
+                                    <?= $orderResultSet[$i]['monto'] ?>
+                                </td>
+                            </tr>
+                        <?php endfor; ?>
+                    <?php endif; ?>
                 </tbody>
             </table>
         </div>

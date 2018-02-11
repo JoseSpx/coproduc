@@ -6,8 +6,6 @@ if(!isset($_SESSION['user'])){
     header("location:/");
 }
 
-$order = new Order();
-$orderResultSet = $order->getAllOrdersFromAClient($_SESSION['user_dni']);
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +33,7 @@ $orderResultSet = $order->getAllOrdersFromAClient($_SESSION['user_dni']);
 
     <link rel="stylesheet" href="/public/libraries/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/public/libraries/font/css/icon.css">
-    <link rel="stylesheet" href="/public/css/coproduc_user_order.min.css">
+    <link rel="stylesheet" href="/public/css/coproduc_user_order_detail.css">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -69,70 +67,71 @@ $orderResultSet = $order->getAllOrdersFromAClient($_SESSION['user_dni']);
 <div class="container">
 
     <div class="row pt-4 pb-4">
-        <div class="col-12 title d-flex justify-content-center text-uppercase">
-            Lista de Pedidos
+        <div class="col-10 offset-1 col-lg-12 offset-lg-0 title d-flex justify-content-center text-uppercase">
+            Pago del pedido
         </div>
     </div>
 
     <div class="row">
-        <div class="col-12 ">
-            <table class="table table-hover table-sm">
-                <thead class="color-primary">
-                <tr>
-                    <th class="text-center" scope="col">#</th>
-                    <th class="text-center" scope="col">Producto</th>
-                    <th class="text-center" scope="col">Cantidad</th>
-                    <th class="text-center" scope="col">Fecha de Pedido</th>
-                    <th class="text-center" scope="col">Fecha de Entrega</th>
-                    <th class="text-center" scope="col">Estado</th>
-                    <th class="text-center" scope="col">Pagos</th>
-                </tr>
-                </thead>
-                <tbody>
-                <?php for ($i = 0; $i < count($orderResultSet); $i++): ?>
-                    <tr>
-                        <th class="text-center" scope="row"><?= $i + 1?></th>
-                        <td class="text-center">
-                            <?= $orderResultSet[$i]['product'] ?>
-                        </td>
-                        <td class="text-center">
-                            <?= $orderResultSet[$i]['quantity'] ?>
-                        </td>
-                        <td class="text-center">
-                            <?= $orderResultSet[$i]['date_order'] ?>
-                        </td>
-                        <td class="text-center">
-                            <?php
-                            $confirmation = $orderResultSet[$i]['date_confirmation'];
-                            if( $confirmation == '' || $confirmation == null){
-                                echo "Desconocido";
-                            }
-                            else{
-                                echo $orderResultSet[$i]['state'];
-                            }
-                            ?>
-                        </td>
-                        <td class="text-center">
-                            <?php
-                            $state= $orderResultSet[$i]['state'];
-                            if($state == 'P'){
-                                echo "Pagado";
-                            }
-                            elseif ($state == 'D'){
-                                echo "Debe";
-                            }
-                            else{
-                                echo "Anulado";
-                            }
-                            ?>
-                        </td>
-                        <td class="text-center">
-                            <button class="btn btn-sm btn-primary color-primary btn_pay">Ver</button>
-                        </td>
-                    </tr>
-                <?php endfor; ?>
-                </tbody>
-            </table>
+        <div class="col-10 offset-1 col-lg-6 offset-lg-3 ">
+
+            <form id="form_pay" method="post" action="/user/order_detail_save">
+
+                <input type="hidden" name="id_order" value="<?= $_POST['id_order'] ?>">
+
+                <div class="form-group">
+                    <label for="inputCode">Código de Operación</label>
+                    <input name="code" type="text" class="form-control" id="inputCode" placeholder="Código" maxlength="20" required>
+                    <small id="code-error" class="monto-error text-danger d-none">No se acepta letras u otro carácteres</small>
+                </div>
+
+                <div class="form-group ">
+                    <label for="inputMonto">Monto</label>
+                    <input name="monto" type="text" class="form-control" id="inputMonto" placeholder="Código" maxlength="20" required>
+                    <small id="monto-error" class="monto-error text-danger d-none">No se acepta letras u otro carácteres (excepto el punto) .</small>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="inputDate">Fecha</label>
+                            <input name="date" type="date" class="form-control" id="inputDate" placeholder="" required>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="inputTime">Hora</label>
+                            <input name="time" type="time" class="form-control" id="inputTime" placeholder="Hora">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="bank">Tipo de Banco</label>
+                    <select class="form-control" name="bank" id="bank" required>
+                        <option disabled value="" selected >Elegir</option>
+                        <option value="Banco Central del Perú">Banco Central del Perú</option>
+                        <option value="Interbank">Interbank</option>
+                    </select>
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    <input name="cbx" type="checkbox" class="custom-control-input" id="inputCbx">
+                    <label class="custom-control-label" for="inputCbx">Datos ingresados verificados</label>
+                    <small id="cbx-error" class="monto-error text-danger d-none">Confirme</small>
+                </div>
+
+
+                <div class="d-flex justify-content-center col-6 offset-3 col-sm-4 offset-sm-4 mt-4">
+                    <button type="submit" class="form-control btn btn-primary btn_save">Guardar</button>
+                </div>
+
+            </form>
+
+
         </div>
     </div>
 
@@ -143,5 +142,7 @@ $orderResultSet = $order->getAllOrdersFromAClient($_SESSION['user_dni']);
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="/public/libraries/js/sweetAlert2.js"></script>
+<script src="/public/js/validations.min.js"></script>
+<script src="/public/js/user_order_detail.min.js"></script>
 </body>
 </html>
