@@ -15,8 +15,8 @@ class UserController extends Controller {
         $this->view("user/order_detail");
     }
 
-    public function order_list(){
-        $this->view("user/order_list");
+    public function order_list($id){
+        $this->view("user/order_list", $id);
     }
 
     public function update_username(){

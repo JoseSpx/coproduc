@@ -77,7 +77,7 @@ if(!isset($_SESSION['user'])){
 
             <form id="form_pay" method="post" action="/user/order_detail_save">
 
-                <input type="hidden" name="id_order" value="<?= $_POST['id_order'] ?>">
+                <input type="hidden" id="id_order" name="id_order" value="<?= $_POST['id_order'] ?>">
 
                 <div class="form-group">
                     <label for="inputCode">Código de Operación</label>

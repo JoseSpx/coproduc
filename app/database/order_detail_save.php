@@ -22,7 +22,7 @@
     }
 
     if($time != false){
-        $time = $date("Y-m-d", $time);
+        $time = date("H:i", $time);
     }
     else{
         $time = null;

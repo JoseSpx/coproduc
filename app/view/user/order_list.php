@@ -6,10 +6,19 @@
         header("location:/");
     }
 
-    $order = new Order();
-    $orderResultSet = $order->getAllFinancialfromAOrder($_POST['nro_order']);
+    if(empty($id)){
+        header("location:/");
+    }
 
-    $name_product = $order->getNameOfTheProduct($_POST['nro_order']);
+    if(is_array($id)){
+        $id = $id[0];
+    }
+
+
+    $order = new Order();
+    $orderResultSet = $order->getAllFinancialfromAOrder($id);
+
+    $name_product = $order->getNameOfTheProduct($id);
 
 ?>
 
@@ -92,7 +101,7 @@
     <div class="row mb-3">
         <div class="col-2">
             <form class="form_order_detail" action="/user/order_detail" method="post">
-                <input type="hidden" name="id_order" value="<?= $_POST['nro_order'] ?>">
+                <input type="hidden" name="id_order" value="<?= $id ?>">
                 <button type="submit" class="form-control btn btn-sm btn-dark ">Agregar Pago</button>
             </form>
         </div>
@@ -134,7 +143,7 @@
                                     <?= $orderResultSet[$i]['date'] ?>
                                 </td>
                                 <td class="text-center">
-                                    <?= $orderResultSet[$i]['time'] ?>
+                                    <?= ($orderResultSet[$i]['time'] != null) ? $orderResultSet[$i]['time'] : "No asignado" ?>
                                 </td>
                                 <td class="text-center">
                                     <?= $orderResultSet[$i]['entity'] ?>

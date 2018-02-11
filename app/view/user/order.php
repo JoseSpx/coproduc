@@ -127,8 +127,9 @@
                                 ?>
                             </td>
                             <td class="text-center">
-                                <form class="form_order_detail" action="/user/order_list" method="post">
-                                    <input type="hidden" name="nro_order" value="<?= $orderResultSet[$i]['order_id'] ?>">
+                                <form class="form_order_detail" action="/user/order_list/<?= $orderResultSet[$i]['order_id'] ?>"
+                                      method="post">
+                                    <!--input type="hidden" name="nro_order" value="<?= $orderResultSet[$i]['order_id'] ?>" -->
                                     <button type="submit" class="btn btn-sm btn-primary color-primary btn_pay">Ver</button>
                                 </form>
                             </td>

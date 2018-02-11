@@ -14,11 +14,37 @@ $("#form_pay").bind("submit", function () {
         },
 
         success : function (response) {
-            alert("suceess");
+            if (response === 'true'){
+                swal({
+                    title: 'Pago Registrado',
+                    text: "",
+                    type: 'success',
+                    confirmButtonColor: '#FFD238',
+                    confirmButtonText: 'Aceptar'
+                }).then(function () {
+                    let id = document.getElementById("id_order").value;
+                    window.location.href = "/user/order_list/" + id;
+                });
+            }
+            else{
+                swal({
+                    title: 'No se pudo registrar el pago',
+                    text: "",
+                    type: 'error',
+                    confirmButtonColor: '#FFD238',
+                    confirmButtonText: 'Aceptar'
+                });
+            }
         },
 
         error : function () {
-            alert("error");
+            swal({
+                title: 'No se pudo registrar el pago',
+                text: "",
+                type: 'error',
+                confirmButtonColor: '#FFD238',
+                confirmButtonText: 'Aceptar'
+            });
         }
 
     });
