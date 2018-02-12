@@ -11,6 +11,13 @@
                 Productos
             </a>
         </li>
+
+        <li>
+            <a href="/admin/clients/1" class="bg-dark list-group-item flex-column justify-content-center align-items-start text-center">
+                Clientes
+            </a>
+        </li>
+
     </ul>
 </div>
 

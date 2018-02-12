@@ -66,6 +66,9 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav  ml-auto d-flex align-items-center">
             <li class="nav-item ml-2">
+                <a class="nav-link link-nav" href="/user/order"> Lista de Pedidos </a>
+            </li>
+            <li class="nav-item ml-2">
                 <a class="nav-link link-nav" href="/user/config"> Configuración </a>
             </li>
             <li class="nav-item ml-2">
@@ -81,7 +84,7 @@
 <div class="container">
 
     <div class="row pt-4 pb-4">
-        <div class="col-12 title d-flex justify-content-center text-uppercase">
+        <div class="col-10 offset-1 offset-sm-0 col-sm-12 title d-flex justify-content-center text-uppercase">
             Lista de Pagos
         </div>
     </div>
@@ -99,10 +102,10 @@
     </div>
 
     <div class="row mb-3">
-        <div class="col-2">
+        <div class="col-4 col-md-3 col-lg-2">
             <form class="form_order_detail" action="/user/order_detail" method="post">
                 <input type="hidden" name="id_order" value="<?= $id ?>">
-                <button type="submit" class="form-control btn btn-sm btn-dark ">Agregar Pago</button>
+                <button type="submit" class="form-control btn btn-sm color-btn ">Agregar Pago</button>
             </form>
         </div>
     </div>
@@ -112,10 +115,10 @@
             <table class="table table-hover table-sm">
                 <thead class="color-primary">
                     <tr>
-                        <th class="text-center" scope="col">#</th>
+                        <th class="text-center d-none d-sm-block" scope="col">#</th>
                         <th class="text-center" scope="col">Cod. Operación</th>
                         <th class="text-center" scope="col">Fecha</th>
-                        <th class="text-center" scope="col">Hora</th>
+                        <th class="text-center d-none d-sm-block"" scope="col">Hora</th>
                         <th class="text-center" scope="col">Entidad</th>
                         <th class="text-center" scope="col">Monto</th>
 
@@ -135,14 +138,14 @@
                         <?php for ($i = 0; $i < count($orderResultSet); $i++): ?>
                             <input type="hidden" value="<?= $orderResultSet[$i]['id'] ?>" title="code" name="cod_financial">
                             <tr>
-                                <td class="text-center" scope="row"><?= $i + 1?></td>
+                                <td class="text-center d-none d-sm-block" scope="row"><?= $i + 1?></td>
                                 <td class="text-center">
                                     <?= $orderResultSet[$i]['cod_op'] ?>
                                 </td>
                                 <td class="text-center">
                                     <?= $orderResultSet[$i]['date'] ?>
                                 </td>
-                                <td class="text-center">
+                                <td class="text-center d-none d-sm-block">
                                     <?= ($orderResultSet[$i]['time'] != null) ? $orderResultSet[$i]['time'] : "No asignado" ?>
                                 </td>
                                 <td class="text-center">

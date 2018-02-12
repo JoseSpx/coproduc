@@ -34,14 +34,31 @@ button:active, button:focus{
     box-shadow: none;
 }
 
+.btn_cancel{
+    box-shadow: none;
+    border: 0;
+    background-color: #ffd54f ;
+}
+
+.btn_cancel:hover{
+    box-shadow: 0 0 10px black;
+    background-color: #ff9800;
+}
+
+.btn_cancel:focus{
+    box-shadow: none;
+}
+
+
 .btn_save{
     box-shadow: none;
     border: 0;
-    background-color: var(--secondaryColor);
+    background-color: #ffb74d;
 }
 
 .btn_save:hover{
-    background-color: var(--primaryColor);
+    box-shadow: 0 0 10px black;
+    background-color: #ff9800;
 }
 
 .btn_save:focus{
@@ -51,7 +68,7 @@ button:active, button:focus{
 .title{
     font-size: 1.3em;
     font-family: "Open Sans", sans-serif;
-    background-color: var(--secondaryColor);
+    background-color: #ffb74d;
     color: white;
     border-radius: 10px;
     padding: 5px 0;

@@ -230,4 +230,24 @@ class User{
         return $ps->rowCount() == 1; // false == 0
     }
 
+    public function getUsers($page, $clientsByPage){
+
+        $conn = Connection::connect();
+        $start = $clientsByPage * ($page - 1);
+        $ps = $conn->prepare("select dni, name, last_name, email, telephone, telephone2, type, ubication_id from user_data
+                                          ORDER BY dni ASC LIMIT $start, $clientsByPage");
+
+        $ps->execute();
+        return $ps->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function getTotalOfUsers(){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("select dni from  user_data ");
+        $ps->execute();
+
+        return $ps->rowCount();
+    }
+
+
 }

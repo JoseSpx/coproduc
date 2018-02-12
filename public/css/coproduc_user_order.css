@@ -25,13 +25,24 @@ body{
 }
 
 .color-primary{
-    background-color: var(--secondaryColor);
+    background-color: var(--secondaryColor) !important;
     color: white;
+}
+
+.color-btn{
+    background-color: #ffb74d;
+    color: #fff;
+}
+
+.color-btn:focus{
+    background-color: #ffb74d;
+    color: #fff !important;
 }
 
 button:active, button:focus{
     background-color: var(--primaryColor) !important;
     box-shadow: none;
+    color: white;
 }
 
 .btn_pay{
@@ -50,7 +61,7 @@ button:active, button:focus{
 .title{
     font-size: 1.3em;
     font-family: "Open Sans", sans-serif;
-    background-color: var(--secondaryColor);
+    background-color: #ef6c00;
     color: white;
     border-radius: 10px;
     padding: 5px 0;

@@ -69,7 +69,7 @@
 <div class="container">
 
     <div class="row pt-4 pb-4">
-        <div class="col-12 title d-flex justify-content-center text-uppercase">
+        <div class="col-10 offset-1 col-sm-12 offset-sm-0 title d-flex justify-content-center text-uppercase">
             Lista de Pedidos
         </div>
     </div>
@@ -83,7 +83,7 @@
                         <th class="text-center" scope="col">Producto</th>
                         <th class="text-center" scope="col">Cantidad</th>
                         <th class="text-center" scope="col">Fecha de Pedido</th>
-                        <th class="text-center" scope="col">Fecha de Entrega</th>
+                        <th class="text-center d-none d-sm-block" scope="col">Fecha de Entrega</th>
                         <th class="text-center" scope="col">Estado</th>
                         <th class="text-center" scope="col">Pagos</th>
                     </tr>
@@ -101,7 +101,7 @@
                             <td class="text-center">
                                 <?= $orderResultSet[$i]['date_order'] ?>
                             </td>
-                            <td class="text-center">
+                            <td class="text-center d-none d-sm-block">
                                 <?php
                                 $confirmation = $orderResultSet[$i]['date_confirmation'];
                                 if( $confirmation == '' || $confirmation == null){
@@ -130,7 +130,7 @@
                                 <form class="form_order_detail" action="/user/order_list/<?= $orderResultSet[$i]['order_id'] ?>"
                                       method="post">
                                     <!--input type="hidden" name="nro_order" value="<?= $orderResultSet[$i]['order_id'] ?>" -->
-                                    <button type="submit" class="btn btn-sm btn-primary color-primary btn_pay">Ver</button>
+                                    <button type="submit" class=" btn btn-sm color-btn ">Ver</button>
                                 </form>
                             </td>
                         </tr>

@@ -69,8 +69,8 @@
                         <button type="button" data-toggle="modal" data-target="#modalLogin" class="nav-link btn btn-color text-white" >Iniciar Sesión</button>
                     </li>
                 <?php else: ?>
-                    <li class="ml-2 mr-2">
-                        <div class="dropdown">
+                    <li class="ml-2 mr-2 mt-1">
+                        <div class="dropdown d-flex flex-column justify-content-center">
                             <button class="btn btn-color dropdown-toggle text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <?php
                                     $user = $_SESSION['user'];
@@ -79,9 +79,19 @@
                                 ?>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="/user/config">Configuración</a>
-                                <a class="dropdown-item" href="/user/order">Pedidos</a>
-                                <a class="dropdown-item" href="/coproduc/logout">Salir</a>
+                                <div class="d-block d-lg-none">
+                                    <a class="dropdown-item text-center" href="/user/config">Configuración</a>
+                                    <a class="dropdown-item text-center" href="/user/order">Pedidos</a>
+                                    <a class="dropdown-item text-center" href="/coproduc/logout">Salir</a>
+                                </div>
+
+
+                                <div class="d-none d-lg-block">
+                                    <a class="dropdown-item" href="/user/config">Configuración</a>
+                                    <a class="dropdown-item" href="/user/order">Pedidos</a>
+                                    <a class="dropdown-item" href="/coproduc/logout">Salir</a>
+                                </div>
+
                             </div>
                         </div>
                     </li>
@@ -387,26 +397,23 @@
                 <div class="row ">
                     <div class="col-10 offset-1">
                         <div class="row contact-data">
-                            <div class="col-6 d-flex flex-column">
+                            <div class="col-12 col-md-6 d-flex flex-column">
                                 <div class="form-group">
                                     <!--label for="inputName"></label-->
                                     <input name="name" required type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder=" Nombre">
                                 </div>
                                 <div class="form-group mt-3">
-                                    <!--label for="inputEmail">Email</label-->
                                     <input name="email" required type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder=" Email">
                                 </div>
                                 <div class="form-group mt-3">
-                                    <!--label for="inputTelephone">Telefono</label-->
                                     <input name="phone" required type="number" class="form-control" id="inputTelephone" aria-describedby="emailHelp" placeholder=" Teléfono">
                                 </div>
                             </div>
-                            <div class="col-6 d-flex flex-column justify-content-between">
+                            <div class="col-12 col-md-6 mt-3 mt-md-0 d-flex flex-column justify-content-between">
                                 <div class="form-group contact-message">
-                                    <!--label for="inputMessage">Password</label-->
                                     <textarea name="message" required spellcheck="false" type="text" class="form-control" id="inputPass" placeholder="Mensaje"></textarea>
                                 </div>
-                                <div class="d-flex flex-column ">
+                                <div class="d-flex flex-column mt-3 mt-md-0">
                                     <button name="submit" type="submit" class="btn btn-primary contact-submit">ENVIAR</button>
                                 </div>
                             </div>
@@ -477,6 +484,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="/public/libraries/js/sweetAlert2.js"></script>
 <script src="/public/js/coproduc_main.min.js"></script>
-<script src="/public/js/mail.js"></script>
+<script src="/public/js/mail.min.js"></script>
 </body>
 </html>

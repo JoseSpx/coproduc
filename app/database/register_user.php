@@ -43,19 +43,23 @@
         return print json_encode($arrayResult);
     }
 
+    function filter($string){
+        return filter_var(strtolower(trim($string)), FILTER_SANITIZE_STRING);
+    }
+
 
     $dni = $_POST['dni'];
-    $name = $_POST['name'];
-    $lastname = $_POST['lastName'];
-    $email = $_POST['email'];
-    $phone1 = $_POST['phone1'];
-    $phone2 = $_POST['phone2'];
-    $address = $_POST['address'];
-    $reference = $_POST['reference'];
+    $name = filter_var(strtolower(trim($_POST['name'])), FILTER_SANITIZE_STRING);
+    $lastname = filter($_POST['lastName']);
+    $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_STRING);
+    $phone1 = filter($_POST['phone1']);
+    $phone2 = filter($_POST['phone2']);
+    $address = filter($_POST['address']);
+    $reference = filter($_POST['reference']);
     $depar = $_POST['departments'];
     $prov = $_POST['provinces'];
     $district = $_POST['districts'];
-    $urb = $_POST['urb'];
+    $urb = filter($_POST['urb']);
     $pass = $_POST['pass'];
 
     if(!$userdb->existsDNI_userData($dni)){

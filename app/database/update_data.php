@@ -13,8 +13,8 @@
     $dni_old = $_POST['dni_old'];
     $dni_new = $_POST['dni_new'];
 
-    $name = filter_var(trim($_POST['name']), FILTER_SANITIZE_STRING);
-    $lastName = filter_var(trim($_POST['lastName']), FILTER_SANITIZE_STRING);
+    $name = filter_var(strtolower(trim($_POST['name'])), FILTER_SANITIZE_STRING);
+    $lastName = filter_var(strtolower(trim($_POST['lastName'])), FILTER_SANITIZE_STRING);
     $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_STRING);
     $phone1 = filter_var(trim($_POST['phone1']), FILTER_SANITIZE_STRING);
     $phone2 = filter_var(trim($_POST['phone2']), FILTER_SANITIZE_STRING);

@@ -72,7 +72,7 @@ if(!isset($_SESSION['user'])){
         </div>
     </div>
 
-    <div class="row">
+    <div class="row mb-4">
         <div class="col-10 offset-1 col-lg-6 offset-lg-3 ">
 
             <form id="form_pay" method="post" action="/user/order_detail_save">
@@ -125,8 +125,16 @@ if(!isset($_SESSION['user'])){
                 </div>
 
 
-                <div class="d-flex justify-content-center col-6 offset-3 col-sm-4 offset-sm-4 mt-4">
-                    <button type="submit" class="form-control btn btn-primary btn_save">Guardar</button>
+                <div class="row d-flex justify-content-between mt-4">
+
+                    <div class="col-6">
+                        <button type="submit" class="form-control btn btn-primary btn_save">Guardar</button>
+                    </div>
+
+                    <div class="col-6">
+                        <a href="/user/order_list/<?= $_POST['id_order'] ?>" class="form-control btn btn-primary btn_cancel">Cancelar</a>
+                    </div>
+
                 </div>
 
             </form>

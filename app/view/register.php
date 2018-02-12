@@ -74,7 +74,7 @@ $districts = ['La Esperanza','Víctor Larco ','Trujillo','El Porvenir','Huanchac
                                 <label class="d-block" for="inputDNI"> DNI </label>
                             </div>
                             <div class="col-9">
-                                <input name="dni" type="text" class="form-control form-control-sm" id="inputDNI" maxlength="9" required>
+                                <input name="dni" type="text" class="form-control form-control-sm" id="inputDNI" minlength="8" maxlength="8" required>
                             </div>
                         </div>
                         <div class="row">
@@ -253,7 +253,7 @@ $districts = ['La Esperanza','Víctor Larco ','Trujillo','El Porvenir','Huanchac
                                 <label class="d-block" for="inputUser">Usuario </label>
                             </div>
                             <div class="col-9 col-lg-8">
-                                <input name="user" type="text" class="form-control form-control-sm" id="inputUser" required>
+                                <input name="user" type="text" class="form-control form-control-sm" id="inputUser" maxlength="10" required>
                            </div>
                         </div>
                         <div class="row">
