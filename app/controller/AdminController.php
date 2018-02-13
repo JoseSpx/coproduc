@@ -29,6 +29,16 @@ class AdminController extends Controller {
         $this->view("admin/options/clients", $id);
     }
 
+    public function client_data($id){
+        $this->extras("verifyAdmin");
+        $this->view("admin/options/client_data", $id);
+    }
+
+    public function client_eliminate($id){
+        //$this->extras("verifyAdmin");
+        $this->database("admin_client_eliminate", $id);
+    }
+
     public function product_delete($id){
         $id = $id[0];
         $this->database("product_delete", $id);

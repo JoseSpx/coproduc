@@ -73,7 +73,7 @@
                                     ?>
                                 </td>
                                 <td>
-                                    <a href="/admin/product_update_view/<?= $products[$i]['id'] ?>" class="btn btn-sm btn-warning text-white"> Editar </a>
+                                    <a href="/admin/client_data/<?= $users[$i]['dni'] ?>" class="btn btn-sm btn-warning text-white"> Editar </a>
                                     <!--button content="/admin/product_delete/<?= $products[$i]['id'] ?>" class="btn btn-sm btn-danger text-white delete"> Eliminar </button-->
                                 </td>
                             </tr>

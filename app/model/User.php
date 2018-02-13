@@ -220,6 +220,20 @@ class User{
         return $rs ;
     }
 
+    public function getUserDataByDni($dni){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("SELECT dni, name, last_name, email, telephone, telephone2, dpto,
+            prov, dist, urb, address, reference, state, ubication_id AS id_ubication FROM user_data
+            INNER JOIN ubication u2 ON ubication_id = u2.id
+            WHERE dni = :dni ");
+        $ps->execute(array(
+            ':dni' => $dni
+        ));
+
+        $rs = $ps->fetchAll(PDO::FETCH_ASSOC);
+        return $rs ;
+    }
+
     public function existsDNI_userData($dni){
         $conn = Connection::connect();
         $ps = $conn->prepare("select name from user_data WHERE dni =  :dni LIMIT 1");
@@ -235,6 +249,7 @@ class User{
         $conn = Connection::connect();
         $start = $clientsByPage * ($page - 1);
         $ps = $conn->prepare("select dni, name, last_name, email, telephone, telephone2, type, ubication_id from user_data
+                                          WHERE eliminated = '0'
                                           ORDER BY dni ASC LIMIT $start, $clientsByPage");
 
         $ps->execute();
@@ -243,10 +258,19 @@ class User{
 
     public function getTotalOfUsers(){
         $conn = Connection::connect();
-        $ps = $conn->prepare("select dni from  user_data ");
+        $ps = $conn->prepare("select dni from  user_data WHERE eliminated = '0'");
         $ps->execute();
 
         return $ps->rowCount();
+    }
+
+    public function eliminate_logic($dni, $new_dni){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("update user_data set eliminated = '1', dni = :new_dni WHERE dni = :dni");
+        return $ps->execute(array(
+            ':dni' => $dni,
+            ':new_dni' => $new_dni
+        ));
     }
 
 
