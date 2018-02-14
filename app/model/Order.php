@@ -104,7 +104,7 @@ class Order {
 
     public function getAllOrdersFromAClient($dni){
         $conn = Connection::connect();
-        $ps = $conn->prepare("select `order`.id AS order_id,  p.name AS product ,quantity, date_order, date_confirmation, `order`.state from `order` 
+        $ps = $conn->prepare("select `order`.id AS order_id,  p.name AS product ,quantity, date_order, date_confirmation, date_delivery, `order`.state from `order` 
             INNER JOIN product p ON `order`.product_id = p.id WHERE user_data_dni = :dni ORDER BY `order`.id DESC LIMIT 100");
 
         $ps->execute(array(
@@ -150,7 +150,8 @@ class Order {
 
     public function getAllFinancialfromAOrder($id_order){
         $conn = Connection::connect();
-        $ps = $conn->prepare("select id,cod_op, monto, date, time, entity from financial_entity WHERE order_id = :order");
+        $ps = $conn->prepare("select id,cod_op, monto, date, time, entity from financial_entity WHERE order_id = :order
+                AND eliminated = '0'");
         $ps->execute(array(
            ':order' => $id_order
         ));
@@ -203,4 +204,42 @@ class Order {
             ':id_order' => $id_order
         ));
     }
+
+    public function getFinancialPay($id){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("select id, cod_op, order_id, date, time, entity, monto from financial_entity
+                                           WHERE id = :id");
+
+        $ps->execute(array(
+           ':id' => $id
+        ));
+
+        return $ps->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+
+    public function deletePay($id){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("update financial_entity set eliminated = '1' WHERE id = :id");
+        return $ps->execute(array(
+           ':id' => $id
+        ));
+    }
+
+    public function updatePay($id, $cod_op, $date, $time, $entity, $monto){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("update financial_entity set cod_op = :cod, date = :dat , time = :tim,
+                                          entity = :entity, monto = :monto WHERE id = :id");
+
+        return $ps->execute(array(
+            ':cod' => $cod_op,
+            ':dat' => $date,
+            ':tim' => $time,
+            ':entity' => $entity,
+            ':monto' => $monto,
+            ':id' => $id
+        ));
+
+    }
+
 }

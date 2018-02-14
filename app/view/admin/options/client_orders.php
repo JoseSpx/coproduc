@@ -71,12 +71,12 @@
                                 </td>
                                 <td class="text-center d-none d-sm-block">
                                     <?php
-                                    $confirmation = $orderResultSet[$i]['date_confirmation'];
+                                    $confirmation = $orderResultSet[$i]['date_delivery'];
                                     if( $confirmation == '' || $confirmation == null){
                                         echo "Desconocido";
                                     }
                                     else{
-                                        echo $orderResultSet[$i]['state'];
+                                        echo $orderResultSet[$i]['date_delivery'];
                                     }
                                     ?>
                                 </td>

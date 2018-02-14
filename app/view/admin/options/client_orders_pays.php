@@ -54,6 +54,7 @@
                             <th class="text-center" scope="col">Hora</th>
                             <th class="text-center" scope="col">Entidad</th>
                             <th class="text-center" scope="col">Monto</th>
+                            <th class="text-center" scope="col">Editar</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -61,7 +62,7 @@
                         <?php if(count($orderResultSet) == 0): ?>
 
                             <tr class="alert-dark">
-                                <td colspan="6">
+                                <td colspan="7">
                                     No hay ninguna orden de Pago
                                 </td>
                             </tr>
@@ -85,6 +86,9 @@
                                     </td>
                                     <td class="text-center">
                                         <?= $orderResultSet[$i]['monto'] ?>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="/admin/client_order_pay_edit/<?= $orderResultSet[$i]['id'] ?>" type="submit" class=" btn btn-sm btn-danger text-white ">Editar</a>
                                     </td>
                                 </tr>
                             <?php endfor; ?>
