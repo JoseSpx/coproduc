@@ -74,7 +74,7 @@
                                 </td>
                                 <td>
                                     <a href="/admin/client_data/<?= $users[$i]['dni'] ?>" class="btn btn-sm btn-warning text-white"> Editar </a>
-                                    <!--button content="/admin/product_delete/<?= $products[$i]['id'] ?>" class="btn btn-sm btn-danger text-white delete"> Eliminar </button-->
+                                    <a href="/admin/client_orders/<?= $users[$i]['dni'] ?>" class="btn btn-sm btn-danger text-white "> Pedidos </a>
                                 </td>
                             </tr>
                         <?php

@@ -115,6 +115,20 @@ class Order {
 
     }
 
+    public function getOrderFormClient($id_order){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("select user_data_dni,product_id, quantity, date_order, date_delivery, date_confirmation,
+                                          price_unit, state, delivered, name, last_name, dni from `order`
+                                          INNER JOIN user_data u ON `order`.user_data_dni = u.dni
+                                          WHERE id = :id_order");
+
+        $ps->execute(array(
+           ':id_order' => $id_order
+        ));
+
+        return $ps->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     public function existsDNI($dni){
         $conn = Connection::connect();
         $ps = $conn->prepare("select name from user_data WHERE dni =  :dni LIMIT 1");
@@ -171,4 +185,22 @@ class Order {
         //return true;
     }
 
+    public function update_order($id_order, $quantity, $date_delivery, $date_confirmation,
+                                    $price_unit, $state, $delivered){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("update `order` set quantity = :quantity , date_delivery = :date_delivery,
+                                          date_confirmation = :date_confirmation, price_unit = :price_unit,
+                                          state = :state, delivered = :delivered WHERE id = :id_order");
+
+
+        return $ps->execute(array(
+            ':quantity' => $quantity,
+            ':date_delivery' => $date_delivery,
+            ':date_confirmation' => $date_confirmation,
+            ':price_unit' => $price_unit,
+            ':state' => $state,
+            ':delivered' => $delivered,
+            ':id_order' => $id_order
+        ));
+    }
 }
