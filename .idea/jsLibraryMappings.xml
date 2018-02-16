@@ -3,6 +3,7 @@
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$/public/js/admin_client_data.js" libraries="{jquery-3.2.1}" />
     <file url="file://$PROJECT_DIR$/public/js/admin_client_order_edit.js" libraries="{jquery-3.2.1}" />
+    <file url="file://$PROJECT_DIR$/public/js/admin_client_order_pay_new.js" libraries="{jquery-3.2.1}" />
     <file url="file://$PROJECT_DIR$/public/js/admin_client_pay.js" libraries="{jquery-3.2.1}" />
     <file url="file://$PROJECT_DIR$/public/js/admin_delete_product.js" libraries="{jquery-3.2.1}" />
     <file url="file://$PROJECT_DIR$/public/js/admin_login.js" libraries="{jquery-3.2.1}" />

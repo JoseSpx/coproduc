@@ -38,7 +38,7 @@
             <div class="row">
                 <div class="col-11 mx-auto mt-4">
                     <h1 style="padding-top: 15px"> Sección Pagos del Pedido <small class="text-muted"> | Lista de Pedidos</small></h1>
-                    <a class="btn btn-primary text-white mt-1" href="/admin/product_new">+ Agregar Pago</a>
+                    <a class="btn btn-primary text-white mt-1" href="/admin/client_order_pay_new/<?= $id ?>">+ Agregar Pago</a>
                 </div>
             </div>
 

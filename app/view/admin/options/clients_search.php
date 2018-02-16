@@ -1,18 +1,23 @@
 <?php
     require_once __DIR__ . '/../../../model/User.php';
 
-    if(empty($id)){
-        $id = 1;
+    if(!empty($_POST['type'])){
+
+        $u = new User();
+
+        $search = filter_var(trim($_POST['search']), FILTER_SANITIZE_STRING);
+
+        if($_POST['type'] == 'dni'){
+            $users = $u->search_by_dni($search);
+        }
+        else{
+            $users = $u->search_by_lastName($search);
+        }
+
     }
 
-    if(is_array($id)){
-        $id = $id[0];
-    }
 
-    $u = new User();
-    $total_users = $u->getTotalOfUsers();
-    $nro_pages = ceil($total_users / 8);
-    $users = $u->getUsers($id, 8);
+
 
 ?>
 <!DOCTYPE html>
@@ -41,17 +46,38 @@
         <div class="container-fluid div-main">
             <div class="row">
                 <div class="col-11 mx-auto mt-4">
-                    <h1 style="padding-top: 15px"> Sección Clientes <small class="text-muted"> | Lista de Clientes</small></h1>
+                    <h1 style="padding-top: 15px"> Buscar Clientes <small class="text-muted"> | Lista de Clientes</small></h1>
                     <!--a class="btn btn-primary text-white mt-1" href="/admin/product_new">+ NUEVO PRODUCTO</a-->
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-11 mx-auto">
-                    <a href="/admin/clients_search/" class="btn btn-primary" >Buscar Cliente</a>
+                    <a href="/admin/clients/1" class="btn btn-primary" >Ver todos los Clientes</a>
                 </div>
             </div>
 
+            <div class="row mt-3">
+                <div class="col-11 mx-auto">
+                    <form id="form_search" action="/admin/clients_search" class="" method="post">
+                        <div class="row">
+                            <div class="col-6">
+                                <input name="search" type="text" class="form-control" title="textToSearch">
+                            </div>
+                            <div class="col-3">
+                                <select name="type" id="" class="form-control" title="typeOfSearch">
+                                    <option value="dni">Por DNI</option>
+                                    <option value="last_name">Por Apellidos</option>
+                                </select>
+                            </div>
+                            <div class="col-3">
+                                <button class="form-control btn btn-danger text-white" type="submit">Buscar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
             <div class="row mt-4">
                 <div class="col-11 mx-auto">
                     <table class="table table-hover">
@@ -67,7 +93,9 @@
                         </thead>
                         <tbody>
                         <?php
-                            for ($i = 0; $i < count($users); $i++):
+                            if(!empty($_POST['type'])):
+                                if (count($users) > 0):
+                                    for ($i = 0; $i < count($users) ; $i++):
                         ?>
                             <tr>
                                 <td> <?= $users[$i]['dni'] ?></td>
@@ -85,64 +113,35 @@
                                 </td>
                                 <td>
                                     <a href="/admin/client_data/<?= $users[$i]['dni'] ?>" class="btn btn-sm btn-warning text-white"> Editar </a>
-                                    <a href="/admin/client_orders/<?= $users[$i]['dni'] ?>" class="btn btn-sm btn-danger text-white "> Pedidos </a>
+                                    <a href="/admin/client_orders/<?= $users[$i]['dni'] ?>" class="btn btn-sm btn-success text-white "> Pedidos </a>
                                 </td>
                             </tr>
                         <?php
-                            endfor;
+                                    endfor;
+                                else:
+                                    ?>
+
+                                    <tr>
+                                        <td colspan="6">No existe coincidencias</td>
+                                    </tr>
+
+
+                                <?php
+                                endif;
+                            else:
                         ?>
+
+                            <tr>
+                                <td colspan="6">No existe coincidencias</td>
+                            </tr>
+
+
+                        <?php endif; ?>
                         </tbody>
                     </table>
                 </div>
             </div>
 
-
-            <div class="row mb-4">
-                <div class="col-11 mx-auto d-flex justify-content-center">
-                    <nav aria-label="...">
-                        <ul class="pagination">
-
-                            <?php if($id == 1): ?>
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="/admin/clients" tabindex="-1">Anterior</a>
-                                </li>
-                            <?php else: ?>
-                                <li class="page-item">
-                                    <a class="page-link" href="/admin/clients/<?= $id - 1 ?>" tabindex="-1">Anterior</a>
-                                </li>
-                            <?php endif; ?>
-
-
-                            <?php for ($i = 1 ; $i < $nro_pages + 1 ; $i++): ?>
-                                <?php if($id == $i): ?>
-                                    <li class="page-item active">
-                                        <a class="page-link" href="#"><?= $id ?><span class="sr-only">(current)</span></a>
-                                    </li>
-                                <?php else: ?>
-                                    <li class="page-item">
-                                        <a class="page-link" href="/admin/clients/<?= $i ?>"><?= $i ?></a>
-                                    </li>
-                                <?php endif; ?>
-                            <?php endfor; ?>
-
-                            <?php if($id == $nro_pages): ?>
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="/admin/clients" tabindex="-1">Siguiente</a>
-                                </li>
-                            <?php else: ?>
-                                <li class="page-item">
-                                    <a class="page-link" href="/admin/clients/<?= $id + 1 ?>" tabindex="-1">Siguiente</a>
-                                </li>
-                            <?php endif; ?>
-
-
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-
-
-        </div><!-- Main Col END -->
 
         <!-- pagination -->
 

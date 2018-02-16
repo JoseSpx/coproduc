@@ -1,8 +1,8 @@
 <?php
 
     header("Content-type: application/json");
-
-    if(!isset($_POST['code'])){
+    //TODO : crear otor igual
+    if(!isset($_POST['id_order'])){
         return print json_encode("false");
     }
 

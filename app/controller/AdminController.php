@@ -74,6 +74,16 @@ class AdminController extends Controller {
         $this->database("admin_order_pay_edit_update");
     }
 
+    public function client_order_pay_new($id){
+        $this->extras("verifyAdmin");
+        $this->view("admin/options/client_order_pay_new", $id);
+    }
+
+    public function clients_search($id){
+        $this->extras("verifyAdmin");
+        $this->view("admin/options/clients_search", $id);
+    }
+
     public function product_delete($id){
         $id = $id[0];
         $this->database("product_delete", $id);

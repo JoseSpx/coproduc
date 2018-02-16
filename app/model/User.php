@@ -273,5 +273,24 @@ class User{
         ));
     }
 
+    public function search_by_dni($dni){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("select * from user_data WHERE dni = :dni AND eliminated = '0'");
+        $ps->execute(array(
+           ':dni' => $dni
+        ));
+
+        return $ps->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function search_by_lastName($lastName){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("select * from user_data WHERE user_data.last_name like :lastName AND  eliminated = '0'");
+        $ps->execute(array(
+            ':lastName' => $lastName
+        ));
+
+        return $ps->fetchAll(PDO::FETCH_ASSOC);
+    }
 
 }

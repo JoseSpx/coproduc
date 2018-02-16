@@ -45,7 +45,9 @@ $("#form_order_update").bind("submit", function () {
                     'Pedido Actualizado',
                     '',
                     'success'
-                )
+                ).then(function () {
+                    window.history.back();
+                })
             }
             else{
                 swal(
