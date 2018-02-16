@@ -69,7 +69,7 @@
 <div class="container">
 
     <div class="row pt-4 pb-4">
-        <div class="col-10 offset-1 col-sm-12 offset-sm-0 title d-flex justify-content-center text-uppercase">
+        <div class="col-10 offset-1 col-sm-12 offset-sm-0 title bg-danger d-flex justify-content-center text-uppercase">
             Lista de Pedidos
         </div>
     </div>
@@ -89,6 +89,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                <?php if(count($orderResultSet) > 0 ): ?>
                     <?php for ($i = 0; $i < count($orderResultSet); $i++): ?>
                         <tr>
                             <th class="text-center" scope="row"><?= $i + 1?></th>
@@ -134,8 +135,14 @@
                                 </form>
                             </td>
                         </tr>
-
                     <?php endfor; ?>
+                <?php else:?>
+                <tr>
+                    <td colspan="7" class="bg-light">
+                        No existen pedidos
+                    </td>
+                </tr>
+                <?php endif; ?>
                 </tbody>
             </table>
         </div>

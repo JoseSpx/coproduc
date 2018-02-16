@@ -139,7 +139,7 @@ $districts = ['La Esperanza','Víctor Larco ','Trujillo','El Porvenir','Huanchac
                                 <label class="d-block" for="inputPhone2"> Teléfono Opcional</label>
                             </div>
                             <div class="col-9 col-lg-3  mt-3 mt-lg-0">
-                                <input name="phone2" type="number" class="form-control form-control-sm" id="inputPhone2" maxlength="20" required>
+                                <input name="phone2" type="number" class="form-control form-control-sm" id="inputPhone2" maxlength="20">
                             </div>
                         </div>
                     </div>

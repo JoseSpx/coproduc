@@ -50,10 +50,10 @@
 
     $dni = $_POST['dni'];
     $name = filter_var(strtolower(trim($_POST['name'])), FILTER_SANITIZE_STRING);
-    $lastname = filter($_POST['lastName']);
+    $lastname = filter(strtolower($_POST['lastName']));
     $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_STRING);
     $phone1 = filter($_POST['phone1']);
-    $phone2 = filter($_POST['phone2']);
+    $phone2 = (empty($_POST['phone2'])) ? null : filter($_POST['phone2']);
     $address = filter($_POST['address']);
     $reference = filter($_POST['reference']);
     $depar = $_POST['departments'];

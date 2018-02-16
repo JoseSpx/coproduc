@@ -242,4 +242,26 @@ class Order {
 
     }
 
+    public function getTotalLastOrders(){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("select * from `order` 
+                                                  INNER JOIN user_data u ON `order`.user_data_dni = u.dni
+                                                  INNER JOIN product p ON `order`.product_id = p.id
+                                                  ORDER BY `order`.date_order DESC ");
+        $ps->execute();
+        return $ps->rowCount();
+    }
+
+    public function getLastOrders($page, $perPage){
+        $conn = Connection::connect();
+        $init = ($page - 1) * $perPage;
+        $ps = $conn->prepare("select `order`.id AS id, user_data_dni,product_id, quantity, date_order, date_delivery, date_confirmation,
+                                          price_unit, `order`.state AS state, delivered, last_name, dni, p.name AS name_product from `order` 
+                                          INNER JOIN user_data u ON `order`.user_data_dni = u.dni
+                                          INNER JOIN product p ON `order`.product_id = p.id
+                                          ORDER BY `order`.date_order DESC LIMIT $init, 8");
+        $ps->execute();
+        return $ps->fetchAll(PDO::FETCH_ASSOC);
+    }
+
 }

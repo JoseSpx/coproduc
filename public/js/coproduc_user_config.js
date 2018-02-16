@@ -17,7 +17,7 @@ $("#form_update_username").bind("submit",function () {
             }
             else{
                 swal({
-                    title: 'Ocurrio una acción inesperada',
+                    title: 'Usuario ya existe',
                     text : '',
                     type : 'error',
                     confirmButtonColor: '#FFD238',
@@ -27,7 +27,7 @@ $("#form_update_username").bind("submit",function () {
        },
        error : function () {
            swal({
-               title: 'Ocurrio una acción inesperada',
+               title: 'Ocurrio una acción inesperada.',
                text : '',
                type : 'error',
                confirmButtonColor: '#FFD238',
@@ -93,6 +93,25 @@ $("#form_update_data").bind("submit", function () {
         url : $(this).attr('action'),
         data : $(this).serialize(),
 
+        beforeSend : function (xhr) {
+            let dni = document.getElementById("inputDNI").value;
+            if (!isInteger(dni)){
+                let dni = document.getElementById("error-dni");
+                if (dni.classList.contains("d-none")){
+                    dni.classList.remove("d-none");
+                }
+                xhr.abort();
+            }
+            else{
+                let dni = document.getElementById("error-dni");
+                if (!dni.classList.contains("d-none")){
+                    dni.classList.add("d-none");
+                }
+            }
+
+        },
+        
+        
         success : function (response) {
             if (response === 'true'){
                 swal({
@@ -101,6 +120,8 @@ $("#form_update_data").bind("submit", function () {
                     type: 'success',
                     confirmButtonColor: '#FFD238',
                     confirmButtonText: 'Aceptar'
+                }).then(function () {
+                    location.reload();
                 });
             }
             else if (response === 'dni_exists'){

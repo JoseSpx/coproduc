@@ -106,13 +106,13 @@
                                             <label for="inputDNI"> DNI </label>
                                         </div>
                                         <div class="col-9 col-lg-10">
-                                            <input name="dni_new" value="<?= $data['dni'] ?>" type="number" class="form-control form-control-sm" id="inputDNI" max="99999999" required>
+                                            <input name="dni_new" value="<?= $data['dni'] ?>" type="text" class="form-control form-control-sm" id="inputDNI" minlength="8" maxlength="8" required>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-9 col-lg-10 offset-3 offset-lg-2">
                                             <small id="error-dni" class="alert alert-danger form-text text-muted d-none">
-                                                DNI ya registrado
+                                                DNI no válido o ya registrado
                                             </small>
                                         </div>
                                     </div>
@@ -374,6 +374,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="/public/libraries/js/sweetAlert2.js"></script>
+<script src="/public/js/validations.min.js"></script>
 <script src="/public/js/coproduc_user_config.min.js"></script>
 </body>
 </html>

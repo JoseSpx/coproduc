@@ -103,7 +103,7 @@ $("#form-register").bind("submit",function () {
                });
            }
            else{
-               swal("Ocurrió un error inseperado");
+               //swal("Ocurrió un error inseperado");
            }
 
        },

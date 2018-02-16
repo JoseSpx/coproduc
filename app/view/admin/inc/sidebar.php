@@ -18,6 +18,12 @@
             </a>
         </li>
 
+        <li>
+            <a href="/admin/orders/1" class="bg-dark list-group-item flex-column justify-content-center align-items-start text-center">
+                Pedidos
+            </a>
+        </li>
+
     </ul>
 </div>
 
