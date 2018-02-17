@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Coproduc</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="/public/img/icon.png"/>
 
     <!-- Open Graph -->
@@ -376,11 +376,48 @@
 
     <!-- about us --->
     <section id="about-us" class="mt-5">
-        <div class="container-fluid">
-            <div class="row ">
-                <img class="img-fluid " src="/public/img/about-us.jpg" alt="">
-            </div>
+
+        <div class="d-none d-md-flex">
+            <img class="img-fluid" src="/public/img/about-us.jpg" alt="about-us">
         </div>
+
+
+        <div class="container-fluid d-block d-md-none">
+            <div class="row d-block d-md-none">
+                <div class="col-10 offset-1 d-flex justify-content-center">
+                    <h2 class="titles">NOSOTROS</h2>
+                </div>
+            </div>
+
+            <div class="container d-block d-md-none mt-3">
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <p class="text-justify">Somos una empresa 100% dedicada a distribuir productos de calidad y confiables
+                            pensando en ti y tu familia.</p>
+                        <p class="text-justify"><b>COPRODUC</b> nace ofreciendo diversos productos hasta la puerta de tu casa ahorrando tiempo y dinero</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <img class="img-fluid" src="/public/img/about-us_small.jpg" alt="about-us">
+                </div>
+            </div>
+
+        </div>
+
+
+
+            <!--div class="container d-block d-md-none">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="text-center">Somos una empresa 100% dedicada a distribuir productos de calidad y confiables
+                            pensando en ti y tu familia.</p>
+                        <p><b>COPRODUC</b> nace ofreciendo diversos productos hasta la puerta de tu casa ahorrando tiempo y dinero</p>
+                    </div>
+                </div>
+            </div-->
     </section>
 
     <!-- contact -->
@@ -395,7 +432,7 @@
 
         <div class="container mt-3">
             <div class="row">
-                <div class="col-12">
+                <div class="col-10 offset-1">
                     <p class="text-center">Siempre dispuestos a responder tus dudas. Escríbenos</p>
                 </div>
             </div>

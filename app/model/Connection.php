@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../config/env.php';
+//require_once __DIR__ . '/../config/env_hosting.php';
 
 class Connection{
 
