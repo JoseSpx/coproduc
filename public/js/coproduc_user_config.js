@@ -15,7 +15,7 @@ $("#form_update_username").bind("submit",function () {
                     confirmButtonText: 'Aceptar'
                 });
             }
-            else{
+            else if (response === 'false'){
                 swal({
                     title: 'Usuario ya existe',
                     text : '',
@@ -27,7 +27,7 @@ $("#form_update_username").bind("submit",function () {
        },
        error : function () {
            swal({
-               title: 'Ocurrio una acción inesperada.',
+               title: 'Ocurrio una acción inesperada',
                text : '',
                type : 'error',
                confirmButtonColor: '#FFD238',

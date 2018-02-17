@@ -83,8 +83,14 @@
 
 <div class="container">
 
-    <div class="row pt-4 pb-4">
+    <!--div class="row pt-4 pb-4">
         <div class="col-10 offset-1 offset-sm-0 col-sm-12 title d-flex justify-content-center text-uppercase">
+            Lista de Pagos
+        </div>
+    </div-->
+
+    <div class="row pt-4 pb-4 d-flex justify-content-center">
+        <div class="col-auto text-uppercase title">
             Lista de Pagos
         </div>
     </div>

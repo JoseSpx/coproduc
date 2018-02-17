@@ -7,7 +7,7 @@
     }
 
     $order = new Order();
-    $orderResultSet = $order->getAllOrdersFromAClient($_SESSION['user_dni']);
+    $orderResultSet = $order->getAllOrdersFromAClientNoAnulated($_SESSION['user_dni']);
 ?>
 
 <!DOCTYPE html>
@@ -68,8 +68,14 @@
 
 <div class="container">
 
-    <div class="row pt-4 pb-4">
-        <div class="col-10 offset-1 col-sm-12 offset-sm-0 title bg-danger d-flex justify-content-center text-uppercase">
+    <!--div class="row pt-4 pb-4">
+        <div class="col-10 offset-1 col-sm-12 offset-sm-0 title bg d-flex justify-content-center text-uppercase">
+            Lista de Pedidos
+        </div>
+    </div-->
+
+    <div class="row pt-4 pb-4 d-flex justify-content-center">
+        <div class="col-auto text-uppercase title">
             Lista de Pedidos
         </div>
     </div>
@@ -77,13 +83,13 @@
     <div class="row">
         <div class="col-12 ">
             <table class="table table-hover table-sm">
-                <thead class="color-primary">
+                <thead class="bg-warning text-white">
                     <tr>
                         <th class="text-center" scope="col">#</th>
                         <th class="text-center" scope="col">Producto</th>
                         <th class="text-center" scope="col">Cantidad</th>
-                        <th class="text-center" scope="col">Fecha de Pedido</th>
-                        <th class="text-center d-none d-sm-block" scope="col">Fecha de Entrega</th>
+                        <th class="text-center " scope="col">Fecha de Pedido</th>
+                        <th class="text-center d-none d-sm-table-cell" scope="col">Fecha de Entrega</th><!-- d-none d-sm-table-cell -->
                         <th class="text-center" scope="col">Estado</th>
                         <th class="text-center" scope="col">Pagos</th>
                     </tr>
@@ -92,7 +98,7 @@
                 <?php if(count($orderResultSet) > 0 ): ?>
                     <?php for ($i = 0; $i < count($orderResultSet); $i++): ?>
                         <tr>
-                            <th class="text-center" scope="row"><?= $i + 1?></th>
+                            <td class="text-center font-weight-bold" scope="row"><?= $i + 1?></td>
                             <td class="text-center">
                                 <?= $orderResultSet[$i]['product'] ?>
                             </td>
@@ -102,7 +108,7 @@
                             <td class="text-center">
                                 <?= $orderResultSet[$i]['date_order'] ?>
                             </td>
-                            <td class="text-center d-none d-sm-block">
+                            <td class="text-center d-none d-sm-table-cell">
                                 <?php
                                 $confirmation = $orderResultSet[$i]['date_delivery'];
                                 if( $confirmation == '' || $confirmation == null){

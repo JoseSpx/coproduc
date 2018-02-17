@@ -36,6 +36,12 @@
     else{
 
         $dni = filter_var(trim($_POST['dni_client']), FILTER_SANITIZE_STRING);
+
+        if(strlen($dni) > 8){
+            return print json_encode("false");
+        }
+
+
         if($order->existsDNI($dni)){
 
             //$type = $order->getTypeOfClient($dni);

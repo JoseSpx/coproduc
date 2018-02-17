@@ -115,6 +115,19 @@ class Order {
 
     }
 
+    public function getAllOrdersFromAClientNoAnulated($dni){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("select `order`.id AS order_id,  p.name AS product ,quantity, date_order, date_confirmation, date_delivery, `order`.state from `order` 
+            INNER JOIN product p ON `order`.product_id = p.id WHERE user_data_dni = :dni AND `order`.state != 'A' ORDER BY `order`.id DESC LIMIT 100");
+
+        $ps->execute(array(
+            ':dni' => $dni
+        ));
+
+        return $ps->fetchAll(PDO::FETCH_ASSOC);
+
+    }
+
     public function getOrderFormClient($id_order){
         $conn = Connection::connect();
         $ps = $conn->prepare("select user_data_dni,product_id, quantity, date_order, date_delivery, date_confirmation,
@@ -255,7 +268,7 @@ class Order {
     public function getLastOrders($page, $perPage){
         $conn = Connection::connect();
         $init = ($page - 1) * $perPage;
-        $ps = $conn->prepare("select `order`.id AS id, user_data_dni,product_id, quantity, date_order, date_delivery, date_confirmation,
+        $ps = $conn->prepare("select `order`.id AS id, u.name AS user_name, user_data_dni,product_id, quantity, date_order, date_delivery, date_confirmation,
                                           price_unit, `order`.state AS state, delivered, last_name, dni, p.name AS name_product from `order` 
                                           INNER JOIN user_data u ON `order`.user_data_dni = u.dni
                                           INNER JOIN product p ON `order`.product_id = p.id

@@ -66,9 +66,9 @@ if(!isset($_SESSION['user'])){
 
 <div class="container">
 
-    <div class="row pt-4 pb-4">
-        <div class="col-10 offset-1 col-lg-12 offset-lg-0 title d-flex justify-content-center text-uppercase">
-            Pago del pedido
+    <div class="row pt-4 pb-4 d-flex justify-content-center">
+        <div class="col-auto text-uppercase title">
+            Pago del Pedido
         </div>
     </div>
 

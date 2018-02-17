@@ -271,7 +271,7 @@
                                                                 Cantidad
                                                             </div>
                                                             <div class="col-8">
-                                                                <input type="number" class="form-control form-control-sm" pattern="[0-9]+"
+                                                                <input type="number" class="form-control form-control-sm" pattern="[0-9]+" min="1" max="1000"
                                                                        title="producto" name="quantity">
                                                             </div>
                                                         </div>
@@ -296,7 +296,7 @@
                                                                     Cantidad
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <input type="number" class="form-control form-control-sm" pattern="[0-9]+"
+                                                                    <input type="number" class="form-control form-control-sm" pattern="[0-9]+" min="1" max="1000"
                                                                            title="producto" name="quantity" required>
                                                                 </div>
                                                             </div>
@@ -306,7 +306,7 @@
                                                                     DNI
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <input type="number" class="form-control form-control-sm" pattern="[0-9]+" max="99999999"
+                                                                    <input type="number" class="form-control form-control-sm" pattern="[0-9]+" max="99999999" min="10000000"
                                                                            title="dni" name="dni_client" required  >
                                                                 </div>
                                                             </div>
@@ -333,7 +333,7 @@
                                                                     Teléfono
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <input type="number" class="form-control form-control-sm na_te" pattern="[0-9]+" max="99999999" value=""
+                                                                    <input type="number" class="form-control form-control-sm na_te" pattern="[0-9]+" max="999999999" min="0" value=""
                                                                            title="telefono" name="phone_client">
                                                                 </div>
                                                             </div>
@@ -392,7 +392,16 @@
                 </div>
             </div>
         </div>
-        <div class="container mt-4 contact">
+
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">Siempre dispuestos a responder tus dudas. Escríbenos</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-3 contact">
             <form id="form-contact" action="/coproduc/mail" method="post">
                 <div class="row ">
                     <div class="col-10 offset-1">

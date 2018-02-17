@@ -72,7 +72,8 @@
                         ?>
                             <tr>
                                 <td> <?= $orders[$i]['user_data_dni'] ?></td>
-                                <td> <?= $orders[$i]['last_name'] ?></td>
+                                <td> <?= ($orders[$i]['last_name'] == null || $orders[$i]['last_name'] == '')
+                                            ?  $orders[$i]['user_name'] . ' (NR)' : $orders[$i]['last_name'] ?></td>
                                 <td> <?= $orders[$i]['name_product'] ?></td>
                                 <td> <?= ($orders[$i]['delivered'] == 0) ? "No Enviado" : "Enviado"  ?></td>
                                 <td> <?php
