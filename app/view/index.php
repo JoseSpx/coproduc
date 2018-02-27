@@ -38,6 +38,19 @@
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113455922-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-113455922-1');
+    </script>
+
+
+
 </head>
 <body>
 
@@ -323,7 +336,7 @@
                                                                     Nombre
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <input type="text" class="form-control form-control-sm na_te" pattern="[a-zA-Z]+" maxlength="20" value=""
+                                                                    <input type="text" class="form-control form-control-sm na_te" pattern="[a-zA-Z\s]+" maxlength="20" value=""
                                                                            title="name" name="name_client">
                                                                 </div>
                                                             </div>
@@ -446,13 +459,13 @@
                             <div class="col-12 col-md-6 d-flex flex-column">
                                 <div class="form-group">
                                     <!--label for="inputName"></label-->
-                                    <input name="name" required type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder=" Nombre">
+                                    <input name="name" required type="text" class="form-control" id="inputName" placeholder=" Nombre">
                                 </div>
                                 <div class="form-group mt-3">
-                                    <input name="email" required type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder=" Email">
+                                    <input name="email" required type="email" class="form-control" id="inputEmail"  placeholder=" Email">
                                 </div>
                                 <div class="form-group mt-3">
-                                    <input name="phone" required type="number" class="form-control" id="inputTelephone" aria-describedby="emailHelp" placeholder=" Teléfono">
+                                    <input name="phone" required type="number" class="form-control" id="inputTelephone" placeholder=" Teléfono">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 mt-3 mt-md-0 d-flex flex-column justify-content-between">
@@ -460,7 +473,7 @@
                                     <textarea name="message" required spellcheck="false" type="text" class="form-control" id="inputPass" placeholder="Mensaje"></textarea>
                                 </div>
                                 <div class="d-flex flex-column mt-3 mt-md-0">
-                                    <button name="submit" type="submit" class="btn btn-primary contact-submit">ENVIAR</button>
+                                    <button type="submit" class="btn btn-primary contact-submit">ENVIAR</button>
                                 </div>
                             </div>
                         </div>

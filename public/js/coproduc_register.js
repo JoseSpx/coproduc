@@ -119,6 +119,7 @@ $("#form-register").bind("submit",function () {
 
 });
 
+/*
 
 $(function () {
    $("#inputDNI").val("76197141");
@@ -130,10 +131,10 @@ $(function () {
    $("#inputAddress").val("calle");
    $("#inputReference").val("taxi");
    $("#departments").val("La Libertad");
-   /*$("#provinces").val("Trujillo");
-   $("#districts").val("Trujillo");*/
    $("#inputUrb").val("La rinconada");
    $("#inputUser").val("admin");
    $("#inputPass").val("123");
    $("#inputPass2").val("123");
 });
+
+*/

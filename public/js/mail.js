@@ -24,6 +24,8 @@ $("#form-contact").bind("submit",function () {
                     type: 'success',
                     confirmButtonColor: '#FFD238',
                     confirmButtonText: 'Aceptar'
+                }).then(function () {
+                    location.reload();
                 });
             }
             else{
