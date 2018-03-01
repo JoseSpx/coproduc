@@ -93,11 +93,10 @@ $(".btn-modal").click(function () {
 });
 
 
-
-
-
-
-
+function isNumberKey(evt) {
+    let charCode = (evt.which) ? evt.which : evt.keyCode;
+    return (charCode === 8 || (charCode >= 48 && charCode <= 57 ));
+}
 
 
 

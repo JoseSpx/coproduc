@@ -237,7 +237,7 @@
                             <div class="hovereffect">
                                 <img class="card-img-top" src="<?= '/public/img/products/' . $products[$i]['image'] ?> " alt="<?=  $products[$i]['image'] ?>">
                                 <div class="overlay">
-                                    <h2>Descripción</h2>
+                                    <h2 class="text-capitalize">Descripción</h2>
                                     <p class="text-white"> <?= $products[$i]['description'] ?> </p>
                                 </div>
                             </div>
@@ -246,7 +246,7 @@
                                 <h5 class="card-title d-flex justify-content-center font-weight-bold"> <?= $products[$i]['name'] ?> </h5>
                                 <p class="text-center"> Precio : &nbsp;<?= $products[$i]['price'] ?> soles c/u (referencial) </p>
                                 <div class="d-flex justify-content-center">
-                                    <button type="button"  class="btn btn-primary btn-color btn-modal" data-toggle="modal" data-target="<?= '#' . $products[$i]['id'] ?>">
+                                    <button type="button" class="btn btn-primary btn-color btn-modal" data-toggle="modal" data-target="<?= '#' . $products[$i]['id'] ?>">
                                         Comprar
                                         <i class="icon-basket"></i>
                                     </button>
@@ -319,8 +319,9 @@
                                                                     DNI
                                                                 </div>
                                                                 <div class="col-8">
-                                                                    <input type="number" class="form-control form-control-sm" pattern="[0-9]+" max="99999999" min="10000000"
-                                                                           title="dni" name="dni_client" required  >
+                                                                    <input id="dni" type="number" class="form-control form-control-sm" min="10000000" max="99999999"
+                                                                           title="dni" name="dni_client" required oninvalid="this.setCustomValidity('El DNI debe tener 8 dígitos')"
+                                                                            oninput="this.setCustomValidity('')" onkeypress="return isNumberKey(event)">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -508,10 +509,10 @@
                         <p class="text-white text-center"><i class="icon-location"></i> Trujillo - Cajamarca - Perú </p>
                     </div>
                     <div class="col-4 mt-3">
-                        <p class="text-white text-center"><i class="icon-mail-alt"></i> info@coproduc.com </p>
+                        <p class="text-white text-center"><i class="icon-mail-alt"></i> informes@coproduc.com </p>
                     </div>
                     <div class="col-4 mt-3">
-                        <p class="text-white text-center"><i class="icon-phone"></i> 949212970 - 949212970 </p>
+                        <p class="text-white text-center"><i class="icon-phone"></i> 944575208 </p>
                     </div>
                 </div>
                 <div class="row d-flex d-md-none flex-column">
@@ -519,10 +520,10 @@
                         <p class="text-white text-center"><i class="icon-location"></i> Trujillo - Cajamarca - Perú </p>
                     </div>
                     <div class="col-12 mt-3">
-                        <p class="text-white text-center"><i class="icon-mail-alt"></i> info@coproduc.com </p>
+                        <p class="text-white text-center"><i class="icon-mail-alt"></i> informes@coproduc.com </p>
                     </div>
                     <div class="col-12 mt-3">
-                        <p class="text-white text-center"><i class="icon-phone"></i> 949212970 - 949212970 </p>
+                        <p class="text-white text-center"><i class="icon-phone"></i> 944575208  </p>
                     </div>
                 </div>
                 <div class="row">
