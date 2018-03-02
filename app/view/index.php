@@ -160,7 +160,7 @@
 
                             <div class="row mt-3">
                                 <div class="col-10 offset-1">
-                                    <div id="alert-error" class="alert alert-danger d-none">
+                                    <div id="alert-error" class="text-danger d-none text-center h6">
                                         Usuario o Contraseña incorrecta
                                     </div>
                                 </div>
@@ -303,7 +303,7 @@
 
                                                 <div class="row mt-3">
                                                     <div class="col-8 offset-2">
-                                                        <div class=""  id="<?= $products[$i]['id'] . '_no_client_2'?>">
+                                                        <div class="user_no_registered_1"  id="<?= $products[$i]['id'] . '_no_client_2'?>">
                                                             <div class="row">
                                                                 <div class="col-4 d-flex flex-column justify-content-center align-items-end">
                                                                     Cantidad
@@ -326,7 +326,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="d-none" id="<?= $products[$i]['id'] . '_no_client' ?>">
+                                                        <div class="user_no_registered_2 d-none" id="<?= $products[$i]['id'] . '_no_client' ?>">
 
                                                             <div class="mt-0">
                                                                 <p class="text-danger text-center">Complete sus datos por favor</p>

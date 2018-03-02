@@ -90,6 +90,21 @@ $(".form-modal").bind("submit",function () {
 
 $(".btn-modal").click(function () {
     $(".na_te").val("");
+
+    let data1 = document.getElementsByClassName("user_no_registered_1");
+    let data2 = document.getElementsByClassName("user_no_registered_2");
+
+    for (let i = 0 ; i < data1.length ; i++){
+        if(data1[i].classList.contains("d-none")){
+            data1[i].classList.remove("d-none");
+        }
+
+        if(!data2[i].classList.contains("d-none")){
+            data2[i].classList.add("d-none");
+        }
+
+    }
+
 });
 
 

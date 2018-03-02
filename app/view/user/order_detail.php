@@ -113,7 +113,7 @@ if(!isset($_SESSION['user'])){
                     <label for="bank">Tipo de Banco</label>
                     <select class="form-control" name="bank" id="bank" required>
                         <option disabled value="" selected >Elegir</option>
-                        <option value="Banco Central del Perú">Banco Central del Perú</option>
+                        <option value="Banco de la Nación">Banco de la Nación</option>
                         <option value="Interbank">Interbank</option>
                     </select>
                 </div>
