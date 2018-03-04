@@ -50,7 +50,7 @@
                                 <div class="box">
                                     <div class="card">
                                         <div class="col-10 offset-1 my-3">
-                                            <a href="">
+                                            <a href="/admin/reports_users"">
                                                 <img class="card-img-top" src="/public/img/person.png" alt="icono de una persona">
                                             </a>
                                         </div>

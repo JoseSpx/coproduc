@@ -293,4 +293,22 @@ class User{
         return $ps->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function getTheBestClients($dateInit, $dateEnd){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("select name, last_name, dni, type, sum(o.quantity) AS total_quantity  from user_data
+                                          INNER JOIN `order` o ON user_data.dni = o.user_data_dni
+                                          WHERE date_order >= :dateInit AND date_order <= :dateEnd AND o.state != 'A'
+                                            AND eliminated = '0'
+                                          GROUP BY dni
+                                          ORDER BY total_quantity DESC ");
+
+        $ps->execute(array(
+            ':dateInit' => $dateInit,
+            ':dateEnd' => $dateEnd
+        ));
+
+        return $ps->fetchAll(PDO::FETCH_ASSOC);
+
+    }
+
 }

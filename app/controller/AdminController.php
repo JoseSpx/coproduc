@@ -123,8 +123,17 @@ class AdminController extends Controller {
         $this->view("admin/options/reports_products");
     }
 
+    public function reports_users(){
+        $this->extras("verifyAdmin");
+        $this->view("admin/options/reports_users");
+    }
+
     public function report_db_products(){
         $this->database("reports/products");
+    }
+
+    public function report_db_users(){
+        $this->database("reports/users");
     }
 
 }

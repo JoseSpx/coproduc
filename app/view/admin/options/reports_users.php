@@ -1,3 +1,14 @@
+<?php
+    require_once __DIR__ . '/../../../model/Order.php';
+
+    if(is_array($id)){
+        $id = $id[0];
+    }
+
+    $order = new Order();
+    $orderResultSet = $order->getAllOrdersFromAClient($id);
+
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -24,15 +35,15 @@
         <div class="container-fluid div-main">
             <div class="row">
                 <div class="col-11 mx-auto mt-4">
-                    <h1 style="padding-top: 15px"> Reporte <small class="text-muted"> | Productos</small></h1>
-                    <p>Productos más vendidos a menos vendidos en un rango de fechas</p>
+                    <h1 style="padding-top: 15px"> Reporte <small class="text-muted"> | Usuarios</small></h1>
+                    <p>Usuarios que mas compras han realizado en un rango de fechas</p>
                     <!--a class="btn btn-primary text-white mt-1" href="/admin/product_new">+ NUEVO PRODUCTO</a-->
                 </div>
             </div>
 
             <div class="row mt-1">
                 <div class="col-11 mx-auto">
-                    <form action="/admin/report_db_products" method="post" id="form_search">
+                    <form action="/admin/report_db_users" method="post" id="form_search">
                         <div class="row">
                             <div class="col-2 d-flex flex-column justify-content-center">
                                 <b class="text-center">Fecha Inicial : </b>
@@ -65,8 +76,9 @@
                                 <thead class="table-dark">
                                     <tr>
                                         <th class="text-center">N°</th>
-                                        <th class="text-center">Producto</th>
-                                        <th class="text-center">Descripción</th>
+                                        <th class="text-center">Nombre y Apellidos</th>
+                                        <th class="text-center">DNI</th>
+                                        <th class="text-center">Tipo</th>
                                         <th class="text-center">Cantidad</th>
                                     </tr>
                                 </thead>
@@ -90,7 +102,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="/public/libraries/js/sweetAlert2.js"></script>
-    <script src="/public/js/admin_report_product.min.js"></script>
+    <script src="/public/js/admin_report_user.js"></script>
     
 </body>
 </html>

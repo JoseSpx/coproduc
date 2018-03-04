@@ -8,12 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/controller/AdminController.php" afterPath="$PROJECT_DIR$/app/controller/AdminController.php" />
-      <change beforePath="$PROJECT_DIR$/app/database/register_user.php" afterPath="$PROJECT_DIR$/app/database/register_user.php" />
-      <change beforePath="$PROJECT_DIR$/app/database/update_data.php" afterPath="$PROJECT_DIR$/app/database/update_data.php" />
-      <change beforePath="$PROJECT_DIR$/app/model/Product.php" afterPath="$PROJECT_DIR$/app/model/Product.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/admin/inc/sidebar.php" afterPath="$PROJECT_DIR$/app/view/admin/inc/sidebar.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/admin/options/client_orders.php" afterPath="$PROJECT_DIR$/app/view/admin/options/client_orders.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/admin/options/orders.php" afterPath="$PROJECT_DIR$/app/view/admin/options/orders.php" />
+      <change beforePath="$PROJECT_DIR$/app/model/User.php" afterPath="$PROJECT_DIR$/app/model/User.php" />
+      <change beforePath="$PROJECT_DIR$/app/view/admin/options/reports.php" afterPath="$PROJECT_DIR$/app/view/admin/options/reports.php" />
+      <change beforePath="$PROJECT_DIR$/app/view/admin/options/reports_products.php" afterPath="$PROJECT_DIR$/app/view/admin/options/reports_products.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,33 +46,62 @@
       <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="125" column="38" lean-forward="false" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="38" />
+            <state relative-caret-position="482">
+              <caret line="134" column="35" lean-forward="false" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reports_products.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/admin/options/reports_products.php">
+      <file leaf-file-name="reports_users.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/admin/options/reports_users.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="93" column="27" lean-forward="true" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+            <state relative-caret-position="312">
+              <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database/reports/users.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="59" lean-forward="false" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/model/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="300" column="63" lean-forward="false" selection-start-line="300" selection-start-column="63" selection-end-line="300" selection-end-column="63" />
               <folding>
-                <marker date="1520185026656" expanded="true" signature="3170:3262" ph="..." />
-                <marker date="1520185026656" expanded="true" signature="3211:3262" ph="..." />
-                <marker date="1520185026656" expanded="true" signature="3679:3720" ph="..." />
+                <marker date="1520204254887" expanded="true" signature="169:221" ph="select user account" />
+                <marker date="1520204254887" expanded="true" signature="458:502" ph="select user account" />
+                <marker date="1520204254887" expanded="true" signature="762:821" ph="UPDATE account... " />
+                <marker date="1520204254887" expanded="true" signature="1077:1131" ph="UPDATE account... " />
+                <marker date="1520204254887" expanded="true" signature="1616:1790" ph="update ubication... " />
+                <marker date="1520204254887" expanded="true" signature="2136:2373" ph="update user_data... " />
+                <marker date="1520204254887" expanded="true" signature="3133:3279" ph="insert into ubication... " />
+                <marker date="1520204254887" expanded="true" signature="3652:3816" ph="insert into user_data... " />
+                <marker date="1520204254887" expanded="true" signature="4148:4222" ph="insert into account... " />
+                <marker date="1520204254887" expanded="true" signature="4859:5045" ph="UPDATE user_data... " />
+                <marker date="1520204254887" expanded="true" signature="5384:5450" ph="select ubica... user_data" />
+                <marker date="1520204254887" expanded="true" signature="5674:5871" ph="update ubication... " />
+                <marker date="1520204254887" expanded="true" signature="6330:6404" ph="insert into account... " />
+                <marker date="1520204254887" expanded="true" signature="6933:7270" ph="SELECT user,... account" />
+                <marker date="1520204254887" expanded="true" signature="7532:7785" ph="SELECT dni, user_data" />
+                <marker date="1520204254887" expanded="true" signature="8048:8100" ph="select name user_data" />
+                <marker date="1520204254887" expanded="true" signature="8400:8631" ph="select dni, user_data" />
+                <marker date="1520204254887" expanded="true" signature="8837:8886" ph="select dni f... user_data" />
+                <marker date="1520204254887" expanded="true" signature="9076:9146" ph="update user_data... " />
+                <marker date="1520204254887" expanded="true" signature="9377:9438" ph="select * fro... user_data" />
+                <marker date="1520204254887" expanded="true" signature="9684:9770" ph="select * fro... user_data" />
+                <marker date="1520204254887" expanded="true" signature="10036:10527" ph="select name,... product" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin_report_product.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/js/admin_report_product.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="66" lean-forward="false" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -85,6 +111,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="56" lean-forward="false" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reports.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/admin/options/reports.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="52" column="74" lean-forward="false" selection-start-line="52" selection-start-column="74" selection-end-line="52" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -131,14 +167,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/database/admin_order_pay_edit_update.php" />
-        <option value="$PROJECT_DIR$/public/js/admin_client_pay.js" />
-        <option value="$PROJECT_DIR$/public/js/admin_client_order_pay_new.js" />
         <option value="$PROJECT_DIR$/app/view/admin/options/client_orders_pays.php" />
         <option value="$PROJECT_DIR$/app/view/admin/options/client_order_pay_new.php" />
         <option value="$PROJECT_DIR$/app/view/admin/options/clients.php" />
         <option value="$PROJECT_DIR$/app/view/admin/options/clients_search.php" />
-        <option value="$PROJECT_DIR$/app/model/User.php" />
         <option value="$PROJECT_DIR$/public/js/admin_client_order_edit.js" />
         <option value="$PROJECT_DIR$/public/js/coproduc_user_config.min.js" />
         <option value="$PROJECT_DIR$/public/js/coproduc_user_config.js" />
@@ -175,13 +207,17 @@
         <option value="$PROJECT_DIR$/app/view/admin/inc/sidebar.php" />
         <option value="$PROJECT_DIR$/public/css/admin_report_main.css" />
         <option value="$PROJECT_DIR$/app/view/admin/options/client_orders.php" />
-        <option value="$PROJECT_DIR$/app/controller/AdminController.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/716d0651-2963-4b3b-a835-2ef94846f768/console.sql" />
         <option value="$PROJECT_DIR$/app/model/Product.php" />
         <option value="$PROJECT_DIR$/app/database/reports/products.php" />
-        <option value="$PROJECT_DIR$/app/view/admin/options/reports.php" />
         <option value="$PROJECT_DIR$/public/js/admin_report_product.js" />
         <option value="$PROJECT_DIR$/app/view/admin/options/reports_products.php" />
+        <option value="$PROJECT_DIR$/app/view/admin/options/reports.php" />
+        <option value="$PROJECT_DIR$/app/controller/AdminController.php" />
+        <option value="$PROJECT_DIR$/app/view/admin/options/reports_users.php" />
+        <option value="$PROJECT_DIR$/app/database/reports/users.php" />
+        <option value="$PROJECT_DIR$/public/js/admin_report_user.js" />
+        <option value="$PROJECT_DIR$/app/model/User.php" />
       </list>
     </option>
   </component>
@@ -372,19 +408,19 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Coproduc\app\view\admin\options" />
-      <recent name="C:\xampp\htdocs\Coproduc\public\img" />
-      <recent name="C:\xampp\htdocs\Coproduc\public\img\slider" />
-      <recent name="C:\xampp\htdocs\Coproduc\app\view\user" />
-      <recent name="C:\xampp\htdocs\Coproduc\public\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Coproduc\app\extras" />
       <recent name="C:\xampp\htdocs\Coproduc\app\model" />
       <recent name="C:\xampp\htdocs\Coproduc\public\img\products" />
       <recent name="C:\xampp\htdocs\Coproduc\public\libraries" />
       <recent name="C:\xampp\htdocs\Coproduc\public\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Coproduc\public\js" />
+      <recent name="C:\xampp\htdocs\Coproduc\app\database\reports" />
+      <recent name="C:\xampp\htdocs\Coproduc\app\view\admin\options" />
+      <recent name="C:\xampp\htdocs\Coproduc\public\img" />
+      <recent name="C:\xampp\htdocs\Coproduc\public\img\slider" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -470,12 +506,12 @@
       <workItem from="1519960852975" duration="3357000" />
       <workItem from="1520009762613" duration="3058000" />
       <workItem from="1520136619514" duration="8132000" />
-      <workItem from="1520172958807" duration="11489000" />
+      <workItem from="1520172958807" duration="18388000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="493676000" />
+    <option name="totallyTimeSpent" value="500575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -488,7 +524,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.303681" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27155825" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19969743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23071104" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23600605" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -540,34 +576,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/model/Order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="270" column="74" lean-forward="false" selection-start-line="270" selection-start-column="74" selection-end-line="270" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/user/updateConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="74" lean-forward="false" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/user/order.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="74" lean-forward="false" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/admin/cpanel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/admin/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -844,10 +852,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/admin/options/reports.php">
+    <entry file="file://$PROJECT_DIR$/public/js/admin_update_product.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-802">
-          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        <state relative-caret-position="289">
+          <caret line="100" column="15" lean-forward="true" selection-start-line="94" selection-start-column="12" selection-end-line="100" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/admin_report_product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/admin/options/reports_products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -860,10 +884,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/admin_update_product.js">
+    <entry file="file://$PROJECT_DIR$/app/view/admin/options/reports.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="100" column="15" lean-forward="true" selection-start-line="94" selection-start-column="12" selection-end-line="100" selection-end-column="15" />
+        <state relative-caret-position="357">
+          <caret line="52" column="74" lean-forward="false" selection-start-line="52" selection-start-column="74" selection-end-line="52" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="134" column="35" lean-forward="false" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -878,8 +910,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/Product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="67" column="87" lean-forward="false" selection-start-line="67" selection-start-column="73" selection-end-line="67" selection-end-column="87" />
+        <state relative-caret-position="193">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="80" selection-end-column="5" />
           <folding>
             <marker date="1520181032124" expanded="true" signature="173:224" ph="SELECT id, n... product" />
             <marker date="1520181032124" expanded="true" signature="421:515" ph="SELECT id, n... product" />
@@ -892,31 +924,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/AdminController.php">
+    <entry file="file://$PROJECT_DIR$/app/view/admin/options/reports_users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="125" column="38" lean-forward="false" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="38" />
+        <state relative-caret-position="312">
+          <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/admin/options/reports_products.php">
+    <entry file="file://$PROJECT_DIR$/app/database/reports/users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="93" column="27" lean-forward="true" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+        <state relative-caret-position="238">
+          <caret line="14" column="59" lean-forward="false" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/admin_report_user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="56" column="67" lean-forward="false" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="300" column="63" lean-forward="false" selection-start-line="300" selection-start-column="63" selection-end-line="300" selection-end-column="63" />
           <folding>
-            <marker date="1520185026656" expanded="true" signature="3170:3262" ph="..." />
-            <marker date="1520185026656" expanded="true" signature="3211:3262" ph="..." />
-            <marker date="1520185026656" expanded="true" signature="3679:3720" ph="..." />
+            <marker date="1520204254887" expanded="true" signature="169:221" ph="select user account" />
+            <marker date="1520204254887" expanded="true" signature="458:502" ph="select user account" />
+            <marker date="1520204254887" expanded="true" signature="762:821" ph="UPDATE account... " />
+            <marker date="1520204254887" expanded="true" signature="1077:1131" ph="UPDATE account... " />
+            <marker date="1520204254887" expanded="true" signature="1616:1790" ph="update ubication... " />
+            <marker date="1520204254887" expanded="true" signature="2136:2373" ph="update user_data... " />
+            <marker date="1520204254887" expanded="true" signature="3133:3279" ph="insert into ubication... " />
+            <marker date="1520204254887" expanded="true" signature="3652:3816" ph="insert into user_data... " />
+            <marker date="1520204254887" expanded="true" signature="4148:4222" ph="insert into account... " />
+            <marker date="1520204254887" expanded="true" signature="4859:5045" ph="UPDATE user_data... " />
+            <marker date="1520204254887" expanded="true" signature="5384:5450" ph="select ubica... user_data" />
+            <marker date="1520204254887" expanded="true" signature="5674:5871" ph="update ubication... " />
+            <marker date="1520204254887" expanded="true" signature="6330:6404" ph="insert into account... " />
+            <marker date="1520204254887" expanded="true" signature="6933:7270" ph="SELECT user,... account" />
+            <marker date="1520204254887" expanded="true" signature="7532:7785" ph="SELECT dni, user_data" />
+            <marker date="1520204254887" expanded="true" signature="8048:8100" ph="select name user_data" />
+            <marker date="1520204254887" expanded="true" signature="8400:8631" ph="select dni, user_data" />
+            <marker date="1520204254887" expanded="true" signature="8837:8886" ph="select dni f... user_data" />
+            <marker date="1520204254887" expanded="true" signature="9076:9146" ph="update user_data... " />
+            <marker date="1520204254887" expanded="true" signature="9377:9438" ph="select * fro... user_data" />
+            <marker date="1520204254887" expanded="true" signature="9684:9770" ph="select * fro... user_data" />
+            <marker date="1520204254887" expanded="true" signature="10036:10527" ph="select name,... product" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/admin_report_product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="66" lean-forward="false" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
