@@ -23,6 +23,11 @@
                 Pedidos
             </a>
         </li>
+        <li>
+            <a href="/admin/reports" class="bg-dark list-group-item flex-column justify-content-center align-items-start text-center">
+                Reportes
+            </a>
+        </li>
 
     </ul>
 </div>

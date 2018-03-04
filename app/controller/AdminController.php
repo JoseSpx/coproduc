@@ -113,4 +113,18 @@ class AdminController extends Controller {
         $this->database("product_update");
     }
 
+    public function reports(){
+        $this->extras("verifyAdmin");
+        $this->view("admin/options/reports");
+    }
+
+    public function reports_products(){
+        $this->extras("verifyAdmin");
+        $this->view("admin/options/reports_products");
+    }
+
+    public function report_db_products(){
+        $this->database("reports/products");
+    }
+
 }

@@ -58,7 +58,7 @@
                         <thead>
                             <tr>
                                 <th scope="col">DNI</th>
-                                <th scope="col">Apellido</th>
+                                <th scope="col">Nombres y Apellidos</th>
                                 <th scope="col">Producto</th>
                                 <th scope="col">Delivery</th>
                                 <th scope="col">Estado</th>
@@ -73,7 +73,8 @@
                             <tr>
                                 <td> <?= $orders[$i]['user_data_dni'] ?></td>
                                 <td> <?= ($orders[$i]['last_name'] == null || $orders[$i]['last_name'] == '')
-                                            ?  $orders[$i]['user_name'] . ' (NR)' : $orders[$i]['last_name'] ?></td>
+                                            ? $orders[$i]['user_name'] . ' ' . $orders[$i]['last_name'] . ' (NR)'
+                                            : $orders[$i]['user_name'] . ' ' . $orders[$i]['last_name'] ?></td>
                                 <td> <?= $orders[$i]['name_product'] ?></td>
                                 <td> <?= ($orders[$i]['delivered'] == 0) ? "No Enviado" : "Enviado"  ?></td>
                                 <td> <?php

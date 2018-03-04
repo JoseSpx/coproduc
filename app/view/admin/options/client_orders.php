@@ -95,10 +95,10 @@
                                     ?>
                                 </td>
                                 <td class="text-center">
-                                    <a href="/admin/client_orders_pays/<?= $orderResultSet[$i]['order_id'] ?>" type="submit" class=" btn btn-sm btn-warning text-white ">Ver</a>
+                                    <a href="/admin/client_orders_pays/<?= $orderResultSet[$i]['order_id'] ?>" class="btn btn-sm btn-warning text-white ">Ver</a>
                                 </td>
                                 <td class="text-center">
-                                    <a href="/admin/client_order_edit/<?= $orderResultSet[$i]['order_id'] ?>" type="submit" class=" btn btn-sm btn-danger text-white ">Editar</a>
+                                    <a href="/admin/client_order_edit/<?= $orderResultSet[$i]['order_id'] ?>" class="btn btn-sm btn-danger text-white ">Editar</a>
                                 </td>
                             </tr>
 

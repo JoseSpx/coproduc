@@ -63,5 +63,22 @@ class Product{
         ));
     }
 
+    public function getMostSelledProducts($dateInit, $dateEnd){
+        $conn = Connection::connect();
+        $ps = $conn->prepare("select name, description, sum(quantity) AS total_quantity from product
+                                          INNER JOIN `order` o ON product.id = o.product_id
+                                          WHERE date_order >= :dateInit AND date_order <= :dateEnd AND o.state != 'A'
+                                          GROUP BY product_id
+                                          ORDER BY total_quantity DESC ");
+
+        $ps->execute(array(
+            ':dateInit' => $dateInit,
+            ':dateEnd' => $dateEnd
+        ));
+
+        return $ps->fetchAll(PDO::FETCH_ASSOC);
+
+    }
+
 
 }

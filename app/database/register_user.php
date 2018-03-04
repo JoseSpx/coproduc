@@ -49,8 +49,8 @@
 
 
     $dni = $_POST['dni'];
-    $name = filter_var(strtolower(trim($_POST['name'])), FILTER_SANITIZE_STRING);
-    $lastname = filter(strtolower($_POST['lastName']));
+    $name = filter_var(ucwords(strtolower(trim($_POST['name']))), FILTER_SANITIZE_STRING);
+    $lastname = filter(ucwords(strtolower($_POST['lastName'])));
     $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_STRING);
     $phone1 = filter($_POST['phone1']);
     $phone2 = (empty($_POST['phone2'])) ? null : filter($_POST['phone2']);
