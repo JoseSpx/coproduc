@@ -27,12 +27,12 @@
         <?php require_once __DIR__ . '/../inc/sidebar.php' ?>
 
         <!-- MAIN -->
-        <div class="container-fluid div-main">
+        <div class="container-fluid div-main my-5 my-md-0">
             <div class="row">
                 <div class="col-11 mx-auto">
                     <div class="row">
                         <div class="card-deck">
-                            <div class="col-4">
+                            <div class="col-10 offset-1 offset-md-0 col-md-4">
                                 <div class="box">
                                     <div class="card">
                                        <div class="col-10 offset-1 my-3">
@@ -46,11 +46,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-10 offset-1 offset-md-0 col-md-4">
                                 <div class="box">
                                     <div class="card">
                                         <div class="col-10 offset-1 my-3">
-                                            <a href="/admin/reports_users"">
+                                            <a href="">
                                                 <img class="card-img-top" src="/public/img/person.png" alt="icono de una persona">
                                             </a>
                                         </div>
@@ -60,7 +60,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-10 offset-1 offset-md-0 col-md-4">
                                 <div class="box">
                                     <div class="card">
                                         <div class="col-10 offset-1 my-3">

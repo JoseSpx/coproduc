@@ -35,18 +35,18 @@
                 </li>
 
                 <li class="nav-item d-flex ml-auto mr-auto">
-                    <a href="/admin/clients/1" class="nav-link">
+                    <a href="/admin/clients/1" class="nav-link text-white">
                         Clientes
                     </a>
                 </li>
 
                 <li class="nav-item d-flex ml-auto mr-auto">
-                    <a href="/admin/orders/1" class="nav-link ">
+                    <a href="/admin/orders/1" class="nav-link text-white">
                         Pedidos
                     </a>
                 </li>
                 <li class="nav-item d-flex ml-auto mr-auto">
-                    <a href="/admin/reports" class="nav-link ">
+                    <a href="/admin/reports" class="nav-link text-white">
                         Reportes
                     </a>
                 </li>
