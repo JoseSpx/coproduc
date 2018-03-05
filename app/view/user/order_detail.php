@@ -6,6 +6,11 @@ if(!isset($_SESSION['user'])){
     header("location:/");
 }
 
+require __DIR__ . '/../../model/Bank.php';
+
+$bank = new Bank();
+$banks = $bank->getAll();
+
 ?>
 
 <!DOCTYPE html>
@@ -113,8 +118,11 @@ if(!isset($_SESSION['user'])){
                     <label for="bank">Tipo de Banco</label>
                     <select class="form-control" name="bank" id="bank" required>
                         <option disabled value="" selected >Elegir</option>
-                        <option value="Banco de la Nación">Banco de la Nación</option>
-                        <option value="Interbank">Interbank</option>
+
+                        <?php foreach ($banks as $b): ?>
+                            <option value="<?= $b['name'] ?>"><?= $b['name'] ?></option>
+                        <?php endforeach; ?>
+
                     </select>
                 </div>
 

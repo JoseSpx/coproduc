@@ -5,7 +5,10 @@
         $id = $id[0];
     }
 
-    $banks = ["Banco Central del Perú", "Interbank", "Pago Efectivo"];
+    require __DIR__ . '/../../../model/Bank.php';
+    $bank = new Bank();
+    $banks = $bank->getAll();
+
 
 ?>
 <!DOCTYPE html>
@@ -79,8 +82,9 @@
                             <label for="bank">Tipo de Banco</label>
                             <select class="form-control" name="bank" id="bank" required>
                                 <?php foreach ($banks as $b): ?>
-                                        <option value="<?= $b ?>"><?= $b ?></option>
+                                        <option value="<?= $b['name'] ?>"><?= $b['name'] ?></option>
                                 <?php endforeach;?>
+                                <option value="Pago Efectivo">Pago Efectivo</option>
                             </select>
                         </div>
 

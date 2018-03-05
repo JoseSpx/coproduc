@@ -88,7 +88,7 @@
                                         <?= $orderResultSet[$i]['monto'] ?>
                                     </td>
                                     <td class="text-center">
-                                        <a href="/admin/client_order_pay_edit/<?= $orderResultSet[$i]['id'] ?>" type="submit" class=" btn btn-sm btn-danger text-white ">Editar</a>
+                                        <a href="/admin/client_order_pay_edit/<?= $orderResultSet[$i]['id'] ?>" class=" btn btn-sm btn-danger text-white ">Editar</a>
                                     </td>
                                 </tr>
                             <?php endfor; ?>

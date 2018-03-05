@@ -20,6 +20,11 @@
 
     $name_product = $order->getNameOfTheProduct($id);
 
+    require __DIR__ . '/../../model/Bank.php';
+
+    $bank = new Bank();
+    $banks = $bank->getAll();
+
 ?>
 
 <!DOCTYPE html>
@@ -97,13 +102,37 @@
 
     <div class="row mb-3">
         <div class="col-12 ">
-            <span class="text-dark">Los datos son referidos a pagos realizados en alguna entidad bancaria.</span>
+            Nombre del producto : <span class="font-weight-bold"><?= $name_product ?></span>
         </div>
     </div>
 
     <div class="row mb-3">
         <div class="col-12 ">
-            Nombre del producto : <span class="font-weight-bold"><?= $name_product ?></span>
+            <b>Cuentas para depósito :</b>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-12 ">
+            <ul class="list-group list-group-s">
+                <li class="list-group-item">
+                    <div class="row">
+                        <?php if(count($banks) % 2 == 0): ?>
+                            <?php foreach ($banks as $b): ?>
+                                <div class="col-12 col-md-6 text-center">
+                                    <?= $b['name'] . ' : ' . $b['code'] ?>
+                                </div>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <?php foreach ($banks as $b): ?>
+                                <div class="col-12 col-md-4 text-center">
+                                    <?= $b['name'] . ' : ' . $b['code'] ?>
+                                </div>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 

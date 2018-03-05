@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fdbfcd0-2494-4763-9b3c-4101d8486ca9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/model/Bank.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/controller/AdminController.php" afterPath="$PROJECT_DIR$/app/controller/AdminController.php" />
-      <change beforePath="$PROJECT_DIR$/app/model/User.php" afterPath="$PROJECT_DIR$/app/model/User.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/admin/options/reports.php" afterPath="$PROJECT_DIR$/app/view/admin/options/reports.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/admin/options/reports_products.php" afterPath="$PROJECT_DIR$/app/view/admin/options/reports_products.php" />
+      <change beforePath="$PROJECT_DIR$/app/extras/mail.php" afterPath="$PROJECT_DIR$/app/extras/mail.php" />
+      <change beforePath="$PROJECT_DIR$/app/view/admin/options/client_order_pay_edit.php" afterPath="$PROJECT_DIR$/app/view/admin/options/client_order_pay_edit.php" />
+      <change beforePath="$PROJECT_DIR$/app/view/admin/options/client_order_pay_new.php" afterPath="$PROJECT_DIR$/app/view/admin/options/client_order_pay_new.php" />
+      <change beforePath="$PROJECT_DIR$/app/view/admin/options/client_orders_pays.php" afterPath="$PROJECT_DIR$/app/view/admin/options/client_orders_pays.php" />
+      <change beforePath="$PROJECT_DIR$/app/view/index.php" afterPath="$PROJECT_DIR$/app/view/index.php" />
+      <change beforePath="$PROJECT_DIR$/app/view/user/order_detail.php" afterPath="$PROJECT_DIR$/app/view/user/order_detail.php" />
+      <change beforePath="$PROJECT_DIR$/app/view/user/order_list.php" afterPath="$PROJECT_DIR$/app/view/user/order_list.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,85 +46,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controller/AdminController.php">
+      <file leaf-file-name="client_order_pay_new.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/admin/options/client_order_pay_new.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="134" column="35" lean-forward="false" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="35" />
+            <state relative-caret-position="194">
+              <caret line="86" column="84" lean-forward="true" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="84" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reports_users.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/admin/options/reports_users.php">
+      <file leaf-file-name="client_order_pay_edit.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/view/admin/options/client_order_pay_edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/database/reports/users.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="59" lean-forward="false" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/model/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="300" column="63" lean-forward="false" selection-start-line="300" selection-start-column="63" selection-end-line="300" selection-end-column="63" />
+            <state relative-caret-position="359">
+              <caret line="101" column="30" lean-forward="true" selection-start-line="101" selection-start-column="30" selection-end-line="101" selection-end-column="30" />
               <folding>
-                <marker date="1520204254887" expanded="true" signature="169:221" ph="select user account" />
-                <marker date="1520204254887" expanded="true" signature="458:502" ph="select user account" />
-                <marker date="1520204254887" expanded="true" signature="762:821" ph="UPDATE account... " />
-                <marker date="1520204254887" expanded="true" signature="1077:1131" ph="UPDATE account... " />
-                <marker date="1520204254887" expanded="true" signature="1616:1790" ph="update ubication... " />
-                <marker date="1520204254887" expanded="true" signature="2136:2373" ph="update user_data... " />
-                <marker date="1520204254887" expanded="true" signature="3133:3279" ph="insert into ubication... " />
-                <marker date="1520204254887" expanded="true" signature="3652:3816" ph="insert into user_data... " />
-                <marker date="1520204254887" expanded="true" signature="4148:4222" ph="insert into account... " />
-                <marker date="1520204254887" expanded="true" signature="4859:5045" ph="UPDATE user_data... " />
-                <marker date="1520204254887" expanded="true" signature="5384:5450" ph="select ubica... user_data" />
-                <marker date="1520204254887" expanded="true" signature="5674:5871" ph="update ubication... " />
-                <marker date="1520204254887" expanded="true" signature="6330:6404" ph="insert into account... " />
-                <marker date="1520204254887" expanded="true" signature="6933:7270" ph="SELECT user,... account" />
-                <marker date="1520204254887" expanded="true" signature="7532:7785" ph="SELECT dni, user_data" />
-                <marker date="1520204254887" expanded="true" signature="8048:8100" ph="select name user_data" />
-                <marker date="1520204254887" expanded="true" signature="8400:8631" ph="select dni, user_data" />
-                <marker date="1520204254887" expanded="true" signature="8837:8886" ph="select dni f... user_data" />
-                <marker date="1520204254887" expanded="true" signature="9076:9146" ph="update user_data... " />
-                <marker date="1520204254887" expanded="true" signature="9377:9438" ph="select * fro... user_data" />
-                <marker date="1520204254887" expanded="true" signature="9684:9770" ph="select * fro... user_data" />
-                <marker date="1520204254887" expanded="true" signature="10036:10527" ph="select name,... product" />
+                <marker date="1520211440981" expanded="true" signature="4728:5083" ph="..." />
+                <marker date="1520211440981" expanded="true" signature="4777:4929" ph="..." />
+                <marker date="1520211440981" expanded="true" signature="4978:5083" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/716d0651-2963-4b3b-a835-2ef94846f768/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="56" lean-forward="false" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reports.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/admin/options/reports.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="52" column="74" lean-forward="false" selection-start-line="52" selection-start-column="74" selection-end-line="52" selection-end-column="74" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -153,12 +97,13 @@
       <find>getAllOrdersFromAClient</find>
       <find>img</find>
       <find>titles</find>
-      <find>name</find>
       <find>Descripc</find>
       <find>id=&quot;dni&quot;</find>
       <find>dni</find>
       <find>btn-modal</find>
       <find>na_te</find>
+      <find>name</find>
+      <find>type</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,10 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/view/admin/options/client_orders_pays.php" />
-        <option value="$PROJECT_DIR$/app/view/admin/options/client_order_pay_new.php" />
-        <option value="$PROJECT_DIR$/app/view/admin/options/clients.php" />
-        <option value="$PROJECT_DIR$/app/view/admin/options/clients_search.php" />
         <option value="$PROJECT_DIR$/public/js/admin_client_order_edit.js" />
         <option value="$PROJECT_DIR$/public/js/coproduc_user_config.min.js" />
         <option value="$PROJECT_DIR$/public/js/coproduc_user_config.js" />
@@ -184,7 +125,6 @@
         <option value="$PROJECT_DIR$/app/model/Order.php" />
         <option value="$PROJECT_DIR$/app/view/register.php" />
         <option value="$PROJECT_DIR$/app/view/user/updateConfig.php" />
-        <option value="$PROJECT_DIR$/app/view/user/order_list.php" />
         <option value="$PROJECT_DIR$/app/view/user/order.php" />
         <option value="$PROJECT_DIR$/app/view/admin/index.php" />
         <option value="&lt;12a34440-d4da-4c84-adc0-b924897afaa8&gt;/.htaccess" />
@@ -197,9 +137,6 @@
         <option value="&lt;12a34440-d4da-4c84-adc0-b924897afaa8&gt;/app/extras/mail.php" />
         <option value="$PROJECT_DIR$/public/js/coproduc_register.js" />
         <option value="&lt;12a34440-d4da-4c84-adc0-b924897afaa8&gt;/app/view/index.php" />
-        <option value="$PROJECT_DIR$/app/view/user/order_detail.php" />
-        <option value="$PROJECT_DIR$/app/extras/mail.php" />
-        <option value="$PROJECT_DIR$/app/view/index.php" />
         <option value="$PROJECT_DIR$/public/js/coproduc_main.js" />
         <option value="$PROJECT_DIR$/app/database/register_user.php" />
         <option value="$PROJECT_DIR$/app/database/update_data.php" />
@@ -218,6 +155,14 @@
         <option value="$PROJECT_DIR$/app/database/reports/users.php" />
         <option value="$PROJECT_DIR$/public/js/admin_report_user.js" />
         <option value="$PROJECT_DIR$/app/model/User.php" />
+        <option value="$PROJECT_DIR$/app/extras/mail.php" />
+        <option value="$PROJECT_DIR$/app/view/admin/options/client_orders_pays.php" />
+        <option value="$PROJECT_DIR$/app/model/Bank.php" />
+        <option value="$PROJECT_DIR$/app/view/user/order_detail.php" />
+        <option value="$PROJECT_DIR$/app/view/user/order_list.php" />
+        <option value="$PROJECT_DIR$/app/view/index.php" />
+        <option value="$PROJECT_DIR$/app/view/admin/options/client_order_pay_new.php" />
+        <option value="$PROJECT_DIR$/app/view/admin/options/client_order_pay_edit.php" />
       </list>
     </option>
   </component>
@@ -315,25 +260,6 @@
               <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
               <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="reports" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="extras" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -355,15 +281,14 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="inc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="options" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
               <item name="Coproduc" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="options" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Coproduc" type="b2602c69:ProjectViewProjectNode" />
@@ -506,12 +431,12 @@
       <workItem from="1519960852975" duration="3357000" />
       <workItem from="1520009762613" duration="3058000" />
       <workItem from="1520136619514" duration="8132000" />
-      <workItem from="1520172958807" duration="18388000" />
+      <workItem from="1520172958807" duration="25185000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="500575000" />
+    <option name="totallyTimeSpent" value="507372000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -522,9 +447,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.303681" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27155825" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2912254" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23071104" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22541603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23600605" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -576,34 +501,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/view/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="74" lean-forward="false" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/admin/options/client_data.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="54" lean-forward="false" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/env.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/env_hosting.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/libraries/font/css/icon.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -622,13 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -713,27 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/user/order_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1517">
-          <caret line="29" column="74" lean-forward="false" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/extras/mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/user/order_detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="113" column="42" lean-forward="false" selection-start-line="113" selection-start-column="42" selection-end-line="113" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/extras/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -759,13 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="336" column="50" lean-forward="false" selection-start-line="336" selection-start-column="50" selection-end-line="336" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -924,10 +786,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/admin/options/reports_users.php">
+    <entry file="file://$PROJECT_DIR$/public/js/admin_report_user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+        <state relative-caret-position="357">
+          <caret line="56" column="67" lean-forward="false" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -940,17 +802,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/admin_report_user.js">
+    <entry file="file://$PROJECT_DIR$/app/extras/mail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="56" column="67" lean-forward="false" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
+        <state relative-caret-position="884">
+          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Bank.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding>
+            <marker date="1520208210981" expanded="true" signature="119:151" ph="select id, n... banks" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/user/order_detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/user/order_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="131" column="39" lean-forward="true" selection-start-line="131" selection-start-column="39" selection-end-line="131" selection-end-column="39" />
+          <folding>
+            <marker date="1520209027500" expanded="true" signature="5882:5981" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/admin/options/client_orders_pays.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="90" column="111" lean-forward="false" selection-start-line="90" selection-start-column="111" selection-end-line="90" selection-end-column="111" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/model/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
+        <state relative-caret-position="5100">
           <caret line="300" column="63" lean-forward="false" selection-start-line="300" selection-start-column="63" selection-end-line="300" selection-end-column="63" />
           <folding>
             <marker date="1520204254887" expanded="true" signature="169:221" ph="select user account" />
@@ -975,6 +873,50 @@
             <marker date="1520204254887" expanded="true" signature="9377:9438" ph="select * fro... user_data" />
             <marker date="1520204254887" expanded="true" signature="9684:9770" ph="select * fro... user_data" />
             <marker date="1520204254887" expanded="true" signature="10036:10527" ph="select name,... product" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/admin/options/reports_users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="53" lean-forward="false" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="39" lean-forward="false" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/admin/options/client_order_pay_new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="86" column="84" lean-forward="true" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/admin/options/client_order_pay_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="101" column="30" lean-forward="true" selection-start-line="101" selection-start-column="30" selection-end-line="101" selection-end-column="30" />
+          <folding>
+            <marker date="1520211440981" expanded="true" signature="4728:5083" ph="..." />
+            <marker date="1520211440981" expanded="true" signature="4777:4929" ph="..." />
+            <marker date="1520211440981" expanded="true" signature="4978:5083" ph="..." />
           </folding>
         </state>
       </provider>

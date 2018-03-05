@@ -56,7 +56,7 @@
 
     <!-- navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top position-fixed">
-        <a class="navbar-brand" href="#main">
+        <a class="navbar-brand" href="/">
             <img src="/public/img/logo.jpg" class="d-inline-block align-top " alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
