@@ -1,7 +1,8 @@
 # COPRODUC
 
 
-Sistema Web que permite la venta rápida de productos a clientes registrados y no registrados
+Sistema Web que permite la venta rápida de productos a clientes registrados y no registrados.
+Posee un panel de administrador para manejar todos los pedidos y reportes.
 
 > Posee una venta rápida que consiste en comprar unproducto con tan solo poner el DNi del cliente
 
